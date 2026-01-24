@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import './App.css'
 
 type CatalogSummary = {
@@ -156,6 +156,7 @@ function App() {
   const [selectedId, setSelectedId] = useState<string | null>(null)
   const [selectedItem, setSelectedItem] = useState<CatalogDetail | null>(null)
   const [detailLoading, setDetailLoading] = useState(false)
+  const didInitPageReset = useRef(false)
 
   const queryString = useMemo(() => {
     const params = new URLSearchParams()
@@ -239,6 +240,10 @@ function App() {
   }, [selectedId])
 
   useEffect(() => {
+    if (!didInitPageReset.current) {
+      didInitPageReset.current = true
+      return
+    }
     setPage(1)
   }, [search, activeFilters, sort, order])
 
