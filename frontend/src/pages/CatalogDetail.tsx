@@ -11,7 +11,8 @@ function CatalogDetailPage() {
   const { entryId } = useParams()
   const location = useLocation()
   const fromState = (location.state as LocationState | null)?.from ?? ''
-  const backHref = fromState ? `/${fromState}` : '/'
+  const backSearch = fromState && fromState.startsWith('?') ? fromState : ''
+  const backHref = backSearch ? `/${backSearch}` : '/'
 
   const [detail, setDetail] = useState<CatalogDetail | null>(null)
   const [loading, setLoading] = useState(false)
@@ -39,7 +40,10 @@ function CatalogDetailPage() {
   return (
     <div className="detail-page">
       <header className="detail-header">
-        <Link to={backHref} className="secondary">
+        <Link
+          to={backSearch ? { pathname: '/', search: backSearch } : '/'}
+          className="secondary"
+        >
           一覧へ戻る
         </Link>
       </header>

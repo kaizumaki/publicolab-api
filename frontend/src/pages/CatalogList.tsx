@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
-import { Link, useLocation } from 'react-router-dom'
+import { Link, useLocation, useNavigate } from 'react-router-dom'
 import {
   API_BASE,
   SITE_TITLE,
@@ -25,36 +25,32 @@ import type {
 
 function CatalogListPage() {
   const location = useLocation()
-  const initialParams =
-    typeof window !== 'undefined'
-      ? new URLSearchParams(window.location.search)
-      : null
-  const initialFilters: ActiveFilters = initialParams
-    ? {
-        categories: parseListParam(initialParams.get('category')),
-        platforms: parseListParam(initialParams.get('platform')),
-        licenses: parseListParam(initialParams.get('license')),
-        statuses: parseListParam(initialParams.get('status')),
-        types: parseListParam(initialParams.get('type')),
-        languages: parseListParam(initialParams.get('language')),
-      }
-    : initialActiveFilters
+  const navigate = useNavigate()
+  const initialParams = new URLSearchParams(location.search)
+  const initialFilters: ActiveFilters = {
+    categories: parseListParam(initialParams.get('category')),
+    platforms: parseListParam(initialParams.get('platform')),
+    licenses: parseListParam(initialParams.get('license')),
+    statuses: parseListParam(initialParams.get('status')),
+    types: parseListParam(initialParams.get('type')),
+    languages: parseListParam(initialParams.get('language')),
+  }
 
   const [filters, setFilters] = useState<FilterOptions>(emptyFilters)
   const [activeFilters, setActiveFilters] =
     useState<ActiveFilters>(initialFilters)
-  const [search, setSearch] = useState(initialParams?.get('q') ?? '')
+  const [search, setSearch] = useState(initialParams.get('q') ?? '')
   const [page, setPage] = useState(
-    parseNumberParam(initialParams?.get('page') ?? null, 1)
+    parseNumberParam(initialParams.get('page'), 1)
   )
   const [pageSize, setPageSize] = useState(
-    parseNumberParam(initialParams?.get('page_size') ?? null, 24, 1, 48)
+    parseNumberParam(initialParams.get('page_size'), 24, 1, 48)
   )
   const [sort, setSort] = useState<SortOption>(
-    resolveSortParam(initialParams?.get('sort') ?? null)
+    resolveSortParam(initialParams.get('sort'))
   )
   const [order, setOrder] = useState<SortOrder>(
-    resolveOrderParam(initialParams?.get('order') ?? null)
+    resolveOrderParam(initialParams.get('order'))
   )
   const [catalog, setCatalog] = useState<CatalogResponse>({
     page: 1,
@@ -103,10 +99,11 @@ function CatalogListPage() {
   }, [])
 
   useEffect(() => {
-    if (typeof window === 'undefined') return
-    const nextUrl = `${window.location.pathname}?${queryString}`
-    window.history.replaceState(null, '', nextUrl)
-  }, [queryString])
+    const nextSearch = `?${queryString}`
+    if (location.search !== nextSearch) {
+      navigate({ pathname: location.pathname, search: nextSearch }, { replace: true })
+    }
+  }, [location.pathname, location.search, navigate, queryString])
 
   useEffect(() => {
     const loadCatalog = async () => {
@@ -401,7 +398,7 @@ function CatalogListPage() {
                 )}
                 <Link
                   to={`/catalog/${item.id}`}
-                  state={{ from: location.search }}
+                  state={{ from: `?${queryString}` }}
                   className="secondary"
                 >
                   詳細
