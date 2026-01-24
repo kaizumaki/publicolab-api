@@ -133,6 +133,12 @@ function CatalogListPage() {
 
   const totalPages = Math.max(1, Math.ceil(catalog.total / catalog.pageSize))
 
+  useEffect(() => {
+    if (page > totalPages) {
+      setPage(totalPages)
+    }
+  }, [page, totalPages])
+
   const handleMultiSelect = (
     event: React.ChangeEvent<HTMLSelectElement>,
     key: keyof ActiveFilters
