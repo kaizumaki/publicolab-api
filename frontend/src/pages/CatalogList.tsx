@@ -139,14 +139,16 @@ function CatalogListPage() {
     }
   }, [page, totalPages])
 
-  const handleMultiSelect = (
-    event: React.ChangeEvent<HTMLSelectElement>,
-    key: keyof ActiveFilters
-  ) => {
-    const selected = Array.from(event.target.selectedOptions).map(
-      (option) => option.value
-    )
-    setActiveFilters((prev) => ({ ...prev, [key]: selected }))
+  const toggleFilterValue = (key: keyof ActiveFilters, value: string) => {
+    setActiveFilters((prev) => {
+      const current = new Set(prev[key])
+      if (current.has(value)) {
+        current.delete(value)
+      } else {
+        current.add(value)
+      }
+      return { ...prev, [key]: Array.from(current) }
+    })
   }
 
   const resetFilters = () => {
@@ -156,6 +158,39 @@ function CatalogListPage() {
     setOrder('asc')
     setPage(1)
   }
+
+  const activeFilterChips = [
+    ...activeFilters.categories.map((value) => ({
+      key: `category-${value}`,
+      label: value,
+      onRemove: () => toggleFilterValue('categories', value),
+    })),
+    ...activeFilters.platforms.map((value) => ({
+      key: `platform-${value}`,
+      label: value,
+      onRemove: () => toggleFilterValue('platforms', value),
+    })),
+    ...activeFilters.licenses.map((value) => ({
+      key: `license-${value}`,
+      label: value,
+      onRemove: () => toggleFilterValue('licenses', value),
+    })),
+    ...activeFilters.statuses.map((value) => ({
+      key: `status-${value}`,
+      label: value,
+      onRemove: () => toggleFilterValue('statuses', value),
+    })),
+    ...activeFilters.types.map((value) => ({
+      key: `type-${value}`,
+      label: value,
+      onRemove: () => toggleFilterValue('types', value),
+    })),
+    ...activeFilters.languages.map((value) => ({
+      key: `language-${value}`,
+      label: value,
+      onRemove: () => toggleFilterValue('languages', value),
+    })),
+  ]
 
   return (
     <div className="app">
@@ -173,6 +208,29 @@ function CatalogListPage() {
       </header>
 
       <section className="controls">
+        {activeFilterChips.length > 0 && (
+          <div className="active-filters">
+            <div className="active-filters-header">
+              <span>選択中フィルター</span>
+              <button type="button" className="secondary" onClick={resetFilters}>
+                すべて解除
+              </button>
+            </div>
+            <div className="active-filters-chips">
+              {activeFilterChips.map((chip) => (
+                <button
+                  key={chip.key}
+                  type="button"
+                  className="active-filter-chip"
+                  onClick={chip.onRemove}
+                >
+                  {chip.label}
+                  <span aria-hidden="true">×</span>
+                </button>
+              ))}
+            </div>
+          </div>
+        )}
         <div className="search">
           <label htmlFor="search">キーワード検索</label>
           <input
@@ -186,94 +244,106 @@ function CatalogListPage() {
 
         <div className="filters">
           <div className="filter-group">
-            <label htmlFor="category">カテゴリ</label>
-            <select
-              id="category"
-              multiple
-              value={activeFilters.categories}
-              onChange={(event) => handleMultiSelect(event, 'categories')}
-            >
+            <div className="filter-label">カテゴリ</div>
+            <div className="filter-options">
               {filters.categories.map((value) => (
-                <option key={value} value={value}>
+                <button
+                  key={value}
+                  type="button"
+                  className={`filter-chip ${
+                    activeFilters.categories.includes(value) ? 'active' : ''
+                  }`}
+                  onClick={() => toggleFilterValue('categories', value)}
+                >
                   {value}
-                </option>
+                </button>
               ))}
-            </select>
+            </div>
           </div>
           <div className="filter-group">
-            <label htmlFor="platform">プラットフォーム</label>
-            <select
-              id="platform"
-              multiple
-              value={activeFilters.platforms}
-              onChange={(event) => handleMultiSelect(event, 'platforms')}
-            >
+            <div className="filter-label">プラットフォーム</div>
+            <div className="filter-options">
               {filters.platforms.map((value) => (
-                <option key={value} value={value}>
+                <button
+                  key={value}
+                  type="button"
+                  className={`filter-chip ${
+                    activeFilters.platforms.includes(value) ? 'active' : ''
+                  }`}
+                  onClick={() => toggleFilterValue('platforms', value)}
+                >
                   {value}
-                </option>
+                </button>
               ))}
-            </select>
+            </div>
           </div>
           <div className="filter-group">
-            <label htmlFor="license">ライセンス</label>
-            <select
-              id="license"
-              multiple
-              value={activeFilters.licenses}
-              onChange={(event) => handleMultiSelect(event, 'licenses')}
-            >
+            <div className="filter-label">ライセンス</div>
+            <div className="filter-options">
               {filters.licenses.map((value) => (
-                <option key={value} value={value}>
+                <button
+                  key={value}
+                  type="button"
+                  className={`filter-chip ${
+                    activeFilters.licenses.includes(value) ? 'active' : ''
+                  }`}
+                  onClick={() => toggleFilterValue('licenses', value)}
+                >
                   {value}
-                </option>
+                </button>
               ))}
-            </select>
+            </div>
           </div>
           <div className="filter-group">
-            <label htmlFor="status">開発ステータス</label>
-            <select
-              id="status"
-              multiple
-              value={activeFilters.statuses}
-              onChange={(event) => handleMultiSelect(event, 'statuses')}
-            >
+            <div className="filter-label">開発ステータス</div>
+            <div className="filter-options">
               {filters.developmentStatuses.map((value) => (
-                <option key={value} value={value}>
+                <button
+                  key={value}
+                  type="button"
+                  className={`filter-chip ${
+                    activeFilters.statuses.includes(value) ? 'active' : ''
+                  }`}
+                  onClick={() => toggleFilterValue('statuses', value)}
+                >
                   {value}
-                </option>
+                </button>
               ))}
-            </select>
+            </div>
           </div>
           <div className="filter-group">
-            <label htmlFor="type">タイプ</label>
-            <select
-              id="type"
-              multiple
-              value={activeFilters.types}
-              onChange={(event) => handleMultiSelect(event, 'types')}
-            >
+            <div className="filter-label">タイプ</div>
+            <div className="filter-options">
               {filters.softwareTypes.map((value) => (
-                <option key={value} value={value}>
+                <button
+                  key={value}
+                  type="button"
+                  className={`filter-chip ${
+                    activeFilters.types.includes(value) ? 'active' : ''
+                  }`}
+                  onClick={() => toggleFilterValue('types', value)}
+                >
                   {value}
-                </option>
+                </button>
               ))}
-            </select>
+            </div>
           </div>
           <div className="filter-group">
-            <label htmlFor="language">言語</label>
-            <select
-              id="language"
-              multiple
-              value={activeFilters.languages}
-              onChange={(event) => handleMultiSelect(event, 'languages')}
-            >
+            <div className="filter-label">言語</div>
+            <div className="filter-options">
               {filters.languages.map((value) => (
-                <option key={value} value={value}>
+                <button
+                  key={value}
+                  type="button"
+                  className={`filter-chip ${
+                    activeFilters.languages.includes(value) ? 'active' : ''
+                  }`}
+                  onClick={() => toggleFilterValue('languages', value)}
+                >
                   {value}
-                </option>
+                </button>
               ))}
-            </select>
+            </div>
           </div>
         </div>
 

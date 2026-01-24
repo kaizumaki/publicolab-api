@@ -46,6 +46,46 @@
   gap: 1.5rem;
 }
 
+.active-filters {
+  padding: 1rem;
+  border-radius: 16px;
+  border: 1px solid #e5e7eb;
+  background: #ffffff;
+  display: grid;
+  gap: 0.75rem;
+}
+
+.active-filters-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  color: #4b5563;
+}
+
+.active-filters-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.active-filter-chip {
+  border-radius: 999px;
+  border: 1px solid #111827;
+  padding: 0.2rem 0.7rem;
+  font-size: 0.8rem;
+  background: #111827;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.active-filter-chip span {
+  font-size: 0.85rem;
+}
+
 .search label,
 .filter-group label,
 .page-size label {
@@ -70,10 +110,9 @@
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
 }
 
-.filter-group select,
 .page-size select {
   width: 100%;
-  min-height: 120px;
+  min-height: auto;
   padding: 0.5rem;
   border-radius: 12px;
   border: 1px solid #e5e7eb;
@@ -81,8 +120,39 @@
   font-size: 0.9rem;
 }
 
-.page-size select {
-  min-height: auto;
+.filter-label {
+  display: block;
+  font-size: 0.85rem;
+  color: #4b5563;
+  margin-bottom: 0.35rem;
+}
+
+.filter-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  max-height: 160px;
+  overflow: auto;
+  padding: 0.35rem;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  background: #ffffff;
+}
+
+.filter-chip {
+  border-radius: 999px;
+  border: 1px solid #e5e7eb;
+  padding: 0.2rem 0.65rem;
+  font-size: 0.8rem;
+  background: #ffffff;
+  color: #111827;
+  cursor: pointer;
+}
+
+.filter-chip.active {
+  background: #111827;
+  color: #ffffff;
+  border-color: #111827;
 }
 
 .filter-actions {
