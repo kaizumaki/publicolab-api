@@ -12,7 +12,6 @@ function CatalogDetailPage() {
   const location = useLocation()
   const fromState = (location.state as LocationState | null)?.from ?? ''
   const backSearch = fromState && fromState.startsWith('?') ? fromState : ''
-  const backHref = backSearch ? `/${backSearch}` : '/'
 
   const [detail, setDetail] = useState<CatalogDetail | null>(null)
   const [loading, setLoading] = useState(false)
