@@ -42,6 +42,8 @@ export CORS_ORIGINS="http://localhost:5173,https://<user>.github.io"
 - `q`: キーワード検索
 - `category`, `platform`, `license`, `status`, `type`, `language` (カンマ区切り)
 - `page`, `page_size`
+- `sort` (`name` / `releaseDate`)
+- `order` (`asc` / `desc`)
 
 ## フロントエンド
 
@@ -64,7 +66,7 @@ VITE_API_BASE=http://localhost:8000 npm run dev
 `.env.example` を参考に設定します。
 
 - `VITE_API_BASE` APIのベースURL
-- `VITE_SITE_TITLE` 画面タイトル
+- `VITE_SITE_TITLE` 画面タイトル（ページタイトルも同期）
 - `BASE_PATH` GitHub Pages の base パス
 
 ## GitHub Pages デプロイ
