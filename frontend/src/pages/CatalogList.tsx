@@ -159,6 +159,11 @@ function CatalogListPage() {
     setPage(1)
   }
 
+  const resetOnlyFilters = () => {
+    setActiveFilters(initialActiveFilters)
+    setPage(1)
+  }
+
   const activeFilterChips = [
     ...activeFilters.categories.map((value) => ({
       key: `category-${value}`,
@@ -212,8 +217,12 @@ function CatalogListPage() {
           <div className="active-filters">
             <div className="active-filters-header">
               <span>選択中フィルター</span>
-              <button type="button" className="secondary" onClick={resetFilters}>
-                すべて解除
+              <button
+                type="button"
+                className="secondary"
+                onClick={resetOnlyFilters}
+              >
+                フィルターのみ解除
               </button>
             </div>
             <div className="active-filters-chips">
