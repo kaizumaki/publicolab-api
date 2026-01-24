@@ -1,12 +1,7 @@
 import { useEffect, useState } from 'react'
 import { Link, useLocation, useParams } from 'react-router-dom'
-import {
-  API_BASE,
-  CatalogDetail,
-  fetchJson,
-  formatDate,
-  resolveLink,
-} from '../lib/catalog'
+import { API_BASE, fetchJson, formatDate, resolveLink } from '../lib/catalog'
+import type { CatalogDetail } from '../lib/catalog'
 
 type LocationState = {
   from?: string

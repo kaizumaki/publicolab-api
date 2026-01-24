@@ -2,12 +2,7 @@ import { useEffect, useMemo, useRef, useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import {
   API_BASE,
-  ActiveFilters,
-  CatalogResponse,
-  FilterOptions,
   SITE_TITLE,
-  SortOption,
-  SortOrder,
   emptyFilters,
   fetchJson,
   formatDate,
@@ -19,6 +14,13 @@ import {
   resolveSortParam,
   resolveLink,
   toQueryParam,
+} from '../lib/catalog'
+import type {
+  ActiveFilters,
+  CatalogResponse,
+  FilterOptions,
+  SortOption,
+  SortOrder,
 } from '../lib/catalog'
 
 function CatalogListPage() {
