@@ -94,6 +94,22 @@
   justify-content: space-between;
 }
 
+.sort-control label {
+  display: block;
+  font-size: 0.85rem;
+  color: #4b5563;
+  margin-bottom: 0.35rem;
+}
+
+.sort-control select {
+  width: 160px;
+  padding: 0.45rem 0.6rem;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  background: #ffffff;
+  font-size: 0.9rem;
+}
+
 .results {
   display: grid;
   gap: 1.5rem;
@@ -220,6 +236,26 @@
 
 .status.error {
   color: #b91c1c;
+}
+
+.empty-state {
+  padding: 2rem;
+  border-radius: 16px;
+  border: 1px dashed #c7d2fe;
+  background: #eef2ff;
+  color: #374151;
+  display: grid;
+  gap: 0.75rem;
+  justify-items: start;
+}
+
+.empty-state h3 {
+  margin: 0;
+}
+
+.empty-state p {
+  margin: 0;
+  color: #4b5563;
 }
 
 button,

@@ -48,6 +48,9 @@ type ActiveFilters = {
   languages: string[]
 }
 
+type SortOption = 'name' | 'releaseDate'
+type SortOrder = 'asc' | 'desc'
+
 const API_BASE = import.meta.env.VITE_API_BASE ?? 'http://localhost:8000'
 const SITE_TITLE = import.meta.env.VITE_SITE_TITLE ?? 'Public Catalog'
 
@@ -68,6 +71,27 @@ const initialActiveFilters: ActiveFilters = {
   types: [],
   languages: [],
 }
+
+const parseListParam = (value: string | null) =>
+  value ? value.split(',').map((entry) => entry.trim()).filter(Boolean) : []
+
+const parseNumberParam = (
+  value: string | null,
+  fallback: number,
+  min = 1,
+  max = Number.MAX_SAFE_INTEGER
+) => {
+  if (!value) return fallback
+  const parsed = Number(value)
+  if (Number.isNaN(parsed)) return fallback
+  return Math.min(Math.max(parsed, min), max)
+}
+
+const resolveSortParam = (value: string | null): SortOption =>
+  value === 'releaseDate' ? 'releaseDate' : 'name'
+
+const resolveOrderParam = (value: string | null): SortOrder =>
+  value === 'desc' ? 'desc' : 'asc'
 
 const fetchJson = async <T,>(url: string): Promise<T> => {
   const response = await fetch(url)
@@ -90,13 +114,37 @@ const pluralize = (count: number, label: string) =>
   count === 1 ? `${count} ${label}` : `${count} ${label}s`
 
 function App() {
+  const initialParams =
+    typeof window !== 'undefined'
+      ? new URLSearchParams(window.location.search)
+      : null
+  const initialFilters: ActiveFilters = initialParams
+    ? {
+        categories: parseListParam(initialParams.get('category')),
+        platforms: parseListParam(initialParams.get('platform')),
+        licenses: parseListParam(initialParams.get('license')),
+        statuses: parseListParam(initialParams.get('status')),
+        types: parseListParam(initialParams.get('type')),
+        languages: parseListParam(initialParams.get('language')),
+      }
+    : initialActiveFilters
+
   const [filters, setFilters] = useState<FilterOptions>(emptyFilters)
-  const [activeFilters, setActiveFilters] = useState<ActiveFilters>(
-    initialActiveFilters
+  const [activeFilters, setActiveFilters] =
+    useState<ActiveFilters>(initialFilters)
+  const [search, setSearch] = useState(initialParams?.get('q') ?? '')
+  const [page, setPage] = useState(
+    parseNumberParam(initialParams?.get('page') ?? null, 1)
   )
-  const [search, setSearch] = useState('')
-  const [page, setPage] = useState(1)
-  const [pageSize, setPageSize] = useState(24)
+  const [pageSize, setPageSize] = useState(
+    parseNumberParam(initialParams?.get('page_size') ?? null, 24, 1, 48)
+  )
+  const [sort, setSort] = useState<SortOption>(
+    resolveSortParam(initialParams?.get('sort') ?? null)
+  )
+  const [order, setOrder] = useState<SortOrder>(
+    resolveOrderParam(initialParams?.get('order') ?? null)
+  )
   const [catalog, setCatalog] = useState<CatalogResponse>({
     page: 1,
     pageSize: 24,
@@ -126,8 +174,10 @@ function App() {
       params.set('language', toQueryParam(activeFilters.languages))
     params.set('page', String(page))
     params.set('page_size', String(pageSize))
+    params.set('sort', sort)
+    params.set('order', order)
     return params.toString()
-  }, [activeFilters, page, pageSize, search])
+  }, [activeFilters, page, pageSize, search, sort, order])
 
   useEffect(() => {
     const loadFilters = async () => {
@@ -142,6 +192,12 @@ function App() {
     }
     loadFilters()
   }, [])
+
+  useEffect(() => {
+    if (typeof window === 'undefined') return
+    const nextUrl = `${window.location.pathname}?${queryString}`
+    window.history.replaceState(null, '', nextUrl)
+  }, [queryString])
 
   useEffect(() => {
     const loadCatalog = async () => {
@@ -184,7 +240,7 @@ function App() {
 
   useEffect(() => {
     setPage(1)
-  }, [search, activeFilters])
+  }, [search, activeFilters, sort, order])
 
   const totalPages = Math.max(1, Math.ceil(catalog.total / catalog.pageSize))
 
@@ -201,6 +257,9 @@ function App() {
   const resetFilters = () => {
     setActiveFilters(initialActiveFilters)
     setSearch('')
+    setSort('name')
+    setOrder('asc')
+    setPage(1)
   }
 
   return (
@@ -338,6 +397,28 @@ function App() {
               ))}
             </select>
           </div>
+          <div className="sort-control">
+            <label htmlFor="sort">並び替え</label>
+            <select
+              id="sort"
+              value={sort}
+              onChange={(event) => setSort(event.target.value as SortOption)}
+            >
+              <option value="name">名前順</option>
+              <option value="releaseDate">更新日順</option>
+            </select>
+          </div>
+          <div className="sort-control">
+            <label htmlFor="order">順序</label>
+            <select
+              id="order"
+              value={order}
+              onChange={(event) => setOrder(event.target.value as SortOrder)}
+            >
+              <option value="asc">昇順</option>
+              <option value="desc">降順</option>
+            </select>
+          </div>
           <button type="button" className="secondary" onClick={resetFilters}>
             条件をリセット
           </button>
@@ -374,7 +455,15 @@ function App() {
         {loading && <p className="status">読み込み中...</p>}
         {error && <p className="status error">{error}</p>}
         {!loading && !error && catalog.items.length === 0 && (
-          <p className="status">該当するカタログがありません。</p>
+          <div className="empty-state">
+            <h3>該当するカタログがありません</h3>
+            <p>
+              検索条件を広げるか、フィルタをリセットして再度お試しください。
+            </p>
+            <button type="button" onClick={resetFilters}>
+              条件をリセット
+            </button>
+          </div>
         )}
 
         <div className="grid">

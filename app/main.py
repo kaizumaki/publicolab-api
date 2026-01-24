@@ -253,6 +253,40 @@ def _apply_filters(
     return result
 
 
+def _normalize_sort(sort_by: str | None) -> str:
+    if sort_by == "releaseDate":
+        return "releaseDate"
+    return "name"
+
+
+def _normalize_order(order: str | None) -> str:
+    if order == "desc":
+        return "desc"
+    return "asc"
+
+
+def _sort_items(
+    items: list[dict[str, Any]],
+    sort_by: str | None,
+    order: str | None,
+) -> list[dict[str, Any]]:
+    normalized_sort = _normalize_sort(sort_by)
+    normalized_order = _normalize_order(order)
+    reverse = normalized_order == "desc"
+
+    if normalized_sort == "releaseDate":
+        return sorted(
+            items,
+            key=lambda item: item.get("releaseDate") or "",
+            reverse=reverse,
+        )
+    return sorted(
+        items,
+        key=lambda item: (item.get("name") or item.get("id") or "").lower(),
+        reverse=reverse,
+    )
+
+
 def _paginate(items: list[dict[str, Any]], page: int, page_size: int) -> dict[str, Any]:
     start = (page - 1) * page_size
     end = start + page_size
@@ -293,6 +327,12 @@ def catalog_list(
     status: str | None = Query(None, description="Comma-separated developmentStatus filter"),
     software_type: str | None = Query(None, alias="type", description="Comma-separated softwareType filter"),
     language: str | None = Query(None, description="Comma-separated language filter"),
+    sort_by: str | None = Query(
+        "name",
+        alias="sort",
+        description="Sort by name or releaseDate",
+    ),
+    order: str | None = Query("asc", description="Sort order: asc or desc"),
     page: int = Query(1, ge=1),
     page_size: int = Query(DEFAULT_PAGE_SIZE, ge=1, le=MAX_PAGE_SIZE),
 ) -> dict[str, Any]:
@@ -306,6 +346,7 @@ def catalog_list(
         software_type=software_type,
         language=language,
     )
+    sorted_items = _sort_items(items, sort_by, order)
     summaries = [
         {
             "id": item["id"],
@@ -320,7 +361,7 @@ def catalog_list(
             "landingURL": item.get("landingURL", ""),
             "releaseDate": item.get("releaseDate", ""),
         }
-        for item in items
+        for item in sorted_items
     ]
     return _paginate(summaries, page, page_size)
 
