@@ -4,6 +4,7 @@ import os
 from pathlib import Path
 from typing import Any, Iterable
 
+import base64
 import yaml
 from fastapi import FastAPI, HTTPException, Query
 from fastapi.middleware.cors import CORSMiddleware
@@ -34,6 +35,22 @@ DATA_STORE: dict[str, Any] = {
     "errors": [],
     "filters": {},
 }
+
+
+class _CatalogSafeLoader(yaml.SafeLoader):
+    pass
+
+
+def _binary_constructor(loader: _CatalogSafeLoader, node: yaml.Node) -> str:
+    raw_value = loader.construct_scalar(node)
+    try:
+        decoded = base64.b64decode(raw_value)
+        return decoded.decode("utf-8", errors="replace")
+    except Exception:
+        return str(raw_value)
+
+
+_CatalogSafeLoader.add_constructor("tag:yaml.org,2002:binary", _binary_constructor)
 
 
 def _ensure_list(value: Any) -> list[str]:
@@ -135,7 +152,10 @@ def _load_catalog() -> None:
     else:
         for file_path in sorted(YAML_DIR.glob("*.yml")):
             try:
-                raw = yaml.safe_load(file_path.read_text(encoding="utf-8"))
+                raw = yaml.load(
+                    file_path.read_text(encoding="utf-8"),
+                    Loader=_CatalogSafeLoader,
+                )
                 if not isinstance(raw, dict):
                     errors.append(f"Invalid YAML format in {file_path.name}")
                     continue
