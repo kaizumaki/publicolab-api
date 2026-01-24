@@ -51,6 +51,7 @@ def _binary_constructor(loader: _CatalogSafeLoader, node: yaml.Node) -> str:
 
 
 _CatalogSafeLoader.add_constructor("tag:yaml.org,2002:binary", _binary_constructor)
+_CatalogSafeLoader.add_constructor("!binary", _binary_constructor)
 
 
 def _ensure_list(value: Any) -> list[str]:
