@@ -1,0 +1,36 @@
+---
+publiccodeYmlVersion: 0.5.0
+name: sensors_fastapi
+url: https://github.com/CodeForAfrica/sensors_fastapi
+landingURL: https://github.com/CodeForAfrica/sensors_fastapi
+developmentStatus: stable
+softwareType: library
+platforms:
+- Python
+categories:
+- geographic-information-systems
+releaseDate: '2024-11-12'
+softwareVersion: ''
+legal:
+  license: GPL-3.0
+  mainCopyrightOwner: CodeForAfrica
+  repoOwner: CodeForAfrica
+maintenance:
+  type: community
+  contacts:
+  - name: CodeForAfrica
+localisation:
+  availableLanguages:
+  - en
+  localisationReady: false
+dependsOn:
+  open: []
+description:
+  en:
+    shortDescription: Backend api test using fastapi for IoT sensors project
+    longDescription: 'Backend api test using fastapi for IoT sensors project This
+      is an experimental project using FastAPI and TimescaleDB as backend application
+      for IoT sensors monitoring applications. The main purpose of this project is:
+      - to allow for automatic onboarding of new sensor devices/nodes to the sensors
+      network database. - handle a large number of API requests asynchronously. -
+      leverage Postgres for both realational and timeseries data use-cases.'

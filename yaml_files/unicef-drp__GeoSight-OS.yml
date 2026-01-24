@@ -1,0 +1,231 @@
+---
+publiccodeYmlVersion: 0.5.0
+name: GeoSight
+applicationSuite: UNICEF Digital Public Goods
+url: https://github.com/unicef-drp/GeoSight-OS
+landingURL: https://unicef-drp.github.io/GeoSight-OS-Documentation/
+developmentStatus: stable
+softwareType: standalone/web
+platforms:
+- web
+- linux
+categories:
+- geographic-information-systems
+- data-visualization
+- data-analytics
+usedBy:
+- UNICEF
+releaseDate: '2025-11-11'
+softwareVersion: 3.1.0
+logo: https://unicef-drp.github.io/GeoSight-OS-Documentation/img/unicef_logo_horizontal.png
+legal:
+  license: AGPL-3.0-only
+  mainCopyrightOwner: UNICEF
+  repoOwner: unicef-drp
+maintenance:
+  type: internal
+  contacts:
+  - name: unicef-drp
+    affiliation: UNICEF
+localisation:
+  availableLanguages:
+  - en
+  localisationReady: true
+dependsOn:
+  open:
+  - name: Django
+    optional: false
+  - name: PostgreSQL
+    optional: false
+  - name: Redis
+    optional: false
+  - name: Celery
+    optional: false
+  - name: Django REST framework
+    optional: false
+  - name: GeoDjango
+    optional: false
+  - name: GDAL
+    optional: false
+  - name: React
+    optional: false
+  - name: Redux
+    optional: false
+  - name: Material-UI (MUI)
+    optional: false
+  - name: MapLibre GL JS
+    optional: false
+  - name: Webpack
+    optional: false
+  - name: TypeScript
+    optional: false
+  - name: Sass/SCSS
+    optional: false
+  - name: Axios
+    optional: false
+  - name: Nunjucks
+    optional: false
+  - name: Chart.js
+    optional: false
+  - name: SheetJS (xlsx)
+    optional: false
+  - name: Playwright
+    optional: false
+  - name: GeoRepo
+    optional: false
+    version: ''
+  - name: Docker
+    optional: false
+  - name: uWSGI
+    optional: false
+  - name: knox
+    optional: false
+  - name: drf-yasg
+    optional: false
+  - name: webpack-bundle-tracker
+    optional: false
+  - name: django-webpack-loader
+    optional: false
+  - name: tinymce
+    optional: false
+  - name: Pako
+    optional: false
+description:
+  en:
+    shortDescription: UNICEF's open-source geospatial web-based data visualization
+      and analysis platform for risk-informed programming
+    longDescription: "GeoSight is an open-source web geospatial data platform developed
+      by UNICEF for easy data visualization and analysis. \nIt is specifically designed
+      to simplify the creation of online maps for visualizing multiple indicators
+      at a subnational \nlevel to support evidence-based decision-making for better
+      results for children.\n\n## Overview\n\nThe GeoSight platform was developed
+      to help UNICEF Country Offices in emergency response and operational planning.
+      \nIt harvests and aggregates data linked to administrative areas (e.g., national
+      and subnational boundaries). \nThese data can then be visualized as choropleth
+      or pie chart maps. Widgets (charts, tables, summaries) can be \ndisplayed in
+      association with the currently active indicator layer.\n\n## Key Features\n\n-
+      **Project-Based Dashboards**: Combine reference datasets, indicators, and context
+      layers for comprehensive data visualization\n- **Indicator Visualization**:
+      Display data using choropleth maps (color-coded boundaries) or charts (pie/bar
+      charts)\n- **Context Layers**: Pull external web mapping services (ArcGIS Online/Portal,
+      WMS, GeoJSON) for contextual information\n- **Interactive Widgets**: Generate
+      charts, tables, and summaries through data analysis\n- **GeoRepo Integration**:
+      Utilize administrative reference datasets from GeoRepo for accurate boundary
+      data\n- **Data Import**: Support for spreadsheets and various intelligence assets\n-
+      **Multi-level Analysis**: Perform data analysis at country and regional levels\n\n##
+      Technical Architecture\n\n- **Backend**: Python 36.9%, Django framework\n- **Frontend**:
+      JavaScript 43.6%, TypeScript 12.9%, SCSS 4.5%\n- **Database**: PostgreSQL (推測)\n-
+      **Deployment**: Docker-based containerization\n- **Platform**: Linux-based web
+      application\n\n## Two Main Interfaces\n\n1. **Dashboard View**: End-user interface
+      for exploring data in projects designed for operational work\n2. **Admin Area**:
+      Project design interface for data management, source selection, and component
+      configuration\n\n## Use Cases\n\n- Emergency response planning\n- Operational
+      planning for UNICEF Country Offices\n- Evidence-based decision-making\n- Subnational
+      data visualization\n- Risk-informed programming\n- Child welfare analysis and
+      planning\n\n## Installation\n\n### Production\n\n```bash\ngit clone https://github.com/unicef-drp/GeoSight-OS\ncd
+      GeoSight-OS/deployment\ndocker-compose up -d\n```\n\nThe web interface will
+      be available at http://127.0.0.1/\n\n### Development\n\nDetailed setup instructions
+      are available in the [GeoSight Developer Guide](https://unicef-drp.github.io/GeoSight-OS-Documentation/developer/).\n\n##
+      Disclaimer\n\n⚠️ The software provided by this project is provided 'as is'.
+      All information provided within the platform should be \nindependently verified
+      before using as the basis for action. The contributors and developers of this
+      platform take no \nresponsibility for any loss of revenue, life, physical harm
+      or any other adverse outcome that may occur as a result \nof the use of this
+      platform.\n\n## Project Partners\n\n- UNICEF (United Nations Children's Fund)\n\n##
+      Contributing\n\nThe project welcomes contributions from everyone. Please read
+      the [contributor guidelines](https://unicef-drp.github.io/GeoSight-OS-Documentation/about/contributing/)
+      \nand [Code of Conduct](https://unicef-drp.github.io/GeoSight-OS-Documentation/about/code-of-conduct/)
+      before contributing.\n\n## Related Projects\n\n- [GeoRepo](https://github.com/unicef-drp/GeoRepo-OS):
+      Administrative reference dataset repository\n"
+    features:
+    - プロジェクト（ダッシュボード）による統合データ可視化
+    - インジケータレイヤーによるコロプレス地図・チャート表示
+    - 外部 Web マッピングサービスからのコンテキストレイヤー取得
+    - ウィジェット（チャート、テーブル、サマリー）の自動生成
+    - GeoRepo との統合による正確な管理境界データの利用
+    - スプレッドシートからのデータインポート
+    - 国・地域レベルでのデータ分析
+    - Docker ベースの簡単なデプロイメント
+    - ダッシュボードビューと管理エリアの2つのインターフェース
+    - データアクセス管理とユーザー権限設定
+    screenshots:
+    - https://unicef-drp.github.io/GeoSight-OS-Documentation/img/geosight-demo-dashboard.png
+    documentation: https://unicef-drp.github.io/GeoSight-OS-Documentation/
+    apiDocumentation: https://unicef-drp.github.io/GeoSight-OS-Documentation/developer/api/
+  ja:
+    shortDescription: UNICEF が開発したオープンソースの地理空間 Web データ可視化・分析プラットフォーム
+    longDescription: |
+      GeoSight は、UNICEF が開発したオープンソースの Web 地理空間データプラットフォームで、
+      簡単なデータ可視化と分析を実現します。国家レベル以下の複数のインジケータを地図上で
+      可視化するオンライン地図作成を簡素化し、子どもたちのためのより良い成果を目指した
+      エビデンスに基づく意思決定をサポートするように設計されています。
+
+      ## 概要
+
+      GeoSight プラットフォームは、緊急対応や業務計画における UNICEF 各国オフィスを支援するために
+      開発されました。国や準国家レベルの行政区域に紐づくデータを収集・集約し、コロプレス地図や
+      円グラフ地図として可視化できます。現在アクティブなインジケータレイヤーと関連付けて、
+      ウィジェット（チャート、テーブル、サマリー）を表示できます。
+
+      ## 主な機能
+
+      - **プロジェクトベースのダッシュボード**: 参照データセット、インジケータ、コンテキストレイヤーを組み合わせた包括的なデータ可視化
+      - **インジケータ可視化**: コロプレス地図（色分けされた境界）またはチャート（円グラフ/棒グラフ）でデータを表示
+      - **コンテキストレイヤー**: 外部 Web マッピングサービス（ArcGIS Online/Portal、WMS、GeoJSON）を活用
+      - **インタラクティブウィジェット**: データ分析によるチャート、テーブル、サマリーの生成
+      - **GeoRepo 統合**: GeoRepo から正確な境界データを取得
+      - **データインポート**: スプレッドシートなど様々なデータソースに対応
+      - **マルチレベル分析**: 国・地域レベルでのデータ分析
+
+      ## 技術構成
+
+      - **バックエンド**: Python 36.9%、Django フレームワーク
+      - **フロントエンド**: JavaScript 43.6%、TypeScript 12.9%、SCSS 4.5%
+      - **データベース**: PostgreSQL（推測）
+      - **デプロイメント**: Docker ベースのコンテナ化
+      - **プラットフォーム**: Linux ベースの Web アプリケーション
+
+      ## 2つのメインインターフェース
+
+      1. **ダッシュボードビュー**: 業務支援用に設計されたプロジェクトのデータを探索するエンドユーザー向けインターフェース
+      2. **管理エリア**: プロジェクト設計、データ管理、ソース選択、コンポーネント設定を行うインターフェース
+
+      ## ユースケース
+
+      - 緊急対応計画
+      - UNICEF 各国オフィスの業務計画
+      - エビデンスに基づく意思決定
+      - 準国家レベルのデータ可視化
+      - リスク情報に基づくプログラミング
+      - 子どもの福祉分析と計画
+
+      ## 免責事項
+
+      ⚠️ このプロジェクトが提供するソフトウェアは「現状有姿」で提供されます。
+      プラットフォーム内で提供されるすべての情報は、行動の基礎として使用する前に独自に検証する必要があります。
+      このプラットフォームの使用の結果として発生する可能性のある収益の損失、生命、身体的危害、
+      その他の悪影響について、このプラットフォームの貢献者および開発者は一切の責任を負いません。
+
+      ## 関連プロジェクト
+
+      - [GeoRepo](https://github.com/unicef-drp/GeoRepo-OS): 管理参照データセットリポジトリ
+    features:
+    - プロジェクト（ダッシュボード）による統合データ可視化
+    - インジケータレイヤーによるコロプレス地図・チャート表示
+    - 外部 Web マッピングサービスからのコンテキストレイヤー取得
+    - ウィジェット（チャート、テーブル、サマリー）の自動生成
+    - GeoRepo との統合による正確な管理境界データの利用
+    - スプレッドシートからのデータインポート
+    - 国・地域レベルでのデータ分析
+    - Docker ベースの簡単なデプロイメント
+    - ダッシュボードビューと管理エリアの2つのインターフェース
+    - データアクセス管理とユーザー権限設定
+    documentation: https://unicef-drp.github.io/GeoSight-OS-Documentation/
+    apiDocumentation: https://unicef-drp.github.io/GeoSight-OS-Documentation/developer/api/
+intendedAudience:
+  countries:
+  - int
+  scope:
+  - emergency-services
+  - healthcare
+  - welfare

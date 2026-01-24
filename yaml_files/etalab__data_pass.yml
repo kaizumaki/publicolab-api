@@ -1,0 +1,32 @@
+---
+publiccodeYmlVersion: 0.5.0
+name: data_pass
+url: https://github.com/etalab/data_pass
+landingURL: https://datapass.api.gouv.fr
+developmentStatus: active
+softwareType: library
+platforms:
+- Ruby
+categories:
+- geographic-information-systems
+releaseDate: '2023-11-30'
+softwareVersion: ''
+legal:
+  license: UNSPECIFIED
+  mainCopyrightOwner: etalab
+  repoOwner: etalab
+maintenance:
+  type: community
+  contacts:
+  - name: etalab
+localisation:
+  availableLanguages:
+  - en
+  localisationReady: false
+dependsOn:
+  open: []
+description:
+  en:
+    shortDescription: 'DataPass '
+    longDescription: DataPass [![Continuous Deployment](https://github.com/etalab/data_pass/actions/workflows/continuous-deployment.yaml/badge.svg)](https://github.com/etalab/data_pass/actions/workflows/continuous-deployment.yaml)
+      [![Continuous Integration](https://github.com/etalab/data_pass/actions/workflows/test.yaml/badge.svg)](https://github.com/etalab/data_pass/actions/workflows/test.yaml)

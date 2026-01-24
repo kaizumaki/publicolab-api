@@ -1,0 +1,38 @@
+---
+publiccodeYmlVersion: 0.5.0
+name: api
+url: https://github.com/uscensusbureau/api
+landingURL: https://census.gov/developers
+developmentStatus: maintenance
+softwareType: library
+platforms:
+- REST
+categories:
+- geographic-information-systems
+releaseDate: '2021-04-07'
+softwareVersion: ''
+legal:
+  license: CC0-1.0
+  mainCopyrightOwner: uscensusbureau
+  repoOwner: uscensusbureau
+maintenance:
+  type: community
+  contacts:
+  - name: uscensusbureau
+  status: maintenance
+localisation:
+  availableLanguages:
+  - en
+  localisationReady: false
+dependsOn:
+  open: []
+description:
+  en:
+    shortDescription: Issue tracker and documentation repository for US Census Bureau
+      APIs.
+    longDescription: |-
+      Repository for tracking Census API bugs, feature requests, and maintaining documentation.
+      Serves as the public interface for Census data API users and developers.
+      Points to official Census API documentation and data access services.
+
+      '

@@ -1,0 +1,37 @@
+---
+publiccodeYmlVersion: 0.5.0
+name: drupal-argentina-mapa
+url: https://github.com/argob/drupal-argentina-mapa
+landingURL: https://github.com/argob/drupal-argentina-mapa
+developmentStatus: inactive
+softwareType: library
+platforms:
+- PHP
+categories:
+- geographic-information-systems
+releaseDate: '2019-11-27'
+softwareVersion: ''
+legal:
+  license: UNSPECIFIED
+  mainCopyrightOwner: argob
+  repoOwner: argob
+maintenance:
+  type: community
+  contacts:
+  - name: argob
+localisation:
+  availableLanguages:
+  - en
+  localisationReady: false
+dependsOn:
+  open: []
+description:
+  en:
+    shortDescription: Esta es una distribución de un componente utilizado en el portal
+      de centralización de organismos públicos. Solución creada por la Subsecretaría
+      de Gobierno Digital de la República Argentina en el periodo 2015-2019.
+    longDescription: 'Esta es una distribución de un componente utilizado en el portal
+      de centralización de organismos públicos. Solución creada por la Subsecretaría
+      de Gobierno Digital de la República Argentina en el periodo 2015-2019.
+
+      '

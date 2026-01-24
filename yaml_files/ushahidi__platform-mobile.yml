@@ -1,0 +1,32 @@
+---
+publiccodeYmlVersion: 0.5.0
+name: platform-mobile
+url: https://github.com/ushahidi/platform-mobile
+landingURL: https://github.com/ushahidi/platform-mobile
+developmentStatus: maintenance
+softwareType: library
+platforms:
+- TypeScript
+categories:
+- geographic-information-systems
+releaseDate: '2020-03-24'
+softwareVersion: ''
+legal:
+  license: AGPL-3.0
+  mainCopyrightOwner: ushahidi
+  repoOwner: ushahidi
+maintenance:
+  type: community
+  contacts:
+  - name: ushahidi
+localisation:
+  availableLanguages:
+  - en
+  localisationReady: false
+dependsOn:
+  open: []
+description:
+  en:
+    shortDescription: Hybrid Mobile UI for Ushahidi Platform V3+
+    longDescription: Hybrid Mobile UI for Ushahidi Platform V3+ ``` git clone git@github.com:ushahidi/platform-mobile-app.git
+      cd platform-mobile-app ```

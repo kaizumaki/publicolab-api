@@ -1,0 +1,39 @@
+---
+publiccodeYmlVersion: 0.5.0
+name: sensors.AFRICA
+url: https://github.com/CodeForAfrica/sensors.AFRICA
+landingURL: https://sensors.africa
+developmentStatus: active
+softwareType: library
+platforms:
+- JavaScript
+categories:
+- geographic-information-systems
+releaseDate: '2018-05-16'
+softwareVersion: ''
+legal:
+  license: GPL-3.0
+  mainCopyrightOwner: CodeForAfrica
+  repoOwner: CodeForAfrica
+maintenance:
+  type: community
+  contacts:
+  - name: CodeForAfrica
+localisation:
+  availableLanguages:
+  - en
+  localisationReady: false
+dependsOn:
+  open: []
+description:
+  en:
+    shortDescription: sensors.AFRICA is a citizen-science focused project by Code
+      for Africa that seeks to address data gaps by providing low cost sensors, which
+      people can use to measure and monitor the quality of the air, water, and sound
+      in their communities.
+    longDescription: 'sensors.AFRICA is a citizen-science focused project by Code
+      for Africa that seeks to address data gaps by providing low cost sensors, which
+      people can use to measure and monitor the quality of the air, water, and sound
+      in their communities.
+
+      '

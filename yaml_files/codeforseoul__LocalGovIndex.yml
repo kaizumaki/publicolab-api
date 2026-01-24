@@ -1,0 +1,32 @@
+---
+publiccodeYmlVersion: 0.5.0
+name: LocalGovIndex
+url: https://github.com/codeforseoul/LocalGovIndex
+landingURL: http://codeforseoul.org/LocalGovIndex/
+developmentStatus: inactive
+softwareType: library
+platforms:
+- JavaScript
+categories:
+- geographic-information-systems
+releaseDate: '2015-03-29'
+softwareVersion: ''
+legal:
+  license: UNSPECIFIED
+  mainCopyrightOwner: codeforseoul
+  repoOwner: codeforseoul
+maintenance:
+  type: community
+  contacts:
+  - name: codeforseoul
+localisation:
+  availableLanguages:
+  - en
+  localisationReady: false
+dependsOn:
+  open: []
+description:
+  en:
+    shortDescription: 지방정부 재정 자립도 시각화 프로젝트
+    longDescription: 지방정부 재정 자립도 시각화 프로젝트 본 프로젝트는 CodeAcross 2015 투명재정을 위한 해커톤 프로젝트("우리재정
+      푸르게 푸르게")의 일환으로 지방정부의 재정 자립도 시각화 프로젝트 입니다.

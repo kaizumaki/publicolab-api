@@ -1,0 +1,37 @@
+---
+publiccodeYmlVersion: 0.5.0
+name: platform-client-mzima
+url: https://github.com/ushahidi/platform-client-mzima
+landingURL: https://github.com/ushahidi/platform-client-mzima
+developmentStatus: active
+softwareType: library
+platforms:
+- TypeScript
+categories:
+- geographic-information-systems
+releaseDate: '2022-08-15'
+softwareVersion: ''
+legal:
+  license: NOASSERTION
+  mainCopyrightOwner: ushahidi
+  repoOwner: ushahidi
+maintenance:
+  type: community
+  contacts:
+  - name: ushahidi
+localisation:
+  availableLanguages:
+  - en
+  localisationReady: false
+dependsOn:
+  open: []
+description:
+  en:
+    shortDescription: "> This Platform Client (Mzima) workspace is generated using
+      [Nx, a Smart, fast and extensible build system.](https://nx.dev)"
+    longDescription: |-
+      # Platform Client (Mzima)
+
+      > This Platform Client (Mzima) workspace is generated using [Nx, a Smart, fast and extensible build system.](https://nx.dev)
+
+      This Platform Client (Mzima) repo houses 2 clients: The web client and the mobile client. Find the installation instructions below.

@@ -1,0 +1,33 @@
+---
+publiccodeYmlVersion: 0.5.0
+name: SIANCE
+url: https://github.com/etalab/SIANCE
+landingURL: https://github.com/etalab/SIANCE
+developmentStatus: maintenance
+softwareType: library
+platforms:
+- Python
+categories:
+- geographic-information-systems
+releaseDate: '2022-10-26'
+softwareVersion: ''
+legal:
+  license: MIT
+  mainCopyrightOwner: etalab
+  repoOwner: etalab
+maintenance:
+  type: community
+  contacts:
+  - name: etalab
+localisation:
+  availableLanguages:
+  - en
+  localisationReady: false
+dependsOn:
+  open: []
+description:
+  en:
+    shortDescription: Archive of SIANCE project (May 2021 version)
+    longDescription: Archive of SIANCE project (May 2021 version) Archive repo including
+      source code, but no data. The reports of inspections by the Autorité de Sûreté
+      Nucléaire (ASN) can be acquired from the ASN website.

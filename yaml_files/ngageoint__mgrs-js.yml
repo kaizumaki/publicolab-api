@@ -1,0 +1,36 @@
+---
+publiccodeYmlVersion: 0.5.0
+name: mgrs-js
+url: https://github.com/ngageoint/mgrs-js
+landingURL: http://ngageoint.github.io/mgrs-js
+developmentStatus: maintenance
+softwareType: library
+platforms:
+- TypeScript
+categories:
+- geographic-information-systems
+releaseDate: '2022-09-12'
+softwareVersion: ''
+legal:
+  license: MIT
+  mainCopyrightOwner: ngageoint
+  repoOwner: ngageoint
+maintenance:
+  type: community
+  contacts:
+  - name: ngageoint
+  status: maintenance
+localisation:
+  availableLanguages:
+  - en
+  localisationReady: false
+dependsOn:
+  open: []
+description:
+  en:
+    shortDescription: TypeScript library for Military Grid Reference System (MGRS)
+      coordinate encoding/decoding.
+    longDescription: |-
+      Utilities for converting between MGRS coordinates and latitude/longitude.
+      MGRS is the standard coordinate system used by NATO and military organizations worldwide.
+      Supports precision conversions, format validation, and grid boundary calculations.

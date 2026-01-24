@@ -1,0 +1,37 @@
+---
+publiccodeYmlVersion: 0.5.0
+name: OpenTransLive
+url: https://github.com/g0v/OpenTransLive
+landingURL: https://transcribe.g0v.tw
+developmentStatus: active
+softwareType: library
+platforms:
+- Python
+categories:
+- geographic-information-systems
+releaseDate: '2025-09-11'
+softwareVersion: ''
+legal:
+  license: AGPL-3.0
+  mainCopyrightOwner: g0v
+  repoOwner: g0v
+maintenance:
+  type: community
+  contacts:
+  - name: g0v
+localisation:
+  availableLanguages:
+  - en
+  localisationReady: false
+dependsOn:
+  open: []
+description:
+  en:
+    shortDescription: "![螢幕擷取畫面_15-9-2025_1231_transcribe g0v tw](https://github.com/user-attachments/assets/9a7ff25a-557d-43b7-8071-e7a6ca176c5f)
+      ![螢幕擷取畫面_15-9-2025_115957_transcribe g0v tw](https://github.com/user-attachme"
+    longDescription: |-
+      # OpenTransLive 開源即時語音翻譯系統
+
+      一個完整的即時語音轉錄和翻譯系統，具備網頁介面和 YouTube 同步支援。
+
+      ![螢幕擷取畫面_15-9-2025_1231_transcribe g0v tw](https://github.com/user-attachments/assets/9a7ff25a-557d-43b7-8071-e7a6ca176c5f) ![螢幕擷取畫面_15-9-2025_115957_transcribe g0v tw](https://github.com/user-attachments/assets/6e36b33b-9d41-4734-a833-4a84fa3943cc)

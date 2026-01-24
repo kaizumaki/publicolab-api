@@ -1,0 +1,33 @@
+---
+publiccodeYmlVersion: 0.5.0
+name: osmtogeojson
+url: https://github.com/tyrasd/osmtogeojson
+landingURL: http://tyrasd.github.io/osmtogeojson/
+developmentStatus: active
+softwareType: library
+platforms:
+- JavaScript
+categories:
+- geographic-information-systems
+releaseDate: '2013-10-03'
+softwareVersion: ''
+legal:
+  license: MIT
+  mainCopyrightOwner: tyrasd
+  repoOwner: tyrasd
+maintenance:
+  type: community
+  contacts:
+  - name: tyrasd
+localisation:
+  availableLanguages:
+  - en
+  localisationReady: false
+dependsOn:
+  open: []
+description:
+  en:
+    shortDescription: convert osm to geojson
+    longDescription: convert osm to geojson Converts [OSM](https://www.openstreetmap.org/)
+      [data](https://wiki.openstreetmap.org/wiki/OSM_XML) to [GeoJSON](https://geojson.org/).
+      Try the [demo](https://tyrasd.github.io/osmtogeojson/)!

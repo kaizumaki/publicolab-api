@@ -1,0 +1,35 @@
+---
+publiccodeYmlVersion: 0.5.0
+name: geopackage-geojson-js
+url: https://github.com/ngageoint/geopackage-geojson-js
+landingURL: http://ngageoint.github.io/geopackage-geojson-js/
+developmentStatus: maintenance
+softwareType: library
+platforms:
+- JavaScript
+categories:
+- geographic-information-systems
+releaseDate: '2022-04-20'
+softwareVersion: ''
+legal:
+  license: UNSPECIFIED
+  mainCopyrightOwner: ngageoint
+  repoOwner: ngageoint
+maintenance:
+  type: community
+  contacts:
+  - name: ngageoint
+  status: maintenance
+localisation:
+  availableLanguages:
+  - en
+  localisationReady: false
+dependsOn:
+  open: []
+description:
+  en:
+    shortDescription: Convert between GeoPackage vector tiles and GeoJSON representations.
+    longDescription: |-
+      JavaScript/TypeScript converter for bidirectional transformation between GeoPackage format and GeoJSON.
+      Enables interoperability between OGC GeoPackage and standard GeoJSON workflows.
+      Supports feature property preservation and geometry transformations.

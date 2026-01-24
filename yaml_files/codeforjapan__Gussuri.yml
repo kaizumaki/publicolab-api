@@ -1,0 +1,32 @@
+---
+publiccodeYmlVersion: 0.5.0
+name: Gussuri
+url: https://github.com/codeforjapan/Gussuri
+landingURL: https://github.com/codeforjapan/Gussuri
+developmentStatus: active
+softwareType: library
+platforms:
+- Dart
+categories:
+- geographic-information-systems
+releaseDate: '2022-04-28'
+softwareVersion: ''
+legal:
+  license: UNSPECIFIED
+  mainCopyrightOwner: codeforjapan
+  repoOwner: codeforjapan
+maintenance:
+  type: community
+  contacts:
+  - name: codeforjapan
+localisation:
+  availableLanguages:
+  - en
+  localisationReady: false
+dependsOn:
+  open: []
+description:
+  en:
+    shortDescription: 睡眠記録シートのアプリ化のプロジェクト
+    longDescription: '睡眠記録シートのアプリ化のプロジェクト $ fvm flutter run -d ${deviceのid} # この場合、93E3B70F-B378-4295-BC3E-5DAA4958D463
+      ```'

@@ -1,0 +1,35 @@
+---
+publiccodeYmlVersion: 0.5.0
+name: openfreemap
+url: https://github.com/hyperknot/openfreemap
+landingURL: https://openfreemap.org/
+developmentStatus: active
+softwareType: library
+platforms:
+- Python
+categories:
+- geographic-information-systems
+releaseDate: '2023-12-13'
+softwareVersion: ''
+legal:
+  license: NOASSERTION
+  mainCopyrightOwner: hyperknot
+  repoOwner: hyperknot
+maintenance:
+  type: community
+  contacts:
+  - name: hyperknot
+localisation:
+  availableLanguages:
+  - en
+  localisationReady: false
+dependsOn:
+  open: []
+description:
+  en:
+    shortDescription: Free and open-source map hosting solution with custom styles
+      for websites and apps, using OpenStreetMap data
+    longDescription: 'Free and open-source map hosting solution with custom styles
+      for websites and apps, using OpenStreetMap data
+
+      '

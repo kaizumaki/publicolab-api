@@ -1,0 +1,33 @@
+---
+publiccodeYmlVersion: 0.5.0
+name: ojo-chicharo
+url: https://github.com/GobiernoFacil/ojo-chicharo
+landingURL: https://github.com/GobiernoFacil/ojo-chicharo
+developmentStatus: inactive
+softwareType: library
+platforms:
+- web
+categories:
+- geographic-information-systems
+releaseDate: '2018-03-06'
+softwareVersion: ''
+legal:
+  license: UNSPECIFIED
+  mainCopyrightOwner: GobiernoFacil
+  repoOwner: GobiernoFacil
+maintenance:
+  type: community
+  contacts:
+  - name: GobiernoFacil
+localisation:
+  availableLanguages:
+  - en
+  localisationReady: false
+dependsOn:
+  open: []
+description:
+  en:
+    shortDescription: '{   "message": "Not Found",   "documentation_url": "https://docs.github.com/rest/repos/contents#get-a-repository-readme",   "status":
+      "404" }'
+    longDescription: '{   "message": "Not Found",   "documentation_url": "https://docs.github.com/rest/repos/contents#get-a-repository-readme",   "status":
+      "404" }'

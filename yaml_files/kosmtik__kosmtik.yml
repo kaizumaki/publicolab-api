@@ -1,0 +1,33 @@
+---
+publiccodeYmlVersion: 0.5.0
+name: kosmtik
+url: https://github.com/kosmtik/kosmtik
+landingURL: https://github.com/kosmtik/kosmtik
+developmentStatus: active
+softwareType: library
+platforms:
+- JavaScript
+categories:
+- geographic-information-systems
+releaseDate: '2014-09-22'
+softwareVersion: ''
+legal:
+  license: NOASSERTION
+  mainCopyrightOwner: kosmtik
+  repoOwner: kosmtik
+maintenance:
+  type: community
+  contacts:
+  - name: kosmtik
+localisation:
+  availableLanguages:
+  - en
+  localisationReady: false
+dependsOn:
+  open: []
+description:
+  en:
+    shortDescription: Make maps with OpenStreetMap and Mapnik
+    longDescription: Make maps with OpenStreetMap and Mapnik [![Join the chat at https://gitter.im/kosmtik/kosmtik](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/kosmtik/kosmtik?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+      [![Dependency Status](https://david-dm.org/kosmtik/kosmtik.svg)](https://david-dm.org/kosmtik/kosmtik)
+      [![Node.js CI](https://github.com/kosmtik/kosmtik/actions/workflows/node.js.yml/badge.svg)](https://github.com/kosmtik/kosmtik/actions/workflows/node.js.yml)

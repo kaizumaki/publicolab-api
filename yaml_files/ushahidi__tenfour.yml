@@ -1,0 +1,36 @@
+---
+publiccodeYmlVersion: 0.5.0
+name: tenfour
+url: https://github.com/ushahidi/tenfour
+landingURL: https://github.com/ushahidi/tenfour
+developmentStatus: inactive
+softwareType: library
+platforms:
+- PHP
+categories:
+- geographic-information-systems
+releaseDate: '2019-07-04'
+softwareVersion: ''
+legal:
+  license: MIT
+  mainCopyrightOwner: ushahidi
+  repoOwner: ushahidi
+maintenance:
+  type: community
+  contacts:
+  - name: ushahidi
+localisation:
+  availableLanguages:
+  - en
+  localisationReady: false
+dependsOn:
+  open: []
+description:
+  en:
+    shortDescription: 'TenFour is an emergency check-in application for teams that
+      unites multiple communication channels: SMS, email, desktop, mobile and chat.
+      It''s a team check-in system that gets answers when you need the'
+    longDescription: 'API For TenFour TenFour is an emergency check-in application
+      for teams that unites multiple communication channels: SMS, email, desktop,
+      mobile and chat. It''s a team check-in system that gets answers when you need
+      them most.'

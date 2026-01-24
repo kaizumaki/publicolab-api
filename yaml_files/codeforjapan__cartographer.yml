@@ -1,0 +1,39 @@
+---
+publiccodeYmlVersion: 0.5.0
+name: cartographer
+url: https://github.com/codeforjapan/cartographer
+landingURL: https://cartographer-agents.vercel.app
+developmentStatus: active
+softwareType: library
+platforms:
+- web
+categories:
+- geographic-information-systems
+releaseDate: '2025-12-24'
+softwareVersion: ''
+legal:
+  license: AGPL-3.0
+  mainCopyrightOwner: codeforjapan
+  repoOwner: codeforjapan
+maintenance:
+  type: community
+  contacts:
+  - name: codeforjapan
+  status: active
+localisation:
+  availableLanguages:
+  - en
+  localisationReady: false
+dependsOn:
+  open: []
+description:
+  en:
+    shortDescription: 倍速会議 is a web service that visualizes recognition and facilitates
+      consensus building. It collects and analyzes recognition from multiple people
+      on specific themes (e.g., "current status of this project
+    longDescription: |-
+      # 倍速会議
+
+      倍速会議 is a web service that visualizes recognition and facilitates consensus building. It collects and analyzes recognition from multiple people on specific themes (e.g., "current status of this project") using LLM-powered insights.
+
+      This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).

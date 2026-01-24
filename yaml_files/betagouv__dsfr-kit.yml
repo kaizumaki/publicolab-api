@@ -1,0 +1,39 @@
+---
+publiccodeYmlVersion: 0.5.0
+name: dsfr-kit
+url: https://github.com/betagouv/dsfr-kit
+landingURL: https://github.com/betagouv/dsfr-kit
+developmentStatus: active
+softwareType: library
+platforms:
+- TypeScript
+categories:
+- geographic-information-systems
+releaseDate: '2025-10-17'
+softwareVersion: ''
+legal:
+  license: MIT
+  mainCopyrightOwner: betagouv
+  repoOwner: betagouv
+maintenance:
+  type: community
+  contacts:
+  - name: betagouv
+localisation:
+  availableLanguages:
+  - en
+  localisationReady: false
+dependsOn:
+  open: []
+description:
+  en:
+    shortDescription: AST-powered generator for the French Government Design System
+      (DSFR). Provides accessible, high-fidelity 'Open Code' components following
+      the shadcn philosophy. Bridges official design assets to modern frameworks using
+      hybrid AST analysis. Built with Lit, Tailwind CSS, and strict RGAA 4 compliance.
+    longDescription: 'AST-powered generator for the French Government Design System
+      (DSFR). Provides accessible, high-fidelity ''Open Code'' components following
+      the shadcn philosophy. Bridges official design assets to modern frameworks using
+      hybrid AST analysis. Built with Lit, Tailwind CSS, and strict RGAA 4 compliance.
+
+      '

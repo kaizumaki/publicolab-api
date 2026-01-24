@@ -1,0 +1,33 @@
+---
+publiccodeYmlVersion: 0.5.0
+name: bill-tracker
+url: https://github.com/OpenUpSA/bill-tracker
+landingURL: https://github.com/OpenUpSA/bill-tracker
+developmentStatus: active
+softwareType: library
+platforms:
+- JavaScript
+categories:
+- geographic-information-systems
+releaseDate: '2024-05-30'
+softwareVersion: ''
+legal:
+  license: UNSPECIFIED
+  mainCopyrightOwner: OpenUpSA
+  repoOwner: OpenUpSA
+maintenance:
+  type: community
+  contacts:
+  - name: OpenUpSA
+localisation:
+  availableLanguages:
+  - en
+  localisationReady: false
+dependsOn:
+  open: []
+description:
+  en:
+    shortDescription: "``` cp .env.example .env # Modify .env with real connection
+      string yarn attendance:update ```"
+    longDescription: "``` cp .env.example .env # Modify .env with real connection
+      string yarn attendance:update ```"

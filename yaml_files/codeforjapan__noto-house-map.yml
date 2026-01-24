@@ -1,0 +1,37 @@
+---
+publiccodeYmlVersion: 0.5.0
+name: noto-house-map
+url: https://github.com/codeforjapan/noto-house-map
+landingURL: https://github.com/codeforjapan/noto-house-map
+developmentStatus: stable
+softwareType: library
+platforms:
+- Vue
+categories:
+- geographic-information-systems
+releaseDate: '2024-03-15'
+softwareVersion: ''
+legal:
+  license: UNSPECIFIED
+  mainCopyrightOwner: codeforjapan
+  repoOwner: codeforjapan
+maintenance:
+  type: community
+  contacts:
+  - name: codeforjapan
+  status: active
+localisation:
+  availableLanguages:
+  - en
+  localisationReady: false
+dependsOn:
+  open: []
+description:
+  en:
+    shortDescription: "[![github pages](https://github.com/codeforjapan/mapprint/actions/workflows/gh-pages.yml/badge.svg)](https://github.com/codeforjapan/mapprint/actions/workflows/gh-pages.yml)"
+    longDescription: |-
+      [![github pages](https://github.com/codeforjapan/mapprint/actions/workflows/gh-pages.yml/badge.svg)](https://github.com/codeforjapan/mapprint/actions/workflows/gh-pages.yml)
+
+      紙マップ === ![kamimap](static/images/logo.png)
+
+      Google マイマップ や、umap の情報を取り込んで、印刷向けに最適化して表示できるサイトのソースコードです。

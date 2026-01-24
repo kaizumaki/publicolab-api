@@ -1,0 +1,35 @@
+---
+publiccodeYmlVersion: 0.5.0
+name: osmnx
+url: https://github.com/gboeing/osmnx
+landingURL: https://osmnx.readthedocs.io
+developmentStatus: active
+softwareType: library
+platforms:
+- Python
+categories:
+- geographic-information-systems
+releaseDate: '2016-07-24'
+softwareVersion: ''
+legal:
+  license: MIT
+  mainCopyrightOwner: gboeing
+  repoOwner: gboeing
+maintenance:
+  type: community
+  contacts:
+  - name: gboeing
+localisation:
+  availableLanguages:
+  - en
+  localisationReady: false
+dependsOn:
+  open: []
+description:
+  en:
+    shortDescription: Download, model, analyze, and visualize street networks and
+      other geospatial features from OpenStreetMap.
+    longDescription: 'Download, model, analyze, and visualize street networks and
+      other geospatial features from OpenStreetMap.
+
+      '

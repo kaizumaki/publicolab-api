@@ -1,0 +1,32 @@
+---
+publiccodeYmlVersion: 0.5.0
+name: iD
+url: https://github.com/openstreetmap/iD
+landingURL: https://ideditor.com/
+developmentStatus: active
+softwareType: library
+platforms:
+- JavaScript
+categories:
+- geographic-information-systems
+releaseDate: '2012-07-11'
+softwareVersion: ''
+legal:
+  license: ISC
+  mainCopyrightOwner: openstreetmap
+  repoOwner: openstreetmap
+maintenance:
+  type: community
+  contacts:
+  - name: openstreetmap
+localisation:
+  availableLanguages:
+  - en
+  localisationReady: false
+dependsOn:
+  open: []
+description:
+  en:
+    shortDescription: "\U0001F194 The easy-to-use OpenStreetMap editor in JavaScript."
+    longDescription: "\U0001F194 The easy-to-use OpenStreetMap editor in JavaScript.
+      [![build](https://github.com/openstreetmap/iD/workflows/build/badge.svg)](https://github.com/openstreetmap/iD/actions?query=workflow%3A%22build%22)"

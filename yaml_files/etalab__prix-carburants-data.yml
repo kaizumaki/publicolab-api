@@ -1,0 +1,33 @@
+---
+publiccodeYmlVersion: 0.5.0
+name: prix-carburants-data
+url: https://github.com/etalab/prix-carburants-data
+landingURL: https://github.com/etalab/prix-carburants-data
+developmentStatus: stable
+softwareType: library
+platforms:
+- Python
+categories:
+- geographic-information-systems
+releaseDate: '2022-10-15'
+softwareVersion: ''
+legal:
+  license: MIT
+  mainCopyrightOwner: etalab
+  repoOwner: etalab
+maintenance:
+  type: community
+  contacts:
+  - name: etalab
+localisation:
+  availableLanguages:
+  - en
+  localisationReady: false
+dependsOn:
+  open: []
+description:
+  en:
+    shortDescription: Auto-generated description for prix-carburants-data (please
+      review)
+    longDescription: This description was auto-filled by Copilot using repository
+      metadata and should be reviewed and improved.

@@ -1,0 +1,36 @@
+---
+publiccodeYmlVersion: 0.5.0
+name: projections-js
+url: https://github.com/ngageoint/projections-js
+landingURL: http://ngageoint.github.io/projections-js
+developmentStatus: maintenance
+softwareType: library
+platforms:
+- JavaScript
+categories:
+- geographic-information-systems
+releaseDate: '2022-07-20'
+softwareVersion: ''
+legal:
+  license: MIT
+  mainCopyrightOwner: ngageoint
+  repoOwner: ngageoint
+maintenance:
+  type: community
+  contacts:
+  - name: ngageoint
+  status: maintenance
+localisation:
+  availableLanguages:
+  - en
+  localisationReady: false
+dependsOn:
+  open: []
+description:
+  en:
+    shortDescription: JavaScript library for map projections and coordinate system
+      transformations.
+    longDescription: |-
+      Implements coordinate transformation between geographic (lat/lon) and projected coordinate systems.
+      Supports common map projections (Mercator, UTM, Lambert, etc.) used in GIS and web mapping.
+      Enables accurate coordinate conversions for cartographic and spatial analysis applications.

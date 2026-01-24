@@ -1,0 +1,33 @@
+---
+publiccodeYmlVersion: 0.5.0
+name: mi-argentina-docs
+url: https://github.com/argob/mi-argentina-docs
+landingURL: https://argob.github.io/mi-argentina-docs/
+developmentStatus: stable
+softwareType: library
+platforms:
+- HTML
+categories:
+- geographic-information-systems
+releaseDate: '2019-11-12'
+softwareVersion: ''
+legal:
+  license: MIT
+  mainCopyrightOwner: argob
+  repoOwner: argob
+maintenance:
+  type: community
+  contacts:
+  - name: argob
+localisation:
+  availableLanguages:
+  - en
+  localisationReady: false
+dependsOn:
+  open: []
+description:
+  en:
+    shortDescription: Estándar de identidad digital simple, ágil y seguro.
+    longDescription: Estándar de identidad digital simple, ágil y seguro. Documentación
+      sobre cómo integrar la plataforma de autenticación (basado en OpenID Connect)
+      con cualquier aplicación de la Administración Pública Nacional.

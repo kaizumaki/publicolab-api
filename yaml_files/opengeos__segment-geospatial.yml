@@ -1,0 +1,35 @@
+---
+publiccodeYmlVersion: 0.5.0
+name: segment-geospatial
+url: https://github.com/opengeos/segment-geospatial
+landingURL: https://samgeo.gishub.org
+developmentStatus: active
+softwareType: library
+platforms:
+- Python
+categories:
+- geographic-information-systems
+releaseDate: '2023-04-19'
+softwareVersion: ''
+legal:
+  license: MIT
+  mainCopyrightOwner: opengeos
+  repoOwner: opengeos
+maintenance:
+  type: community
+  contacts:
+  - name: opengeos
+localisation:
+  availableLanguages:
+  - en
+  localisationReady: false
+dependsOn:
+  open: []
+description:
+  en:
+    shortDescription: A Python package for segmenting geospatial data with the Segment
+      Anything Model (SAM)
+    longDescription: 'A Python package for segmenting geospatial data with the Segment
+      Anything Model (SAM)
+
+      '

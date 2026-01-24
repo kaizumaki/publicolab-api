@@ -1,0 +1,33 @@
+---
+publiccodeYmlVersion: 0.5.0
+name: elevation
+url: https://github.com/linz/elevation
+landingURL: s3://nz-elevation
+developmentStatus: active
+softwareType: library
+platforms:
+- JavaScript
+categories:
+- geographic-information-systems
+releaseDate: '2023-05-29'
+softwareVersion: ''
+legal:
+  license: NOASSERTION
+  mainCopyrightOwner: linz
+  repoOwner: linz
+maintenance:
+  type: community
+  contacts:
+  - name: linz
+localisation:
+  availableLanguages:
+  - en
+  localisationReady: false
+dependsOn:
+  open: []
+description:
+  en:
+    shortDescription: NZ elevation data freely available to use under an open license.
+    longDescription: 'NZ elevation data freely available to use under an open license.
+
+      '

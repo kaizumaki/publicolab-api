@@ -1,0 +1,35 @@
+---
+publiccodeYmlVersion: 0.5.0
+name: giga-maps-api
+url: https://github.com/unicef/giga-maps-api
+landingURL: https://github.com/unicef/giga-maps-api
+developmentStatus: active
+softwareType: library
+platforms:
+- Jupyter Notebook
+categories:
+- geographic-information-systems
+releaseDate: '2025-05-13'
+softwareVersion: ''
+legal:
+  license: AGPL-3.0
+  mainCopyrightOwner: unicef
+  repoOwner: unicef
+maintenance:
+  type: community
+  contacts:
+  - name: unicef
+localisation:
+  availableLanguages:
+  - en
+  localisationReady: false
+dependsOn:
+  open: []
+description:
+  en:
+    shortDescription: Code to help users to programmatically download the data on
+      Giga Maps Api
+    longDescription: 'Code to help users to programmatically download the data on
+      Giga Maps Api
+
+      '

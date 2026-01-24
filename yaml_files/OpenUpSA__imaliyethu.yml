@@ -1,0 +1,32 @@
+---
+publiccodeYmlVersion: 0.5.0
+name: imaliyethu
+url: https://github.com/OpenUpSA/imaliyethu
+landingURL: https://github.com/OpenUpSA/imaliyethu
+developmentStatus: stable
+softwareType: library
+platforms:
+- HTML
+categories:
+- geographic-information-systems
+releaseDate: '2024-11-01'
+softwareVersion: ''
+legal:
+  license: UNSPECIFIED
+  mainCopyrightOwner: OpenUpSA
+  repoOwner: OpenUpSA
+maintenance:
+  type: community
+  contacts:
+  - name: OpenUpSA
+localisation:
+  availableLanguages:
+  - en
+  localisationReady: false
+dependsOn:
+  open: []
+description:
+  en:
+    shortDescription: Static export of the imaliyethu.org.za WordPress site.
+    longDescription: Static export of the imaliyethu.org.za WordPress site. This is
+      a static export of the WordPress site that ran on imaliyethu.org.za.

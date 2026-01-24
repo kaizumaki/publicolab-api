@@ -1,0 +1,35 @@
+---
+publiccodeYmlVersion: 0.5.0
+name: pyproj
+url: https://github.com/pyproj4/pyproj
+landingURL: https://pyproj4.github.io/pyproj
+developmentStatus: active
+softwareType: library
+platforms:
+- Python
+categories:
+- geographic-information-systems
+releaseDate: '2014-12-29'
+softwareVersion: ''
+legal:
+  license: MIT
+  mainCopyrightOwner: pyproj4
+  repoOwner: pyproj4
+maintenance:
+  type: community
+  contacts:
+  - name: pyproj4
+localisation:
+  availableLanguages:
+  - en
+  localisationReady: false
+dependsOn:
+  open: []
+description:
+  en:
+    shortDescription: Python interface to PROJ (cartographic projections and coordinate
+      transformations library)
+    longDescription: 'Python interface to PROJ (cartographic projections and coordinate
+      transformations library)
+
+      '

@@ -1,0 +1,37 @@
+---
+publiccodeYmlVersion: 0.5.0
+name: JibungotoPlanet-API
+url: https://github.com/codeforjapan/JibungotoPlanet-API
+landingURL: https://github.com/codeforjapan/JibungotoPlanet-API
+developmentStatus: stable
+softwareType: library
+platforms:
+- TypeScript
+categories:
+- geographic-information-systems
+releaseDate: '2024-03-04'
+softwareVersion: ''
+legal:
+  license: UNSPECIFIED
+  mainCopyrightOwner: codeforjapan
+  repoOwner: codeforjapan
+maintenance:
+  type: community
+  contacts:
+  - name: codeforjapan
+  status: active
+localisation:
+  availableLanguages:
+  - en
+  localisationReady: false
+dependsOn:
+  open: []
+description:
+  en:
+    shortDescription: This is a blank project for CDK development with TypeScript.
+    longDescription: |-
+      # Welcome to your CDK TypeScript project
+
+      This is a blank project for CDK development with TypeScript.
+
+      The `cdk.json` file tells the CDK Toolkit how to execute your app.

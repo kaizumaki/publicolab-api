@@ -1,0 +1,207 @@
+---
+publiccodeYmlVersion: 0.5.0
+name: abr-geocoder
+applicationSuite: Address Base Registry Tools
+url: https://github.com/digital-go-jp/abr-geocoder
+landingURL: https://lp.geocoder.address-br.digital.go.jp/
+developmentStatus: stable
+softwareType: standalone/other
+platforms:
+- linux
+- windows
+- mac
+categories:
+- geographic-information-systems
+- data-analytics
+- it-development
+usedBy:
+- デジタル庁
+releaseDate: '2025-10-08'
+softwareVersion: 2.2.1
+legal:
+  license: MIT
+  mainCopyrightOwner: デジタル庁 (Digital Agency, Government of Japan)
+  repoOwner: digital-go-jp
+maintenance:
+  type: internal
+  contacts:
+  - name: デジタル庁 (Digital Agency)
+localisation:
+  availableLanguages:
+  - ja
+  - en
+  localisationReady: true
+dependsOn:
+  open:
+  - name: Node.js
+    optional: false
+  - name: SQLite
+    optional: false
+  - name: GDAL
+    optional: true
+  - name: Address Base Registry
+    optional: false
+    versionMin: ''
+description:
+  ja:
+    shortDescription: デジタル庁アドレス・ベース・レジストリを用いた日本国内住所のジオコーディングツール
+    longDescription: |
+      abr-geocoder は、デジタル庁が管理する[アドレス・ベース・レジストリ](https://catalog.registries.digital.go.jp/rc/dataset/)と
+      入力された住所文字列をマッチングし、正規化された住所文字列、町字 ID、緯度経度などを出力するジオコーダーです。
+      日本国内の住所表記を解析し、表記ゆれを吸収して、階層に応じた正規化された結果を出力します。
+
+      ## 主な特徴
+
+      - **日本国内住所に特化**: 日本の住所表記に最適化されたジオコーディング
+      - **アドレス・ベース・レジストリ準拠**: デジタル庁の公式データに基づく正規化
+      - **住居表示・地番対応**: 住居表示番号と地番（一部）の両方に対応
+      - **SQLite 使用**: サーバー内でジオコーディング処理が完結
+      - **高速処理**: マルチスレッド処理による高速化
+      - **多様な出力形式**: csv、json、geojson、ndjson、ndgeojson、simplified の6形式に対応
+
+      ## ユースケース
+
+      ### コマンドとして利用
+
+      - 標準入出力によるパイプライン処理
+      - ファイル入出力による一括処理
+
+      ### REST サーバーとして利用
+
+      - HTTP API によるジオコーディングサービス提供
+
+      ### Node.js ライブラリとして利用
+
+      - 個別リクエスト処理
+      - ストリーム処理対応
+
+      ## 技術仕様
+
+      - **言語**: TypeScript 99.2%
+      - **データベース**: SQLite
+      - **処理方式**: マルチスレッド対応
+      - **データソース**: デジタル庁アドレス・ベース・レジストリ
+
+      ## 制限事項
+
+      - ランドマーク（有名施設名など）による検索は不可
+      - 郵便番号による検索は不可
+      - アルファベット（英語表記）による検索は不可
+      - 京都の通り名検索は限定的にサポート
+
+      ## インストール
+
+      ### グローバルインストール
+
+      ```bash
+      npm install -g @digital-go-jp/abr-geocoder
+      abrg  # 動作確認
+      ```
+
+      ### ローカルインストール
+
+      ```bash
+      npm install @digital-go-jp/abr-geocoder
+      npm link
+      abrg  # 動作確認
+      ```
+
+      ## 基本的な使い方
+
+      ### データダウンロード
+
+      ```bash
+      abrg download  # 全国データをダウンロード
+      abrg download -c 13  # 東京都のみダウンロード
+      ```
+
+      ### ジオコーディング
+
+      ```bash
+      # 標準入力から
+      echo "東京都千代田区紀尾井町1-3" | abrg
+
+      # ファイルから
+      abrg input.txt output.csv
+
+      # REST サーバー起動
+      abrg serve start
+      curl "http://localhost:3000/geocode?address=東京都千代田区紀尾井町1-3"
+      ```
+
+      ## 出力形式
+
+      - **csv**: カンマ区切りテキスト
+      - **json**: JSON 配列
+      - **geojson**: GeoJSON Feature Collection
+      - **ndjson**: 改行区切り JSON（ストリーミング向け）
+      - **ndgeojson**: 改行区切り GeoJSON Feature（ストリーミング向け）
+      - **simplified**: 簡略化された形式
+
+      ## 貢献者
+
+      12名の貢献者によって開発・メンテナンスされています。
+
+      ## アップグレード情報
+
+      ### v2.2.1 から v2.2 へのアップグレード
+
+      - 新しい DCAT 形式 API を使用したデータセットダウンロードに対応
+      - 既知の問題: `abrg update-check` コマンドが新 API に未対応
+
+      ### v2.2 から v2.1 へのアップグレード
+
+      - `abrg serve` コマンドが `abrg serve start` と `abrg serve stop` に分割
+    features:
+    - 日本国内住所の高精度ジオコーディング
+    - アドレス・ベース・レジストリによる正規化
+    - 住居表示・地番（一部）対応
+    - SQLite による高速ローカル処理
+    - マルチスレッド処理による高速化
+    - 6種類の出力形式（csv, json, geojson, ndjson, ndgeojson, simplified）
+    - CLI、REST API、Node.js ライブラリとしての利用
+    - 標準入出力・ファイル入出力対応
+    - 地域指定ダウンロード
+    - データ更新チェック機能
+    - 京都の通り名検索（限定的）
+    documentation: https://github.com/digital-go-jp/abr-geocoder/blob/main/README.ja.md
+  en:
+    shortDescription: A geocoder for Japanese addresses using Digital Agency's Address
+      Base Registry
+    longDescription: "abr-geocoder is a geocoder that matches input address strings
+      with the \n[Address Base Registry](https://catalog.registries.digital.go.jp/rc/dataset/)
+      maintained by \nthe Digital Agency, Government of Japan, outputting normalized
+      address strings, town IDs, \nlatitude and longitude, etc. It analyzes Japanese
+      domestic address notation, absorbs variations, \nand outputs normalized results
+      according to the hierarchy.\n\n## Features\n\n- Geocoder targeting domestic
+      addresses in Japan\n- Normalizes address notation according to the Address Base
+      Registry\n- Supports residence indication and partial number (lot number)\n-
+      Uses SQLite, enabling geocoding within the server\n- High-speed processing through
+      multithreading\n- Supports six output formats: csv, json, geojson, ndjson, ndgeojson,
+      simplified\n\n## Use Cases\n\n- Command-line tool with pipeline support\n- REST
+      API server\n- Node.js library with stream support\n- Limited support for searches
+      by Kyoto street names\n\n## Limitations\n\n- Cannot search by landmarks (e.g.,
+      famous facility names)\n- Cannot search by postal codes\n- Cannot search by
+      alphabet (English notation)\n\n## Technology\n\n- **Language**: TypeScript 99.2%\n-
+      **Database**: SQLite\n- **Processing**: Multithreading support\n- **Data Source**:
+      Digital Agency Address Base Registry\n"
+    features:
+    - High-precision geocoding for Japanese addresses
+    - Address normalization using Address Base Registry
+    - Residence indication and lot number support
+    - Fast local processing with SQLite
+    - Multithreading for high performance
+    - Six output formats (csv, json, geojson, ndjson, ndgeojson, simplified)
+    - CLI, REST API, and Node.js library interfaces
+    - Standard I/O and file I/O support
+    - Regional download capability
+    - Data update checking
+    - Limited Kyoto street name search
+    documentation: https://github.com/digital-go-jp/abr-geocoder/blob/main/README.md
+intendedAudience:
+  countries:
+  - jp
+  scope:
+  - infrastructures-and-logistics
+  - government
+  - local-authorities

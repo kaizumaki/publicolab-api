@@ -1,0 +1,33 @@
+---
+publiccodeYmlVersion: 0.5.0
+name: platform-sdk
+url: https://github.com/ushahidi/platform-sdk
+landingURL: https://github.com/ushahidi/platform-sdk
+developmentStatus: inactive
+softwareType: library
+platforms:
+- TypeScript
+categories:
+- geographic-information-systems
+releaseDate: '2020-05-11'
+softwareVersion: ''
+legal:
+  license: AGPL-3.0
+  mainCopyrightOwner: ushahidi
+  repoOwner: ushahidi
+maintenance:
+  type: community
+  contacts:
+  - name: ushahidi
+localisation:
+  availableLanguages:
+  - en
+  localisationReady: false
+dependsOn:
+  open: []
+description:
+  en:
+    shortDescription: "# SDK ![Ushahidi Platform SDK](https://github.com/ushahidi/platform-sdk/workflows/Ushahidi%20Platform%20SDK/badge.svg?event=registry_package)
+      ![Ushahidi Platform SDK](https://github.com/ushahidi/platfo"
+    longDescription: "# SDK ![Ushahidi Platform SDK](https://github.com/ushahidi/platform-sdk/workflows/Ushahidi%20Platform%20SDK/badge.svg?event=registry_package)
+      ![Ushahidi Platform SDK](https://github.com/ushahidi/platform-sdk/workflows/Ushahidi%20Platform%20SDK/badge.svg)"

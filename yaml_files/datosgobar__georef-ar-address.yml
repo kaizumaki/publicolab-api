@@ -1,0 +1,35 @@
+---
+publiccodeYmlVersion: 0.5.0
+name: georef-ar-address
+url: https://github.com/datosgobar/georef-ar-address
+landingURL: https://github.com/datosgobar/georef-ar-address
+developmentStatus: active
+softwareType: library
+platforms:
+- Python
+categories:
+- geographic-information-systems
+releaseDate: '2019-01-03'
+softwareVersion: ''
+legal:
+  license: MIT
+  mainCopyrightOwner: datosgobar
+  repoOwner: datosgobar
+maintenance:
+  type: community
+  contacts:
+  - name: datosgobar
+localisation:
+  availableLanguages:
+  - en
+  localisationReady: false
+dependsOn:
+  open: []
+description:
+  en:
+    shortDescription: Librería escrita en Python para la identificación de componentes
+      de direcciones argentinas
+    longDescription: 'Librería escrita en Python para la identificación de componentes
+      de direcciones argentinas
+
+      '

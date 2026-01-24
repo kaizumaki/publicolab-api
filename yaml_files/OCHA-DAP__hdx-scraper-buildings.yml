@@ -1,0 +1,36 @@
+---
+publiccodeYmlVersion: 0.5.0
+name: hdx-scraper-buildings
+url: https://github.com/OCHA-DAP/hdx-scraper-buildings
+landingURL: https://github.com/OCHA-DAP/hdx-scraper-buildings
+developmentStatus: active
+softwareType: library
+platforms:
+- Python
+categories:
+- geographic-information-systems
+releaseDate: '2025-07-28'
+softwareVersion: ''
+legal:
+  license: MIT
+  mainCopyrightOwner: OCHA-DAP
+  repoOwner: OCHA-DAP
+maintenance:
+  type: community
+  contacts:
+  - name: OCHA-DAP
+localisation:
+  availableLanguages:
+  - en
+  localisationReady: false
+dependsOn:
+  open: []
+description:
+  en:
+    shortDescription: "[![Build Status](https://github.com/OCHA-DAP/hdx-scraper-buildings/actions/workflows/run-python-tests.yaml/badge.svg)](https://github.com/OCHA-DAP/hdx-scraper-buildings/actions/workflows/run-python-tes"
+    longDescription: |-
+      # Collector for Buildings Datasets
+
+      [![Build Status](https://github.com/OCHA-DAP/hdx-scraper-buildings/actions/workflows/run-python-tests.yaml/badge.svg)](https://github.com/OCHA-DAP/hdx-scraper-buildings/actions/workflows/run-python-tests.yaml) [![Coverage Status](https://coveralls.io/repos/github/OCHA-DAP/hdx-scraper-buildings/badge.svg?branch=main&ts=1)](https://coveralls.io/github/OCHA-DAP/hdx-scraper-buildings?branch=main) [![Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
+
+      This script ...

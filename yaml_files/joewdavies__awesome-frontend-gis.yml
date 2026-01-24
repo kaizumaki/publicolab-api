@@ -1,0 +1,34 @@
+---
+publiccodeYmlVersion: 0.5.0
+name: awesome-frontend-gis
+url: https://github.com/joewdavies/awesome-frontend-gis
+landingURL: https://joewdavies.github.io/awesome-frontend-gis/
+developmentStatus: active
+softwareType: library
+platforms:
+- web
+categories:
+- geographic-information-systems
+releaseDate: '2019-09-18'
+softwareVersion: ''
+legal:
+  license: CC0-1.0
+  mainCopyrightOwner: joewdavies
+  repoOwner: joewdavies
+maintenance:
+  type: community
+  contacts:
+  - name: joewdavies
+localisation:
+  availableLanguages:
+  - en
+  localisationReady: false
+dependsOn:
+  open: []
+description:
+  en:
+    shortDescription: "Geospatial resources for web development :earth_africa: \U0001F5FA️"
+    longDescription: "Geospatial resources for web development :earth_africa: \U0001F5FA️
+      <!--lint disable double-link awesome-heading --> <div align='center'> <h2>Awesome
+      Frontend GIS <a href='https://github.com/sindresorhus/awesome'> <img src='https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg'
+      alt='Awesome' href='https://github.com/sindresorhus/awesome'> </a></h2>"

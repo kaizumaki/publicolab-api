@@ -1,0 +1,31 @@
+---
+publiccodeYmlVersion: 0.5.0
+name: map-server-shcp
+url: https://github.com/GobiernoFacil/map-server-shcp
+landingURL: https://github.com/GobiernoFacil/map-server-shcp
+developmentStatus: inactive
+softwareType: library
+platforms:
+- JavaScript
+categories:
+- geographic-information-systems
+releaseDate: '2017-01-11'
+softwareVersion: ''
+legal:
+  license: GPL-3.0
+  mainCopyrightOwner: GobiernoFacil
+  repoOwner: GobiernoFacil
+maintenance:
+  type: community
+  contacts:
+  - name: GobiernoFacil
+localisation:
+  availableLanguages:
+  - en
+  localisationReady: false
+dependsOn:
+  open: []
+description:
+  en:
+    shortDescription: servidor temporal de mapas
+    longDescription: servidor temporal de mapas <p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>

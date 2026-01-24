@@ -1,0 +1,32 @@
+---
+publiccodeYmlVersion: 0.5.0
+name: laravel-ckan-api
+url: https://github.com/ushahidi/laravel-ckan-api
+landingURL: https://github.com/ushahidi/laravel-ckan-api
+developmentStatus: maintenance
+softwareType: library
+platforms:
+- PHP
+categories:
+- geographic-information-systems
+releaseDate: '2018-05-10'
+softwareVersion: ''
+legal:
+  license: UNSPECIFIED
+  mainCopyrightOwner: ushahidi
+  repoOwner: ushahidi
+maintenance:
+  type: community
+  contacts:
+  - name: ushahidi
+localisation:
+  availableLanguages:
+  - en
+  localisationReady: false
+dependsOn:
+  open: []
+description:
+  en:
+    shortDescription: API Client for Ckan - Laravel 5
+    longDescription: API Client for Ckan - Laravel 5 **TODO:** - Implement unit tests.
+      - Package documentation.

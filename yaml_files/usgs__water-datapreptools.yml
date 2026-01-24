@@ -1,0 +1,39 @@
+---
+publiccodeYmlVersion: 0.5.0
+name: water-datapreptools
+url: https://github.com/usgs/water-datapreptools
+landingURL: https://usgs.github.io/water-datapreptools/
+developmentStatus: inactive
+softwareType: application
+platforms:
+- Python
+categories:
+- geographic-information-systems
+releaseDate: '2024-01-11'
+softwareVersion: ''
+legal:
+  license: CC0-1.0
+  mainCopyrightOwner: usgs
+  repoOwner: usgs
+maintenance:
+  type: community
+  contacts:
+  - name: usgs
+  status: maintenance
+localisation:
+  availableLanguages:
+  - en
+  localisationReady: false
+dependsOn:
+  open: []
+description:
+  en:
+    shortDescription: DEPRECATED Python tools for preparing terrain data for USGS
+      StreamStats.
+    longDescription: |-
+      Legacy Python toolkit for preprocessing digital elevation models and hydrographic data
+      for inclusion in USGS StreamStats hydrologic analysis platform.
+      No longer actively maintained; StreamStats now uses updated data processing pipelines.
+      Archived for reference by hydrologists and water resource developers.
+
+      '

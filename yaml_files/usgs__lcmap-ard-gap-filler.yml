@@ -1,0 +1,37 @@
+---
+publiccodeYmlVersion: 0.5.0
+name: lcmap-ard-gap-filler
+url: https://github.com/usgs/lcmap-ard-gap-filler
+landingURL: https://github.com/usgs/lcmap-ard-gap-filler
+developmentStatus: maintenance
+softwareType: library
+platforms:
+- Python
+categories:
+- geographic-information-systems
+releaseDate: '2020-04-08'
+softwareVersion: ''
+legal:
+  license: NOASSERTION
+  mainCopyrightOwner: usgs
+  repoOwner: usgs
+maintenance:
+  type: community
+  contacts:
+  - name: usgs
+  status: maintenance
+localisation:
+  availableLanguages:
+  - en
+  localisationReady: false
+dependsOn:
+  open: []
+description:
+  en:
+    shortDescription: Disclaimer ==========
+    longDescription: |-
+      Disclaimer ==========
+
+      This software is preliminary or provisional and is subject to revision. It is being provided to meet the need for timely best science. The software has not received final approval by the U.S. Geological Survey (USGS). No warranty, expressed or implied, is made by the USGS or the U.S. Government as to the functionality of the software and related material nor shall the fact of release constitute any such warranty. The software is provided on the condition that neither the USGS nor the U.S. Government shall be held liable for any damages resulting from the authorized or unauthorized use of the software.
+
+      ## Description This is the source code of "Zhou Q, Xian G, Shi H. Gap Fill of Land Surface Temperature and Reflectance Products in Landsat Analysis Ready Data. Remote Sensing. 2020 Jan;12(7):1192."

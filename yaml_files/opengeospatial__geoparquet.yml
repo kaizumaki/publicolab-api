@@ -1,0 +1,35 @@
+---
+publiccodeYmlVersion: 0.5.0
+name: geoparquet
+url: https://github.com/opengeospatial/geoparquet
+landingURL: https://geoparquet.org
+developmentStatus: active
+softwareType: library
+platforms:
+- Python
+categories:
+- geographic-information-systems
+releaseDate: '2021-07-30'
+softwareVersion: ''
+legal:
+  license: Apache-2.0
+  mainCopyrightOwner: opengeospatial
+  repoOwner: opengeospatial
+maintenance:
+  type: community
+  contacts:
+  - name: opengeospatial
+localisation:
+  availableLanguages:
+  - en
+  localisationReady: false
+dependsOn:
+  open: []
+description:
+  en:
+    shortDescription: Specification for storing geospatial vector data (point, line,
+      polygon) in Parquet
+    longDescription: 'Specification for storing geospatial vector data (point, line,
+      polygon) in Parquet
+
+      '

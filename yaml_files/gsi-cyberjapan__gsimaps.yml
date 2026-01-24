@@ -1,0 +1,144 @@
+---
+publiccodeYmlVersion: 0.5.0
+name: gsimaps (地理院地図)
+applicationSuite: 地理院地図
+url: https://github.com/gsi-cyberjapan/gsimaps
+landingURL: https://maps.gsi.go.jp/
+developmentStatus: stable
+softwareType: standalone/web
+platforms:
+- web
+categories:
+- geographic-information-systems
+- data-visualization
+usedBy:
+- 国土地理院
+releaseDate: '2015-03-12'
+softwareVersion: 1.0.0
+logo: https://gsi-cyberjapan.github.io/gsimaps/apple-touch-icon.png
+legal:
+  license: BSD-2-Clause
+  mainCopyrightOwner: 国土地理院
+  repoOwner: gsi-cyberjapan
+maintenance:
+  type: internal
+  contacts:
+  - name: gsi-cyberjapan
+    affiliation: 国土地理院 (Geospatial Information Authority of Japan)
+localisation:
+  availableLanguages:
+  - ja
+  - en
+  localisationReady: true
+dependsOn:
+  open:
+  - name: Leaflet
+    optional: false
+    versionMin: 0.7.3
+  - name: jQuery
+    optional: false
+  - name: Cesium
+    optional: true
+description:
+  ja:
+    shortDescription: 国土地理院が運営する地理院地図（https://maps.gsi.go.jp/）のオープンソースコード
+    longDescription: |
+      gsimaps（地理院地図）は、国土地理院が運営する公式 Web 地図サービス「地理院地図」のソースコードを公開しているオープンソースプロジェクトです。
+
+      ## 主な特徴
+
+      - **豊富な地理空間データ**: 国土地理院が提供する様々な地図データやベクトルデータにアクセス可能
+      - **オープンソース**: BSD-2-Clause ライセンスにより、自由に利用・改変が可能
+      - **カスタマイズ可能**: レイヤ定義ファイル編集ツールにより、独自の地図サービスを構築可能
+      - **地名検索機能**: 東京大学 CSIS のサービスを活用した地名検索に対応
+      - **モバイル対応**: レスポンシブデザインによりスマートフォンやタブレットでも利用可能
+
+      ## 技術スタック
+
+      - Leaflet: オープンソース地図ライブラリ
+      - jQuery: JavaScript ライブラリ
+      - JavaScript 97.4%、HTML 1.5%、CSS 1.1%
+
+      ## 利用方法
+
+      リポジトリをダウンロードし、Web サーバーに配置して index.html を開くことで利用できます。
+      一部の機能（ベクトルデータ処理など）は Web サーバーでのホストが必要です。
+
+      ## 留意事項
+
+      - 国土地理院により作成された部分は、国土地理院コンテンツ利用規約に準拠した BSD-2-Clause ライセンスを適用
+      - 既存ソフトウェア（Leaflet, jQuery 等）については、各ソフトウェアのライセンスが適用
+      - サーバー側動的機能（地名検索等）は、主に地理院地図からの利用を想定しており、常時提供を保証するものではない
+
+      ## 関連リソース
+
+      - 公式地理院地図: https://maps.gsi.go.jp/
+      - デモサイト: https://gsi-cyberjapan.github.io/gsimaps/
+      - レイヤ定義ファイル編集ツール: https://gsi-cyberjapan.github.io/gsimaps/config.html
+      - レイヤ定義規約: https://github.com/gsi-cyberjapan/layers-dot-txt-spec
+    features:
+    - 国土地理院の各種地図データの表示
+    - レイヤーの切り替えと重ね合わせ
+    - 地名検索機能
+    - 3D 表示機能（index_3d.html）
+    - モバイル対応（index_m.html）
+    - カスタマイズ可能なレイヤ定義
+    - ベクトルデータの表示
+    - 位置情報の共有
+    documentation: https://github.com/gsi-cyberjapan/gsimaps/blob/gh-pages/README.md
+  en:
+    shortDescription: The source code of GSI Maps (https://maps.gsi.go.jp/) operated
+      by Geospatial Information Authority of Japan
+    longDescription: |
+      gsimaps is the open-source project providing the source code of "GSI Maps", the official web mapping service operated by the Geospatial Information Authority of Japan (GSI).
+
+      ## Key Features
+
+      - **Rich Geospatial Data**: Access to various map data and vector data provided by GSI
+      - **Open Source**: Freely available under BSD-2-Clause license
+      - **Customizable**: Build your own map service using the layer definition file editor
+      - **Geocoding**: Place name search functionality powered by University of Tokyo CSIS
+      - **Mobile Support**: Responsive design for smartphones and tablets
+
+      ## Technology Stack
+
+      - Leaflet: Open-source mapping library
+      - jQuery: JavaScript library
+      - JavaScript 97.4%, HTML 1.5%, CSS 1.1%
+
+      ## Usage
+
+      Download the repository, place it on a web server, and open index.html.
+      Some features (such as vector data processing) require hosting on a web server.
+
+      ## Notes
+
+      - Parts created by GSI are licensed under BSD-2-Clause in accordance with GSI Content Usage Guidelines
+      - Existing software (Leaflet, jQuery, etc.) are subject to their respective licenses
+      - Server-side dynamic functions (geocoding, etc.) are primarily intended for use with GSI Maps and may not always be available
+
+      ## Related Resources
+
+      - Official GSI Maps: https://maps.gsi.go.jp/
+      - Demo Site: https://gsi-cyberjapan.github.io/gsimaps/
+      - Layer Definition File Editor: https://gsi-cyberjapan.github.io/gsimaps/config.html
+      - Layer Definition Specification: https://github.com/gsi-cyberjapan/layers-dot-txt-spec
+    features:
+    - Display various GSI map data
+    - Layer switching and overlay
+    - Geocoding functionality
+    - 3D display (index_3d.html)
+    - Mobile support (index_m.html)
+    - Customizable layer definitions
+    - Vector data display
+    - Location sharing
+    documentation: https://github.com/gsi-cyberjapan/gsimaps/blob/gh-pages/README.en.md
+intendedAudience:
+  countries:
+  - jp
+  scope:
+  - infrastructures-and-logistics
+  - government
+  - local-authorities
+  - research
+  - tourism

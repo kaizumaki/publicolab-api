@@ -1,0 +1,164 @@
+---
+publiccodeYmlVersion: 0.5.0
+name: mojxml2geojson
+applicationSuite: Address Base Registry Tools
+url: https://github.com/digital-go-jp/mojxml2geojson
+developmentStatus: stable
+softwareType: standalone/other
+platforms:
+- linux
+- windows
+- mac
+categories:
+- geographic-information-systems
+- data-analytics
+- it-development
+usedBy:
+- デジタル庁
+- 法務省
+releaseDate: '2023-01-25'
+softwareVersion: 1.0.1
+legal:
+  license: MIT
+  mainCopyrightOwner: デジタル庁 (Digital Agency, Government of Japan)
+  repoOwner: digital-go-jp
+maintenance:
+  type: internal
+  contacts:
+  - name: デジタル庁 (Digital Agency)
+localisation:
+  availableLanguages:
+  - ja
+  localisationReady: false
+dependsOn:
+  open:
+  - name: Python
+    optional: false
+    versionMin: '3.0'
+  - name: pip
+    optional: false
+    versionMin: '22.0'
+  - name: GDAL
+    optional: false
+  - name: Docker
+    optional: true
+  - name: Address Base Registry
+    optional: false
+description:
+  ja:
+    shortDescription: 法務省登記所備付地図データ（地図XML）をGeoJSONに変換するコンバータ
+    longDescription: |
+      mojxml2geojson は、法務省が提供する登記所備付地図データ（地図XML形式）を
+      GeoJSON 形式に変換するコンバータツールです。
+      地図XMLから筆ポリゴンデータと属性情報を抽出し、アドレス・ベース・レジストリで利用可能な
+      GeoJSON形式に変換します。
+
+      ## 主な特徴
+
+      - **法務省地図XMLに対応**: 登記所備付地図データの変換に特化
+      - **GeoJSON出力**: 標準的な地理空間データ形式で出力
+      - **アドレス・ベース・レジストリ連携**: ABRで利用可能な形式に準拠
+      - **座標系変換**: 公共座標をJGD2011の緯度経度に変換
+      - **CLIツール**: コマンドラインからの簡単な実行
+      - **Docker対応**: コンテナ環境での実行可能
+
+      ## ユースケース
+
+      法務省が公開する登記所備付地図データ（地図XML）を、デジタル庁のアドレス・ベース・レジストリや
+      その他のGIS（地理情報システム）で利用可能なGeoJSON形式に変換する際に使用します。
+
+      地籍データを活用した以下のような用途に適用できます：
+
+      - 土地・不動産情報のデジタル化
+      - 地理空間データベースの構築
+      - 地図サービスへの地籍情報の統合
+      - アドレス・ベース・レジストリとの連携
+
+      ## 変換仕様
+
+      ### 変換対象
+
+      - **筆ポリゴンデータ**: 地図XML内の筆（土地の区画）のポリゴン情報を抽出
+      - **属性情報**: 筆に関連する属性データを抽出
+      - **アドレス・ベース・レジストリ用データ**: ABRで必要な情報を整形
+
+      ### 座標変換
+
+      - **公共座標**: JGD2011の緯度経度（10進度）に変換
+      - **任意座標**: 変換対象外（そのまま出力されない）
+
+      ## 技術仕様
+
+      - **言語**: Python 97%
+      - **必須依存**: GDAL（地理空間データ抽象化ライブラリ）
+      - **パッケージ管理**: pip 22.* 以降
+      - **実行環境**: Python 3.* 以降
+
+      ## インストール
+
+      ### 直接インストール
+
+      ```bash
+      # GDAL をインストール（例: Ubuntu/Debian）
+      sudo apt-get install gdal-bin python3-gdal
+
+      # pip でインストール
+      pip install -r requirements.txt
+
+      # 実行
+      python mojxml2geojson.py input.xml output.geojson
+      ```
+
+      ### Docker を使用
+
+      ```bash
+      # Docker イメージをビルド
+      docker build -t mojxml2geojson .
+
+      # Docker コンテナで実行
+      docker run -v $(pwd):/data mojxml2geojson input.xml output.geojson
+      ```
+
+      ## 制限事項
+
+      - 任意座標系のデータは変換対象外
+      - JGD2011以外の座標系への変換は未対応
+      - 大規模データセットの処理にはメモリ要件に注意が必要
+
+      ## 関連プロジェクト
+
+      - [abr-geocoder](https://github.com/digital-go-jp/abr-geocoder): アドレス・ベース・レジストリを使用したジオコーダー
+      - [アドレス・ベース・レジストリ](https://catalog.registries.digital.go.jp/rc/dataset/): デジタル庁の住所データベース
+
+      ## 貢献者
+
+      8名の貢献者によって開発・メンテナンスされています。
+
+      ## 法務省地図XMLについて
+
+      法務省は、不動産登記法第14条第1項の規定に基づき、登記所に備え付けられた地図（いわゆる「地図」及び「地図に準ずる図面」）
+      のデータを地図XML形式で提供しています。このツールは、そのXMLデータを汎用的なGeoJSON形式に変換することで、
+      より幅広いGISアプリケーションや分析ツールでの利用を可能にします。
+    features:
+    - 法務省登記所備付地図データ（地図XML）のGeoJSON変換
+    - 筆ポリゴンデータと属性情報の抽出
+    - アドレス・ベース・レジストリ用データ形式への変換
+    - 公共座標からJGD2011緯度経度（10進度）への変換
+    - コマンドラインツールとしての利用
+    - Docker環境での実行サポート
+    - GDALを利用した地理空間データ処理
+    - 地籍データのデジタル化支援
+    documentation: https://github.com/digital-go-jp/mojxml2geojson/blob/main/README.md
+  en:
+    shortDescription: 法務省登記所備付地図データ（地図XML）をGeoJSONに変換するコンバータ
+    longDescription: 法務省登記所備付地図データ（地図XML）をGeoJSONに変換するコンバータ - Data converter for the
+      National Land Register data (mojxml). - [What is the National Land Register
+      data?](https://data-gov.note.jp/n/n367f1e368d22#a12a292e-4301-4cf1-979f-74f3bef09999)
+intendedAudience:
+  countries:
+  - jp
+  scope:
+  - infrastructures-and-logistics
+  - government
+  - local-authorities
+landingURL: https://github.com/digital-go-jp/mojxml2geojson

@@ -1,0 +1,34 @@
+---
+publiccodeYmlVersion: 0.5.0
+name: datachecker
+url: https://github.com/ONSdigital/datachecker
+landingURL: https://onsdigital.github.io/datachecker/
+developmentStatus: active
+softwareType: library
+platforms:
+- Python
+categories:
+- geographic-information-systems
+releaseDate: '2026-01-08'
+softwareVersion: ''
+legal:
+  license: MIT
+  mainCopyrightOwner: ONSdigital
+  repoOwner: ONSdigital
+maintenance:
+  type: community
+  contacts:
+  - name: ONSdigital
+localisation:
+  availableLanguages:
+  - en
+  localisationReady: false
+dependsOn:
+  open: []
+description:
+  en:
+    shortDescription: Automated Data Checker for Python
+    longDescription: Automated Data Checker for Python A Data checker which uses pandera
+      to perform the bulk checks. This wrapper can be used to check contents of a
+      dataframe against a pre defined schema either defined directly within your python
+      script, or saved as a supported configuration file.

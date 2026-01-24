@@ -1,0 +1,86 @@
+# publicolab 観測軸定義（Insight-driven + Scalable Sampling）
+# すべてのキー名は英語、説明は日本語。採点は 0–3（高密度レビュー用）。
+# 0: 不在/不明、1: 弱い/部分、2: 十分/一貫、3: 明確/強固
+
+axes:
+  - key: accountability
+    name: 責任所在の明確度
+    rubric:
+      - 0: ライセンス/責任表明が不在、運営主体の記述なし
+      - 1: ライセンスはあるが、運営主体/連絡先が不明
+      - 2: ライセンスと主体が記述され、更新/保守の責任が示唆
+      - 3: 主体・責任範囲・連絡先・方針が明確に記述
+    signals:
+      - legal.license の充足度
+      - README/サイトに主体・連絡先・方針の有無
+      - developmentStatus と保守姿勢の整合
+
+  - key: operability
+    name: 運用可能性（動かせる/使える）
+    rubric:
+      - 0: 実行手順/依存関係が不在
+      - 1: 断片的な手順のみ、試行錯誤が不可避
+      - 2: 手順/環境が一貫し、再現性がある
+      - 3: 実運用事例や導入ガイド/サポートが明記
+    signals:
+      - README の導入/セットアップ/使用例の充足
+      - landingURL の実体（ドキュメント/サイト）
+
+  - key: institutionalFictionLevel
+    name: 制度的フィクション度
+    rubric:
+      - 0: 制度前提なし/現場主導
+      - 1: 制度に言及あるが曖昧
+      - 2: 制度/標準と連動を明確化
+      - 3: 法/規格/調達要件に厳密適合
+    signals:
+      - 標準/制度/法令への参照
+      - 調達/導入要件の記述
+
+  - key: publicReadiness
+    name: 公共利用準備度
+    rubric:
+      - 0: 公共文脈の記述が無い
+      - 1: 公共目的の示唆に留まる
+      - 2: 公共利用の対象/制約/利点が記述
+      - 3: 実例/導入ステップ/ガバナンスが明記
+    signals:
+      - README/サイトの目的/対象/ガバナンス記述
+
+  - key: aiFabricationIndex
+    name: “AIがでっちあげた感”指数（逆指標）
+    rubric:
+      - 0: 生成痕跡なし/一次情報が豊富
+      - 1: 一部定型文が見られる
+      - 2: 定型文/曖昧表現が優勢
+      - 3: 一貫したでっちあげ感（一次情報に乏しい）
+    signals:
+      - 説明の反復/曖昧語、詳細の欠如
+      - README と yml の不整合
+
+# ヒューリスティクス（機械推定の初期版）
+heuristics:
+  accountability:
+    weights:
+      licensePresent: 1
+      ownerKnown: 1
+      statusNonDev: 1
+      contactMention: 1
+  operability:
+    weights:
+      readmeUsage: 1
+      landingURLPresent: 1
+      examplesMention: 1
+  institutionalFictionLevel:
+    weights:
+      standardsMention: 1
+      policyMention: 1
+  publicReadiness:
+    weights:
+      purposeMention: 1
+      governanceMention: 1
+  aiFabricationIndex:
+    weights:
+      vagueLanguage: 1
+      lowDetail: 1
+      inconsistency: 1

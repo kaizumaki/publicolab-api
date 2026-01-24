@@ -1,0 +1,35 @@
+---
+publiccodeYmlVersion: 0.5.0
+name: reportes-nodos-datosgobar
+url: https://github.com/datosgobar/reportes-nodos-datosgobar
+landingURL: https://github.com/datosgobar/reportes-nodos-datosgobar
+developmentStatus: active
+softwareType: library
+platforms:
+- R
+categories:
+- geographic-information-systems
+releaseDate: '2025-03-12'
+softwareVersion: ''
+legal:
+  license: UNSPECIFIED
+  mainCopyrightOwner: datosgobar
+  repoOwner: datosgobar
+maintenance:
+  type: community
+  contacts:
+  - name: datosgobar
+localisation:
+  availableLanguages:
+  - en
+  localisationReady: false
+dependsOn:
+  open: []
+description:
+  en:
+    shortDescription: Scripts de R para la generación automática de reportes por nodo
+      sobre consultas en el portal de Datos Abiertos
+    longDescription: 'Scripts de R para la generación automática de reportes por nodo
+      sobre consultas en el portal de Datos Abiertos
+
+      '

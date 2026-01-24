@@ -1,0 +1,36 @@
+---
+publiccodeYmlVersion: 0.5.0
+name: gars-js
+url: https://github.com/ngageoint/gars-js
+landingURL: https://ngageoint.github.io/gars-js/
+developmentStatus: maintenance
+softwareType: library
+platforms:
+- TypeScript
+categories:
+- geographic-information-systems
+releaseDate: '2022-09-12'
+softwareVersion: ''
+legal:
+  license: MIT
+  mainCopyrightOwner: ngageoint
+  repoOwner: ngageoint
+maintenance:
+  type: community
+  contacts:
+  - name: ngageoint
+  status: maintenance
+localisation:
+  availableLanguages:
+  - en
+  localisationReady: false
+dependsOn:
+  open: []
+description:
+  en:
+    shortDescription: TypeScript library for encoding/decoding Global Area Reference
+      System (GARS) coordinates.
+    longDescription: |-
+      Provides utilities for working with GARS grid references, a hierarchical geographic coordinate system.
+      Supports conversion between lat/lon and GARS codes at various precision levels.
+      Used for military, aviation, and emergency response geographic location encoding.

@@ -1,0 +1,35 @@
+---
+publiccodeYmlVersion: 0.5.0
+name: dataonkorea
+url: https://github.com/codeforseoul/dataonkorea
+landingURL: http://codeforseoul.github.io/dataonkorea
+developmentStatus: inactive
+softwareType: library
+platforms:
+- JavaScript
+categories:
+- geographic-information-systems
+releaseDate: '2015-12-20'
+softwareVersion: ''
+legal:
+  license: Apache-2.0
+  mainCopyrightOwner: codeforseoul
+  repoOwner: codeforseoul
+maintenance:
+  type: community
+  contacts:
+  - name: codeforseoul
+localisation:
+  availableLanguages:
+  - en
+  localisationReady: false
+dependsOn:
+  open: []
+description:
+  en:
+    shortDescription: easy way to draw choropleth map
+    longDescription: 'easy way to draw choropleth map * Name of Provinces(column:
+      name) * Chungcheongnam-do(충청남도) * Chungcheongbuk-do(충청북도) * Gangwon-do(강원도)
+      * Gwangju(광주광역시) * Gyeongsangnam-do(경상남도) * Gyeongsangbuk-do(경상북도) * Gyeonggji-do(경기도)
+      * Daegu(대구광역시) * Daejeon(대전광역시) * Seoul(서울특별시) * Sejongsi(세종시) * Ulsan(울산광역시)
+      * Incheon(인천광역시) * Jeollanam-do(전라남도) * Jeollabuk-do(전라북도) * Jeju-do(제주도)'

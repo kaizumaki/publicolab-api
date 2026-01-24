@@ -1,0 +1,202 @@
+---
+publiccodeYmlVersion: 0.5.0
+name: uMap
+applicationSuite: OpenStreetMap Tools
+url: https://github.com/umap-project/umap
+landingURL: https://umap-project.org/
+developmentStatus: stable
+softwareType: standalone/web
+platforms:
+- web
+- linux
+categories:
+- geographic-information-systems
+- data-visualization
+- content-management
+usedBy:
+- OpenStreetMap Community
+- ANCT (フランス国土結束庁)
+- AIC (市民革新アトリエ)
+releaseDate: '2025-12-22'
+softwareVersion: 3.5.0
+legal:
+  license: AGPL-3.0-only
+  mainCopyrightOwner: uMap project contributors
+  repoOwner: umap-project
+maintenance:
+  type: community
+  contacts:
+  - name: uMap project
+localisation:
+  availableLanguages:
+  - en
+  - fr
+  localisationReady: true
+dependsOn:
+  open:
+  - name: Django
+    optional: false
+  - name: PostgreSQL
+    optional: false
+  - name: GeoDjango
+    optional: false
+  - name: Leaflet
+    optional: false
+  - name: OpenStreetMap
+    optional: false
+  - name: Docker
+    optional: true
+  - name: Nginx
+    optional: true
+  - name: Python Social Auth
+    optional: true
+description:
+  en:
+    shortDescription: Create maps with OpenStreetMap layers in minutes and embed them
+      in your site
+    longDescription: "uMap lets you create maps with OpenStreetMap layers within minutes
+      and embed them in your site. \nBecause we think that the more OSM will be used,
+      the more OSM will be improved. \nBuilt on top of Django and Leaflet.\n\n## Overview\n\nuMap
+      is a free and open-source web-based mapping tool that enables users to quickly
+      create custom \nmaps using OpenStreetMap's background layers. The platform has
+      been actively developed for over \n10 years and has become a popular choice
+      within the OpenStreetMap community.\n\n## Key Features\n\n- **Easy Map Creation**:
+      Create interactive maps in minutes without coding\n- **OpenStreetMap Integration**:
+      Use OpenStreetMap layers as background\n- **Embedding**: Easily embed your maps
+      into websites\n- **Drawing Tools**: Draw lines, polygons, and markers on maps\n-
+      **Data Import**: Import GeoJSON, GPX, KML, and other geospatial formats\n- **Layers
+      Management**: Organize map content in multiple layers\n- **Heatmaps**: Visualize
+      density data with heatmap functionality\n- **Clustering**: Aggregate points
+      for better visualization at different zoom levels\n- **Slideshow**: Create story
+      maps with photos, texts, sounds, and videos\n- **Customization**: Customize
+      map appearance, popups, and interactions\n- **Collaboration**: Share maps and
+      collaborate with others\n- **No Account Required**: Create maps without registration
+      (optional)\n- **Privacy-Focused**: Self-hostable solution for data control\n\n##
+      Technology Stack\n\n- **Backend**: Python, Django, GeoDjango\n- **Frontend**:
+      JavaScript 72.0%, Leaflet\n- **Database**: PostgreSQL with PostGIS\n- **Languages**:
+      Python 22.2%, CSS 3.1%, HTML 2.3%\n\n## Use Cases\n\n- **Urban Planning**: Visualize
+      transportation networks, infrastructure projects\n- **Risk Assessment**: Display
+      flooding hazard plans and environmental risks\n- **Community Mapping**: Create
+      collaborative maps for local communities\n- **Education**: Teaching geography,
+      data visualization, and mapping skills\n- **Storytelling**: Create narrative
+      maps with multimedia content\n- **Data Visualization**: Represent densities,
+      distributions, and patterns\n- **Solar Panel Planning**: Identify potential
+      roof sites for solar installations\n\n## Community and Support\n\nuMap is maintained
+      by a vibrant community:\n\n- **60+ Contributors**: Active development community\n-
+      **3,000+ Issues**: Extensive discussion and problem-solving history\n- **Long-term
+      Philosophy**: Commitment to minimalist, maintainable code\n- **Active Forum**:
+      French OpenStreetMap forum with dedicated uMap section\n- **Communication Channels**:
+      Matrix chat, mailing list, forum\n\n## Deployment Options\n\n- **Docker**: Up-to-date
+      Docker image available\n- **WSGI/ASGI**: Traditional Python web server deployment\n-
+      **Nginx**: Reverse proxy configuration\n- **Dokku**: Platform-as-a-Service deployment\n-
+      **Yunohost**: Self-hosting solution\n- **Helm**: Kubernetes deployment\n\n##
+      Statistics (as of project website)\n\n- 190,194 user accounts\n- 1,561,209 maps
+      created\n- 9,890 edited maps per week\n\n## Funding and Sponsorship\n\nuMap
+      is supported by:\n\n- OpenStreetMap France\n- ANCT (Agence Nationale de la Cohésion
+      des Territoires)\n- AIC (Atelier d'Innovation Citoyenne)\n- NLnet Foundation\n-
+      Scopyleft\n- Individual sponsors via Liberapay, OpenCollective, and GitHub Sponsors\n\n##
+      Philosophy\n\n\"Because we think that the more OSM will be used, the more OSM
+      will be improved.\"\n\nuMap is designed to promote the use of OpenStreetMap
+      by making it accessible to everyone, \nregardless of technical skill level.
+      The project emphasizes:\n\n- Free and open-source software principles\n- Long-term
+      code maintainability\n- Community-driven development\n- Privacy and data sovereignty\n-
+      Simplicity and ease of use\n"
+    features:
+    - 数分で OpenStreetMap ベースの地図を作成
+    - Web サイトへの簡単な埋め込み
+    - 線、ポリゴン、マーカーの描画
+    - GeoJSON、GPX、KML などのデータインポート
+    - 複数レイヤーの管理
+    - ヒートマップ表示
+    - ポイントのクラスタリング
+    - スライドショー機能によるストーリーマップ
+    - 外観とインタラクションのカスタマイズ
+    - 共同編集とマップ共有
+    - アカウント不要での利用（オプション）
+    - セルフホスティング対応
+    - Docker による簡単なデプロイメント
+    documentation: https://docs.umap-project.org/
+  fr:
+    shortDescription: Créez des cartes avec les couches OpenStreetMap en quelques
+      minutes et intégrez-les dans votre site
+    longDescription: "uMap vous permet de créer des cartes avec les couches OpenStreetMap
+      en quelques minutes et \nde les intégrer dans votre site. Parce que nous pensons
+      que plus OSM sera utilisé, plus OSM \nsera amélioré. Construit sur Django et
+      Leaflet.\n\n## Vue d'ensemble\n\nuMap est un outil de cartographie web gratuit
+      et open-source qui permet aux utilisateurs de \ncréer rapidement des cartes
+      personnalisées en utilisant les couches de fond d'OpenStreetMap. \nLa plateforme
+      est activement développée depuis plus de 10 ans et est devenue un choix populaire
+      \nau sein de la communauté OpenStreetMap.\n\n## Fonctionnalités principales\n\n-
+      **Création facile de cartes**: Créez des cartes interactives en minutes sans
+      coder\n- **Intégration OpenStreetMap**: Utilisez les couches OpenStreetMap comme
+      fond\n- **Intégration**: Intégrez facilement vos cartes dans des sites web\n-
+      **Outils de dessin**: Dessinez des lignes, polygones et marqueurs sur les cartes\n-
+      **Import de données**: Importez GeoJSON, GPX, KML et autres formats géospatiaux\n-
+      **Gestion des couches**: Organisez le contenu de la carte en plusieurs couches\n-
+      **Cartes de chaleur**: Visualisez les données de densité avec la fonctionnalité
+      heatmap\n- **Clustering**: Agrégez les points pour une meilleure visualisation
+      à différents niveaux de zoom\n- **Diaporama**: Créez des cartes narratives avec
+      photos, textes, sons et vidéos\n- **Personnalisation**: Personnalisez l'apparence,
+      les popups et les interactions\n- **Collaboration**: Partagez des cartes et
+      collaborez avec d'autres\n- **Pas de compte requis**: Créez des cartes sans
+      inscription (optionnel)\n- **Respect de la vie privée**: Solution auto-hébergeable
+      pour le contrôle des données\n\n## Statistiques\n\n- 190 194 comptes utilisateurs\n-
+      1 561 209 cartes créées\n- 9 890 cartes modifiées par semaine\n"
+    features:
+    - Créez des cartes OpenStreetMap en quelques minutes
+    - Intégration facile dans les sites web
+    - Dessinez des lignes, polygones et marqueurs
+    - Importez des données GeoJSON, GPX, KML
+    - Gérez plusieurs couches
+    - Visualisation en carte de chaleur
+    - Clustering de points
+    - Fonction diaporama pour cartes narratives
+    - Personnalisation de l'apparence et des interactions
+    - Édition collaborative et partage de cartes
+    - Utilisation sans compte (optionnel)
+    - Auto-hébergement possible
+    - Déploiement facile avec Docker
+    documentation: https://docs.umap-project.org/
+  ja:
+    shortDescription: OpenStreetMap レイヤーを使った地図を数分で作成し、サイトに埋め込めるツール
+    longDescription: "uMap は、OpenStreetMap レイヤーを使った地図を数分で作成し、自分のサイトに埋め込むことができる \nWeb
+      ベースのマッピングツールです。OSM がより多く使われることで、OSM がより良くなると考えています。\nDjango と Leaflet の上に構築されています。\n\n##
+      概要\n\nuMap は、ユーザーが OpenStreetMap の背景レイヤーを使用してカスタムマップを素早く作成できる、\n無料でオープンソースの
+      Web ベースマッピングツールです。10年以上にわたって活発に開発されており、\nOpenStreetMap コミュニティ内で人気のある選択肢となっています。\n\n##
+      主な機能\n\n- **簡単な地図作成**: コーディング不要で数分でインタラクティブな地図を作成\n- **OpenStreetMap 統合**: OpenStreetMap
+      レイヤーを背景として使用\n- **埋め込み**: Web サイトへの簡単な地図埋め込み\n- **描画ツール**: 地図上に線、ポリゴン、マーカーを描画\n-
+      **データインポート**: GeoJSON、GPX、KML などの地理空間フォーマットをインポート\n- **レイヤー管理**: 複数のレイヤーで地図コンテンツを整理\n-
+      **ヒートマップ**: ヒートマップ機能で密度データを可視化\n- **クラスタリング**: 異なるズームレベルでより良い可視化のためにポイントを集約\n-
+      **スライドショー**: 写真、テキスト、音声、動画を使ったストーリーマップを作成\n- **カスタマイズ**: 地図の外観、ポップアップ、インタラクションをカスタマイズ\n-
+      **コラボレーション**: 地図を共有し、他の人と協力\n- **アカウント不要**: 登録なしで地図を作成（オプション）\n- **プライバシー重視**:
+      データ管理のためのセルフホスト可能なソリューション\n\n## 技術スタック\n\n- **バックエンド**: Python、Django、GeoDjango\n-
+      **フロントエンド**: JavaScript 72.0%、Leaflet\n- **データベース**: PostgreSQL with PostGIS\n\n##
+      ユースケース\n\n- **都市計画**: 交通網、インフラプロジェクトの可視化\n- **リスク評価**: 洪水ハザードマップや環境リスクの表示\n-
+      **コミュニティマッピング**: 地域コミュニティのための協働地図作成\n- **教育**: 地理、データ可視化、マッピングスキルの教育\n- **ストーリーテリング**:
+      マルチメディアコンテンツを使った物語地図の作成\n- **データ可視化**: 密度、分布、パターンの表現\n\n## 統計（プロジェクト Web サイトより）\n\n-
+      190,194 ユーザーアカウント\n- 1,561,209 個の地図が作成済み\n- 週に 9,890 個の地図が編集されている\n"
+    features:
+    - 数分で OpenStreetMap ベースの地図を作成
+    - Web サイトへの簡単な埋め込み
+    - 線、ポリゴン、マーカーの描画
+    - GeoJSON、GPX、KML などのデータインポート
+    - 複数レイヤーの管理
+    - ヒートマップ表示
+    - ポイントのクラスタリング
+    - スライドショー機能によるストーリーマップ
+    - 外観とインタラクションのカスタマイズ
+    - 共同編集とマップ共有
+    - アカウント不要での利用（オプション）
+    - セルフホスティング対応
+    - Docker による簡単なデプロイメント
+    documentation: https://docs.umap-project.org/
+intendedAudience:
+  scope:
+  - culture
+  - education
+  - emergency-services
+  - environment
+  - infrastructures-and-logistics
+  - research
+  - tourism
+  - welfare

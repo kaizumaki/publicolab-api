@@ -1,0 +1,35 @@
+---
+publiccodeYmlVersion: 0.5.0
+name: ckanext-datarequests
+url: https://github.com/CodeForAfrica/ckanext-datarequests
+landingURL: https://github.com/CodeForAfrica/ckanext-datarequests
+developmentStatus: active
+softwareType: library
+platforms:
+- Python
+categories:
+- geographic-information-systems
+releaseDate: '2024-02-27'
+softwareVersion: ''
+legal:
+  license: AGPL-3.0
+  mainCopyrightOwner: CodeForAfrica
+  repoOwner: CodeForAfrica
+maintenance:
+  type: community
+  contacts:
+  - name: CodeForAfrica
+localisation:
+  availableLanguages:
+  - en
+  localisationReady: false
+dependsOn:
+  open: []
+description:
+  en:
+    shortDescription: A plugin that allows users to request data that is not published
+      yet
+    longDescription: 'A plugin that allows users to request data that is not published
+      yet
+
+      '

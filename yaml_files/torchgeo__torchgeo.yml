@@ -1,0 +1,35 @@
+---
+publiccodeYmlVersion: 0.5.0
+name: torchgeo
+url: https://github.com/torchgeo/torchgeo
+landingURL: https://www.osgeo.org/projects/torchgeo/
+developmentStatus: active
+softwareType: library
+platforms:
+- Python
+categories:
+- geographic-information-systems
+releaseDate: '2021-05-21'
+softwareVersion: ''
+legal:
+  license: MIT
+  mainCopyrightOwner: torchgeo
+  repoOwner: torchgeo
+maintenance:
+  type: community
+  contacts:
+  - name: torchgeo
+localisation:
+  availableLanguages:
+  - en
+  localisationReady: false
+dependsOn:
+  open: []
+description:
+  en:
+    shortDescription: 'TorchGeo: datasets, samplers, transforms, and pre-trained models
+      for geospatial data'
+    longDescription: 'TorchGeo: datasets, samplers, transforms, and pre-trained models
+      for geospatial data
+
+      '

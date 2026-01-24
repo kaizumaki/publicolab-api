@@ -1,0 +1,32 @@
+---
+publiccodeYmlVersion: 0.5.0
+name: cartodb
+url: https://github.com/CartoDB/cartodb
+landingURL: http://carto.com
+developmentStatus: active
+softwareType: library
+platforms:
+- JavaScript
+categories:
+- geographic-information-systems
+releaseDate: '2012-07-05'
+softwareVersion: ''
+legal:
+  license: BSD-3-Clause
+  mainCopyrightOwner: CartoDB
+  repoOwner: CartoDB
+maintenance:
+  type: community
+  contacts:
+  - name: CartoDB
+localisation:
+  availableLanguages:
+  - en
+  localisationReady: false
+dependsOn:
+  open: []
+description:
+  en:
+    shortDescription: Location Intelligence & Data Visualization tool
+    longDescription: Location Intelligence & Data Visualization tool Hey! This content
+      applies only to previous CARTO products.

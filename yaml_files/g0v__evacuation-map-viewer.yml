@@ -1,0 +1,31 @@
+---
+publiccodeYmlVersion: 0.5.0
+name: evacuation-map-viewer
+url: https://github.com/g0v/evacuation-map-viewer
+landingURL: https://github.com/g0v/evacuation-map-viewer
+developmentStatus: maintenance
+softwareType: library
+platforms:
+- HTML
+categories:
+- geographic-information-systems
+releaseDate: '2024-05-25'
+softwareVersion: ''
+legal:
+  license: UNSPECIFIED
+  mainCopyrightOwner: g0v
+  repoOwner: g0v
+maintenance:
+  type: community
+  contacts:
+  - name: g0v
+localisation:
+  availableLanguages:
+  - en
+  localisationReady: false
+dependsOn:
+  open: []
+description:
+  en:
+    shortDescription: "# evacuation-map-viewer"
+    longDescription: "# evacuation-map-viewer"

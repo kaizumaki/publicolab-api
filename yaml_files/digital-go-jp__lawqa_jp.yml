@@ -1,0 +1,39 @@
+---
+publiccodeYmlVersion: 0.5.0
+name: lawqa_jp
+url: https://github.com/digital-go-jp/lawqa_jp
+landingURL: https://github.com/digital-go-jp/lawqa_jp
+developmentStatus: active
+softwareType: library
+platforms:
+- web
+categories:
+- geographic-information-systems
+releaseDate: '2025-07-06'
+softwareVersion: ''
+legal:
+  license: NOASSERTION
+  mainCopyrightOwner: digital-go-jp
+  repoOwner: digital-go-jp
+maintenance:
+  type: community
+  contacts:
+  - name: digital-go-jp
+  status: active
+localisation:
+  availableLanguages:
+  - en
+  localisationReady: false
+dependsOn:
+  open: []
+description:
+  en:
+    shortDescription: "> 本データセットはこちらの記事/発表で利用された「日本の法令に関する多肢選択式のQ&Aが含まれたデータセット」です:
+      > > [政府等が保有するデータのAI学習データへの変換に係る[調査研究]を実施しました](https://www.digital.go.jp/news/382c3937-f43c-4452-ae27-2ea7bb66ec75)
+      > > [植松 幸生, 大杉 直也, 複数のLLMを"
+    longDescription: |-
+      # 日本の法令に関する多肢選択式QAデータセット
+
+      > 本データセットはこちらの記事/発表で利用された「日本の法令に関する多肢選択式のQ&Aが含まれたデータセット」です: >  > [政府等が保有するデータのAI学習データへの変換に係る[調査研究]を実施しました](https://www.digital.go.jp/news/382c3937-f43c-4452-ae27-2ea7bb66ec75) >  > [植松 幸生, 大杉 直也, 複数のLLMを用いた法令QAタスクのGround Truth Curation, 言語処理学会第31回年次大会(NLP2025)](https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/Q6-3.pdf)
+
+      ##  Introduction

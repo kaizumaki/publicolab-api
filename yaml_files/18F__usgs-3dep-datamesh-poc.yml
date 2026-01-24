@@ -1,0 +1,35 @@
+---
+publiccodeYmlVersion: 0.5.0
+name: usgs-3dep-datamesh-poc
+url: https://github.com/18F/usgs-3dep-datamesh-poc
+landingURL: https://github.com/18F/usgs-3dep-datamesh-poc
+developmentStatus: maintenance
+softwareType: documentation
+platforms:
+- web
+categories:
+- geographic-information-systems
+releaseDate: '2024-07-16'
+softwareVersion: ''
+legal:
+  license: CC0-1.0
+  mainCopyrightOwner: 18F
+  repoOwner: 18F
+maintenance:
+  type: community
+  contacts:
+  - name: 18F
+  status: active
+localisation:
+  availableLanguages:
+  - en
+  localisationReady: false
+dependsOn:
+  open: []
+description:
+  en:
+    shortDescription: Design specifications and diagrams for USGS 3DEP Data Mesh proof
+      of concept.
+    longDescription: |
+      GSA Center of Excellence specifications, diagrams, and design decisions for 2024 USGS 3D Elevation Program (3DEP) Data Mesh proof of concept.
+      Includes cloud architecture patterns, data pipeline design, and API specifications for integrating elevation data into a federated data mesh platform.

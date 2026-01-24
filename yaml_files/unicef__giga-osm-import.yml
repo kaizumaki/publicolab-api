@@ -1,0 +1,33 @@
+---
+publiccodeYmlVersion: 0.5.0
+name: giga-osm-import
+url: https://github.com/unicef/giga-osm-import
+landingURL: https://github.com/unicef/giga-osm-import
+developmentStatus: active
+softwareType: library
+platforms:
+- web
+categories:
+- geographic-information-systems
+releaseDate: '2025-05-01'
+softwareVersion: ''
+legal:
+  license: UNSPECIFIED
+  mainCopyrightOwner: unicef
+  repoOwner: unicef
+maintenance:
+  type: community
+  contacts:
+  - name: unicef
+localisation:
+  availableLanguages:
+  - en
+  localisationReady: false
+dependsOn:
+  open: []
+description:
+  en:
+    shortDescription: Importing of Giga school geolocation data to OSM
+    longDescription: 'Importing of Giga school geolocation data to OSM
+
+      '

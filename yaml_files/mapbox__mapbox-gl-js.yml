@@ -1,0 +1,35 @@
+---
+publiccodeYmlVersion: 0.5.0
+name: mapbox-gl-js
+url: https://github.com/mapbox/mapbox-gl-js
+landingURL: https://docs.mapbox.com/mapbox-gl-js/
+developmentStatus: active
+softwareType: library
+platforms:
+- TypeScript
+categories:
+- geographic-information-systems
+releaseDate: '2013-03-07'
+softwareVersion: ''
+legal:
+  license: NOASSERTION
+  mainCopyrightOwner: mapbox
+  repoOwner: mapbox
+maintenance:
+  type: community
+  contacts:
+  - name: mapbox
+localisation:
+  availableLanguages:
+  - en
+  localisationReady: false
+dependsOn:
+  open: []
+description:
+  en:
+    shortDescription: Interactive, thoroughly customizable maps in the browser, powered
+      by vector tiles and WebGL
+    longDescription: 'Interactive, thoroughly customizable maps in the browser, powered
+      by vector tiles and WebGL
+
+      '

@@ -1,0 +1,33 @@
+---
+publiccodeYmlVersion: 0.5.0
+name: QFieldCloud
+url: https://github.com/hotosm/QFieldCloud
+landingURL: https://qfield.cloud
+developmentStatus: active
+softwareType: library
+platforms:
+- Python
+categories:
+- geographic-information-systems
+releaseDate: '2025-10-20'
+softwareVersion: ''
+legal:
+  license: MIT
+  mainCopyrightOwner: hotosm
+  repoOwner: hotosm
+maintenance:
+  type: community
+  contacts:
+  - name: hotosm
+localisation:
+  availableLanguages:
+  - en
+  localisationReady: false
+dependsOn:
+  open: []
+description:
+  en:
+    shortDescription: A fork of https://github.com/opengisch/QFieldCloud for contribution
+    longDescription: 'A fork of https://github.com/opengisch/QFieldCloud for contribution
+
+      '

@@ -1,0 +1,36 @@
+---
+publiccodeYmlVersion: 0.5.0
+name: kanjikana-api-sample
+url: https://github.com/digital-go-jp/kanjikana-api-sample
+landingURL: https://developers.digital.go.jp/documents/name-matching-support
+developmentStatus: stable
+softwareType: library
+platforms:
+- web
+categories:
+- geographic-information-systems
+releaseDate: '2024-10-04'
+softwareVersion: ''
+legal:
+  license: MIT
+  mainCopyrightOwner: digital-go-jp
+  repoOwner: digital-go-jp
+maintenance:
+  type: community
+  contacts:
+  - name: digital-go-jp
+  status: active
+localisation:
+  availableLanguages:
+  - en
+  localisationReady: false
+dependsOn:
+  open: []
+description:
+  en:
+    shortDescription: Sample implementation for Japan's Kanjikana name matching API
+      service.
+    longDescription: |-
+      Example code and documentation for integrating with the Kanjikana name matching API,
+      a service provided by Japan's Digital Agency for matching personal names written in Kanji and Kana across systems.
+      Enables applications to handle Japanese name variations and aliases in administrative and business processes.

@@ -1,0 +1,31 @@
+---
+publiccodeYmlVersion: 0.5.0
+name: editor-layer-index
+url: https://github.com/osmlab/editor-layer-index
+landingURL: https://osmlab.github.io/editor-layer-index/
+developmentStatus: active
+softwareType: library
+platforms:
+- JavaScript
+categories:
+- geographic-information-systems
+releaseDate: '2013-03-13'
+softwareVersion: ''
+legal:
+  license: NOASSERTION
+  mainCopyrightOwner: osmlab
+  repoOwner: osmlab
+maintenance:
+  type: community
+  contacts:
+  - name: osmlab
+localisation:
+  availableLanguages:
+  - en
+  localisationReady: false
+dependsOn:
+  open: []
+description:
+  en:
+    shortDescription: A unified layer index for OSM editors.
+    longDescription: A unified layer index for OSM editors. [![Deploy](https://github.com/osmlab/editor-layer-index/actions/workflows/push.yml/badge.svg?branch=gh-pages)](https://github.com/osmlab/editor-layer-index/actions/workflows/push.yml)

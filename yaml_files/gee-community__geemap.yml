@@ -1,0 +1,35 @@
+---
+publiccodeYmlVersion: 0.5.0
+name: geemap
+url: https://github.com/gee-community/geemap
+landingURL: https://geemap.org
+developmentStatus: active
+softwareType: library
+platforms:
+- Python
+categories:
+- geographic-information-systems
+releaseDate: '2020-03-08'
+softwareVersion: ''
+legal:
+  license: MIT
+  mainCopyrightOwner: gee-community
+  repoOwner: gee-community
+maintenance:
+  type: community
+  contacts:
+  - name: gee-community
+localisation:
+  availableLanguages:
+  - en
+  localisationReady: false
+dependsOn:
+  open: []
+description:
+  en:
+    shortDescription: A Python package for interactive geospatial analysis and visualization
+      with Google Earth Engine.
+    longDescription: 'A Python package for interactive geospatial analysis and visualization
+      with Google Earth Engine.
+
+      '

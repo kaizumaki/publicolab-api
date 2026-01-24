@@ -1,0 +1,35 @@
+---
+publiccodeYmlVersion: 0.5.0
+name: DIGIT-3.0
+url: https://github.com/egovernments/DIGIT-3.0
+landingURL: https://digit.egov.org.in
+developmentStatus: active
+softwareType: application
+platforms:
+- Java
+categories:
+- geographic-information-systems
+releaseDate: '2025-09-25'
+softwareVersion: ''
+legal:
+  license: MIT
+  mainCopyrightOwner: egovernments
+  repoOwner: egovernments
+maintenance:
+  type: community
+  contacts:
+  - name: egovernments
+localisation:
+  availableLanguages:
+  - en
+  localisationReady: false
+dependsOn:
+  open: []
+description:
+  en:
+    shortDescription: DIGIT platform version 3.0 for digital governance and public
+      service delivery.
+    longDescription: |-
+      DIGIT (Digital Infrastructure for Governance) 3.0 is an open-source platform for local government service delivery.
+      Includes modules for property tax, water/sanitation billing, building permits, and citizen engagement.
+      Designed for scalable deployment across Indian municipalities with geographic data integration capabilities.

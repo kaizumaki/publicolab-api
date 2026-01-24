@@ -1,0 +1,33 @@
+---
+publiccodeYmlVersion: 0.5.0
+name: jonmat
+url: https://github.com/codeforseoul/jonmat
+landingURL: http://codeforseoul.org/jonmat/
+developmentStatus: inactive
+softwareType: library
+platforms:
+- JavaScript
+categories:
+- geographic-information-systems
+releaseDate: '2016-03-05'
+softwareVersion: ''
+legal:
+  license: UNSPECIFIED
+  mainCopyrightOwner: codeforseoul
+  repoOwner: codeforseoul
+maintenance:
+  type: community
+  contacts:
+  - name: codeforseoul
+localisation:
+  availableLanguages:
+  - en
+  localisationReady: false
+dependsOn:
+  open: []
+description:
+  en:
+    shortDescription: '{   "message": "Not Found",   "documentation_url": "https://docs.github.com/rest/repos/contents#get-a-repository-readme",   "status":
+      "404" }'
+    longDescription: '{   "message": "Not Found",   "documentation_url": "https://docs.github.com/rest/repos/contents#get-a-repository-readme",   "status":
+      "404" }'

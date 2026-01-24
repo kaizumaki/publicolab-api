@@ -1,0 +1,84 @@
+---
+publiccodeYmlVersion: 0.5.0
+name: GIF
+applicationSuite: Government Digital Platform
+url: https://github.com/JDA-DM/GIF
+landingURL: https://cio.go.jp/
+developmentStatus: stable
+softwareType: configurationFiles
+categories:
+- it-governance
+- it-development
+usedBy:
+- デジタル庁（Digital Agency）
+- 政府機関
+releaseDate: '2026-01-08'
+softwareVersion: '2.2'
+legal:
+  license: CC0-1.0
+  mainCopyrightOwner: デジタル庁 (Digital Agency, Government of Japan)
+  repoOwner: JDA-DM
+maintenance:
+  type: internal
+  contacts:
+  - name: デジタル庁 (Digital Agency)
+    affiliation: Government of Japan
+localisation:
+  availableLanguages:
+  - ja
+  localisationReady: false
+description:
+  ja:
+    shortDescription: 日本政府のデジタル行政における相互運用性の原則・ガイドラインを定めたフレームワーク
+    longDescription: |
+      GIF（Government Interoperability Framework）は、日本のデジタル庁が主導する、
+      政府機関間のシステム・データ連携における相互運用性を実現するための標準フレームワークです。
+
+      ## 概要
+
+      政府が提供するデジタルサービスの相互接続性と相互運用可能性を確保するために、
+      以下の内容を定めています：
+
+      - 基本的な相互運用性の原則
+      - システム構築のガイドライン
+      - データ交換の標準仕様
+      - セキュリティ・プライバシー要件
+      - アーキテクチャパターン
+
+      ## 構成
+
+      リポジトリには以下のドキュメント・資料が含まれます：
+
+      - **説明資料**: GIF の概要・背景・目的を説明する資料
+      - **実装データモデル**: 実際の運用で用いるデータ構造・スキーマ
+      - **実践ガイドブック**: システム構築時の具体的な手順・ベストプラクティス
+      - **その他ルール等**: 推進に必要なルール・ガイドライン類
+
+      ## 目的
+
+      - 政府デジタル化の推進
+      - 官民連携におけるシステム連携の円滑化
+      - 重複投資の削減
+      - 市民にとり利用しやすいデジタルサービスの実現
+
+      ## 適用対象
+
+      - 中央省庁・地方自治体のデジタルシステム
+      - 政府関連の大規模プロジェクト
+      - 官民連携における情報システム構築
+
+      ## ライセンス
+
+      CC0（パブリックドメイン）であり、誰でも自由に利用・改変可能です。
+
+      ## 関連リンク
+
+      - デジタル庁: https://www.digital.go.jp/
+      - CIO ポータル: https://cio.go.jp/
+  en:
+    shortDescription: Government Interoperability Framework
+    longDescription: !binary |-
+      R292ZXJubWVudCBJbnRlcm9wZXJhYmlsaXR5IEZyYW1ld29yayBHSUY6IEdvdmVybm1lbnQgSW50ZXJvcGVyYWJpbGl0eSBGcmFtZXdvcmtcIEdJRuOBr+ODh+OCuOOCv+ODq+W6geOBjOWFrOmWi+OBmeOCi+ODh+ODvOOCv+OBrumAo+aQuuODu+S6pOaPm+OBruOBn+OCgeOBruODh+ODvOOCv+WPgueFp+ODouODh+ODq+OBp+OBmeOAglwg5Yip55So6ICF44GvR0lG44KS44Gd44Gu44G+44G+44OH44O844K/5qiZ5rqW44Go44GX44Gm5o6h55So44GZ44KL5LuW44CB54us6Ieq44Gr5ouh5by144KE6aCF55uu44Gu5Y+W5o2o6YG45oqe44Gq44Gp44Gu44Kr44K544K/44Oe44Kk44K644KS6KGM44Gj44Gm5Yip55So44GZ44KL44GT44Go44GM44Gn44GN44G+44GZ44CCXCBodHRwczovL3d3dy5kaWdpdGFsLmdvLmpwL3BvbGljaWVzL2RhdGFfc3RyYXRlZ3lfZ292ZXJubWVudF9pbnRlcm9wZXJhYmlsaXR5X2ZyYW1ld29yay8=
+platforms:
+- web
+dependsOn: []

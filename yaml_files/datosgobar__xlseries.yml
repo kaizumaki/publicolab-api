@@ -1,0 +1,35 @@
+---
+publiccodeYmlVersion: 0.5.0
+name: xlseries
+url: https://github.com/datosgobar/xlseries
+landingURL: https://github.com/datosgobar/xlseries
+developmentStatus: stable
+softwareType: library
+platforms:
+- Python
+categories:
+- geographic-information-systems
+releaseDate: '2024-09-20'
+softwareVersion: ''
+legal:
+  license: NOASSERTION
+  mainCopyrightOwner: datosgobar
+  repoOwner: datosgobar
+maintenance:
+  type: community
+  contacts:
+  - name: datosgobar
+localisation:
+  availableLanguages:
+  - en
+  localisationReady: false
+dependsOn:
+  open: []
+description:
+  en:
+    shortDescription: Python package to scrape time series data from only-human readable
+      excel files.
+    longDescription: 'Python package to scrape time series data from only-human readable
+      excel files.
+
+      '

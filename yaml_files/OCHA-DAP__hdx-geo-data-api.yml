@@ -1,0 +1,37 @@
+---
+publiccodeYmlVersion: 0.5.0
+name: hdx-geo-data-api
+url: https://github.com/OCHA-DAP/hdx-geo-data-api
+landingURL: https://github.com/OCHA-DAP/hdx-geo-data-api
+developmentStatus: active
+softwareType: library
+platforms:
+- Python
+categories:
+- geographic-information-systems
+releaseDate: '2025-09-19'
+softwareVersion: ''
+legal:
+  license: MIT
+  mainCopyrightOwner: OCHA-DAP
+  repoOwner: OCHA-DAP
+maintenance:
+  type: community
+  contacts:
+  - name: OCHA-DAP
+localisation:
+  availableLanguages:
+  - en
+  localisationReady: false
+dependsOn:
+  open: []
+description:
+  en:
+    shortDescription: This API provides an interface to query and retrieve humanitarian
+      geographical data from HDX. It provides bindings around [GDAL commands](https://gdal.org/en/stable/programs/index.html#gdal-application
+    longDescription: |-
+      # HDX Geo Data API
+
+      This API provides an interface to query and retrieve humanitarian geographical data from HDX. It provides bindings around [GDAL commands](https://gdal.org/en/stable/programs/index.html#gdal-application) through endpoints matching its syntax.
+
+      ## Development

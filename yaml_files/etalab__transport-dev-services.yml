@@ -1,0 +1,33 @@
+---
+publiccodeYmlVersion: 0.5.0
+name: transport-dev-services
+url: https://github.com/etalab/transport-dev-services
+landingURL: https://github.com/etalab/transport-dev-services
+developmentStatus: active
+softwareType: application
+platforms:
+- Python
+categories:
+- geographic-information-systems
+releaseDate: '2025-07-17'
+softwareVersion: ''
+legal:
+  license: MIT
+  mainCopyrightOwner: etalab
+  repoOwner: etalab
+maintenance:
+  type: community
+  contacts:
+  - name: etalab
+localisation:
+  availableLanguages:
+  - en
+  localisationReady: false
+dependsOn:
+  open: []
+description:
+  en:
+    shortDescription: '{   "message": "Not Found",   "documentation_url": "https://docs.github.com/rest/repos/contents#get-a-repository-readme",   "status":
+      "404" }'
+    longDescription: '{   "message": "Not Found",   "documentation_url": "https://docs.github.com/rest/repos/contents#get-a-repository-readme",   "status":
+      "404" }'

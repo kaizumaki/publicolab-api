@@ -1,0 +1,37 @@
+---
+publiccodeYmlVersion: 0.5.0
+name: abr-geocoder-web
+url: https://github.com/digital-go-jp/abr-geocoder-web
+landingURL: https://abr-geocoder.dev
+developmentStatus: active
+softwareType: application
+platforms:
+- TypeScript
+- React
+categories:
+- geographic-information-systems
+releaseDate: '2025-12-19'
+softwareVersion: ''
+legal:
+  license: MIT
+  mainCopyrightOwner: digital-go-jp
+  repoOwner: digital-go-jp
+maintenance:
+  type: community
+  contacts:
+  - name: digital-go-jp
+  status: active
+localisation:
+  availableLanguages:
+  - en
+  localisationReady: false
+dependsOn:
+  open: []
+description:
+  en:
+    shortDescription: Web interface for converting between address and geographic
+      coordinates using Japan's ABR.
+    longDescription: |-
+      A React-based web application providing geographic geocoding services powered by Japan's Address Base Registry (ABR).
+      Converts street addresses to latitude/longitude and vice versa with high accuracy for Japanese locations.
+      Maintained by Digital Agency (digital.go.jp) as a public service for geographic data access.

@@ -1,0 +1,35 @@
+---
+publiccodeYmlVersion: 0.5.0
+name: timezone-boundary-builder
+url: https://github.com/evansiroky/timezone-boundary-builder
+landingURL: https://github.com/evansiroky/timezone-boundary-builder
+developmentStatus: active
+softwareType: library
+platforms:
+- JavaScript
+categories:
+- geographic-information-systems
+releaseDate: '2016-06-17'
+softwareVersion: ''
+legal:
+  license: MIT
+  mainCopyrightOwner: evansiroky
+  repoOwner: evansiroky
+maintenance:
+  type: community
+  contacts:
+  - name: evansiroky
+localisation:
+  availableLanguages:
+  - en
+  localisationReady: false
+dependsOn:
+  open: []
+description:
+  en:
+    shortDescription: A tool to extract data from Open Street Map (OSM) to build the
+      boundaries of the world's timezones.
+    longDescription: 'A tool to extract data from Open Street Map (OSM) to build the
+      boundaries of the world''s timezones.
+
+      '

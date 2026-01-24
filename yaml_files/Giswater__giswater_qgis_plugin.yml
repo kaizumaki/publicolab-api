@@ -1,0 +1,37 @@
+---
+publiccodeYmlVersion: 0.5.0
+name: giswater_qgis_plugin
+url: https://github.com/Giswater/giswater_qgis_plugin
+landingURL: http://www.giswater.org/
+developmentStatus: active
+softwareType: library
+platforms:
+- Python
+categories:
+- geographic-information-systems
+releaseDate: '2016-01-15'
+softwareVersion: ''
+legal:
+  license: GPL-3.0
+  mainCopyrightOwner: Giswater
+  repoOwner: Giswater
+maintenance:
+  type: community
+  contacts:
+  - name: Giswater
+localisation:
+  availableLanguages:
+  - en
+  localisationReady: false
+dependsOn:
+  open: []
+description:
+  en:
+    shortDescription: QGIS plugin for Giswater
+    longDescription: QGIS plugin for Giswater <div align="center"> <a href="https://www.giswater.org/">
+      <picture> <img alt="Giswater logo" src="./icons/dialogs/136.png" height="128">
+      </picture> </a> <h1>Giswater</h1> <a href="https://qgis.org/"><img src="https://img.shields.io/badge/qgis-3.34%20(LTR)%20-blue.svg?style=for-the-badge&logo=qgis&logoColor=white"></a>
+      <a href="https://www.python.org/"><img src="https://img.shields.io/badge/python-3.9-blue.svg?style=for-the-badge&logo=python&logoColor=white"></a>
+      <a href="https://www.postgresql.org/"><img src="https://img.shields.io/badge/postgresql-9.5|16-blue.svg?style=for-the-badge&logo=postgresql&logoColor=white"></a>
+      <a href="./LICENSE"><img alt="LICENSE" src="https://img.shields.io/github/license/giswater/giswater_qgis_plugin?style=for-the-badge"></a>
+      </div>

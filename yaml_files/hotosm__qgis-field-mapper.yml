@@ -1,0 +1,33 @@
+---
+publiccodeYmlVersion: 0.5.0
+name: qgis-field-mapper
+url: https://github.com/hotosm/qgis-field-mapper
+landingURL: https://github.com/hotosm/qgis-field-mapper
+developmentStatus: active
+softwareType: library
+platforms:
+- Python
+categories:
+- geographic-information-systems
+releaseDate: '2025-08-04'
+softwareVersion: ''
+legal:
+  license: GPL-3.0
+  mainCopyrightOwner: hotosm
+  repoOwner: hotosm
+maintenance:
+  type: community
+  contacts:
+  - name: hotosm
+localisation:
+  availableLanguages:
+  - en
+  localisationReady: false
+dependsOn:
+  open: []
+description:
+  en:
+    shortDescription: QGIS plugin to assist with coordinating QField mapping campaigns.
+    longDescription: 'QGIS plugin to assist with coordinating QField mapping campaigns.
+
+      '

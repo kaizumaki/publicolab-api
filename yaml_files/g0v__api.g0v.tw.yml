@@ -1,0 +1,33 @@
+---
+publiccodeYmlVersion: 0.5.0
+name: api.g0v.tw
+url: https://github.com/g0v/api.g0v.tw
+landingURL: https://github.com/g0v/api.g0v.tw
+developmentStatus: stable
+softwareType: library
+platforms:
+- PHP
+categories:
+- geographic-information-systems
+releaseDate: '2024-05-21'
+softwareVersion: ''
+legal:
+  license: UNSPECIFIED
+  mainCopyrightOwner: g0v
+  repoOwner: g0v
+maintenance:
+  type: community
+  contacts:
+  - name: g0v
+localisation:
+  availableLanguages:
+  - en
+  localisationReady: false
+dependsOn:
+  open: []
+description:
+  en:
+    shortDescription: g0v api
+    longDescription: 'g0v api
+
+      '

@@ -1,0 +1,33 @@
+---
+publiccodeYmlVersion: 0.5.0
+name: kontur-ui
+url: https://github.com/hotosm/kontur-ui
+landingURL: https://konturio.github.io/ui/
+developmentStatus: active
+softwareType: library
+platforms:
+- web
+categories:
+- geographic-information-systems
+releaseDate: '2025-08-26'
+softwareVersion: ''
+legal:
+  license: MIT
+  mainCopyrightOwner: hotosm
+  repoOwner: hotosm
+maintenance:
+  type: community
+  contacts:
+  - name: hotosm
+localisation:
+  availableLanguages:
+  - en
+  localisationReady: false
+dependsOn:
+  open: []
+description:
+  en:
+    shortDescription: 'Kontur user interface libraries '
+    longDescription: Kontur user interface libraries - [Lerna.js](https://github.com/lerna/lerna)
+      - [Monorepo](https://en.wikipedia.org/wiki/Monorepo) - [Workspaces](https://legacy.yarnpkg.com/lang/en/docs/workspaces/)
+      - [Conventional commits](https://www.conventionalcommits.org/en/v1.0.0/)

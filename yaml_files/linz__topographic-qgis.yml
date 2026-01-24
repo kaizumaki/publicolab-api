@@ -1,0 +1,32 @@
+---
+publiccodeYmlVersion: 0.5.0
+name: topographic-qgis
+url: https://github.com/linz/topographic-qgis
+landingURL: https://github.com/linz/topographic-qgis
+developmentStatus: active
+softwareType: library
+platforms:
+- Shell
+categories:
+- geographic-information-systems
+releaseDate: '2025-10-16'
+softwareVersion: ''
+legal:
+  license: NOASSERTION
+  mainCopyrightOwner: linz
+  repoOwner: linz
+maintenance:
+  type: community
+  contacts:
+  - name: linz
+localisation:
+  availableLanguages:
+  - en
+  localisationReady: false
+dependsOn:
+  open: []
+description:
+  en:
+    shortDescription: Topographic QGIS Project and Support Files
+    longDescription: Topographic QGIS Project and Support Files This repo manages
+      QGIS projects for map production and data edit.

@@ -1,0 +1,36 @@
+---
+publiccodeYmlVersion: 0.5.0
+name: datagov-catalog
+url: https://github.com/GSA/datagov-catalog
+landingURL: https://data.gov
+developmentStatus: active
+softwareType: application
+platforms:
+- Python
+- React
+categories:
+- geographic-information-systems
+releaseDate: '2025-09-29'
+softwareVersion: ''
+legal:
+  license: CC0-1.0
+  mainCopyrightOwner: GSA
+  repoOwner: GSA
+maintenance:
+  type: community
+  contacts:
+  - name: GSA
+  status: active
+localisation:
+  availableLanguages:
+  - en
+  localisationReady: false
+dependsOn:
+  open: []
+description:
+  en:
+    shortDescription: Next-generation catalog user interface for data.gov
+    longDescription: |
+      A modernized catalog user interface for data.gov replacing the legacy system.
+      Built with React and Python backend, featuring improved search, metadata browsing, and dataset discovery for US government open data.
+      Reuses the harvest database from the datagov-harvester project for centralized metadata management.

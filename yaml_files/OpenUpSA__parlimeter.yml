@@ -1,0 +1,33 @@
+---
+publiccodeYmlVersion: 0.5.0
+name: parlimeter
+url: https://github.com/OpenUpSA/parlimeter
+landingURL: https://github.com/OpenUpSA/parlimeter
+developmentStatus: stable
+softwareType: library
+platforms:
+- HTML
+categories:
+- geographic-information-systems
+releaseDate: '2024-10-10'
+softwareVersion: ''
+legal:
+  license: UNSPECIFIED
+  mainCopyrightOwner: OpenUpSA
+  repoOwner: OpenUpSA
+maintenance:
+  type: community
+  contacts:
+  - name: OpenUpSA
+localisation:
+  availableLanguages:
+  - en
+  localisationReady: false
+dependsOn:
+  open: []
+description:
+  en:
+    shortDescription: Coming soon.
+    longDescription: 'Coming soon.
+
+      '

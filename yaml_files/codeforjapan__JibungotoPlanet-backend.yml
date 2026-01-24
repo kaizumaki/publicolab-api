@@ -1,0 +1,37 @@
+---
+publiccodeYmlVersion: 0.5.0
+name: JibungotoPlanet-backend
+url: https://github.com/codeforjapan/JibungotoPlanet-backend
+landingURL: https://github.com/codeforjapan/JibungotoPlanet
+developmentStatus: active
+softwareType: application
+platforms:
+- TypeScript
+- Node.js
+categories:
+- geographic-information-systems
+releaseDate: '2025-04-28'
+softwareVersion: ''
+legal:
+  license: MIT
+  mainCopyrightOwner: codeforjapan
+  repoOwner: codeforjapan
+maintenance:
+  type: community
+  contacts:
+  - name: codeforjapan
+  status: maintenance
+localisation:
+  availableLanguages:
+  - en
+  localisationReady: false
+dependsOn:
+  open: []
+description:
+  en:
+    shortDescription: Backend API service for JibungotoPlanet geographic information
+      platform.
+    longDescription: |-
+      TypeScript/Node.js backend serving the JibungotoPlanet geographic information platform.
+      Provides REST APIs for geographic data access, spatial queries, and map tile serving.
+      Enables public visualization and analysis of geographic information relevant to Japanese communities.

@@ -1,0 +1,36 @@
+---
+publiccodeYmlVersion: 0.5.0
+name: smartallo
+url: https://github.com/OpenUpSA/smartallo
+landingURL: https://github.com/OpenUpSA/smartallo
+developmentStatus: stable
+softwareType: library
+platforms:
+- JavaScript
+categories:
+- geographic-information-systems
+releaseDate: '2025-04-15'
+softwareVersion: ''
+legal:
+  license: UNSPECIFIED
+  mainCopyrightOwner: OpenUpSA
+  repoOwner: OpenUpSA
+maintenance:
+  type: community
+  contacts:
+  - name: OpenUpSA
+localisation:
+  availableLanguages:
+  - en
+  localisationReady: false
+dependsOn:
+  open: []
+description:
+  en:
+    shortDescription: A basic React Starter project with Parcel.
+    longDescription: |-
+      # React Starter
+
+      A basic React Starter project with Parcel.
+
+      ## Install

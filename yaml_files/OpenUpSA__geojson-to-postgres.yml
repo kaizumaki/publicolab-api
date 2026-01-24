@@ -1,0 +1,33 @@
+---
+publiccodeYmlVersion: 0.5.0
+name: geojson-to-postgres
+url: https://github.com/OpenUpSA/geojson-to-postgres
+landingURL: https://github.com/OpenUpSA/geojson-to-postgres
+developmentStatus: stable
+softwareType: library
+platforms:
+- web
+categories:
+- geographic-information-systems
+releaseDate: '2024-10-22'
+softwareVersion: ''
+legal:
+  license: MIT
+  mainCopyrightOwner: OpenUpSA
+  repoOwner: OpenUpSA
+maintenance:
+  type: community
+  contacts:
+  - name: OpenUpSA
+localisation:
+  availableLanguages:
+  - en
+  localisationReady: false
+dependsOn:
+  open: []
+description:
+  en:
+    shortDescription: Example of importing  GeoJSON into PostgreSQL and querying it.
+    longDescription: 'Example of importing  GeoJSON into PostgreSQL and querying it.
+
+      '

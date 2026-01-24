@@ -1,0 +1,33 @@
+---
+publiccodeYmlVersion: 0.5.0
+name: poncheado
+url: https://github.com/argob/poncheado
+landingURL: https://github.com/argob/poncheado
+developmentStatus: inactive
+softwareType: library
+platforms:
+- HTML
+categories:
+- geographic-information-systems
+releaseDate: '2019-11-26'
+softwareVersion: ''
+legal:
+  license: MIT
+  mainCopyrightOwner: argob
+  repoOwner: argob
+maintenance:
+  type: community
+  contacts:
+  - name: argob
+localisation:
+  availableLanguages:
+  - en
+  localisationReady: false
+dependsOn:
+  open: []
+description:
+  en:
+    shortDescription: Sandbox de htmls hechos con Poncho
+    longDescription: Sandbox de htmls hechos con Poncho Base de html y css para la
+      creación de sitios pertenecientes a la Administración Pública Nacional de la
+      República Argentina.

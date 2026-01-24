@@ -1,0 +1,33 @@
+---
+publiccodeYmlVersion: 0.5.0
+name: imagery
+url: https://github.com/linz/imagery
+landingURL: s3://nz-imagery
+developmentStatus: active
+softwareType: library
+platforms:
+- JavaScript
+categories:
+- geographic-information-systems
+releaseDate: '2023-04-20'
+softwareVersion: ''
+legal:
+  license: NOASSERTION
+  mainCopyrightOwner: linz
+  repoOwner: linz
+maintenance:
+  type: community
+  contacts:
+  - name: linz
+localisation:
+  availableLanguages:
+  - en
+  localisationReady: false
+dependsOn:
+  open: []
+description:
+  en:
+    shortDescription: NZ Aerial imagery freely available to use under an open licence
+    longDescription: 'NZ Aerial imagery freely available to use under an open licence
+
+      '

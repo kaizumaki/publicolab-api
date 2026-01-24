@@ -1,0 +1,37 @@
+---
+publiccodeYmlVersion: 0.5.0
+name: OpenDataTools
+url: https://github.com/codeforjapan/OpenDataTools
+landingURL: https://github.com/codeforjapan/OpenDataTools
+developmentStatus: maintenance
+softwareType: library
+platforms:
+- TypeScript
+categories:
+- geographic-information-systems
+releaseDate: '2024-08-20'
+softwareVersion: ''
+legal:
+  license: MIT
+  mainCopyrightOwner: codeforjapan
+  repoOwner: codeforjapan
+maintenance:
+  type: community
+  contacts:
+  - name: codeforjapan
+localisation:
+  availableLanguages:
+  - en
+  localisationReady: false
+dependsOn:
+  open: []
+description:
+  en:
+    shortDescription: Collection of utilities and libraries for working with Japanese
+      open data.
+    longDescription: |-
+      A TypeScript toolkit providing utilities for accessing, transforming, and visualizing Japanese public open datasets.
+      Includes helpers for common data formats, geocoding, administrative boundary processing, and API integration.
+      Designed to accelerate civic tech application development in Japan.
+
+      これはオープンデータのフォーマット/ルールに沿ったデータの作成を支援するアプリケーションです。

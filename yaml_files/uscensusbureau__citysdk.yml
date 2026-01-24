@@ -1,0 +1,40 @@
+---
+publiccodeYmlVersion: 0.5.0
+name: citysdk
+url: https://github.com/uscensusbureau/citysdk
+landingURL: https://uscensusbureau.github.io/citysdk
+developmentStatus: active
+softwareType: library
+platforms:
+- Clojure
+- JavaScript
+categories:
+- geographic-information-systems
+releaseDate: '2026-01-09'
+softwareVersion: ''
+legal:
+  license: MIT
+  mainCopyrightOwner: uscensusbureau
+  repoOwner: uscensusbureau
+maintenance:
+  type: community
+  contacts:
+  - name: uscensusbureau
+  status: inactive
+localisation:
+  availableLanguages:
+  - en
+  localisationReady: false
+dependsOn:
+  open: []
+description:
+  en:
+    shortDescription: JavaScript/ClojureScript utilities for accessing US Census Bureau
+      APIs and geographic data.
+    longDescription: |-
+      Convenient JavaScript utilities including Census API client, cartographic GeoJSON support, and FIPS code lookups.
+      Simplifies integration of Census demographics and geographic data into web applications.
+      Supports coordinate-to-FIPS conversion for location-based Census data queries.
+      in ClojureScript)
+
+      '

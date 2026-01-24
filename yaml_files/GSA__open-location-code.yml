@@ -1,0 +1,37 @@
+---
+publiccodeYmlVersion: 0.5.0
+name: open-location-code
+url: https://github.com/GSA/open-location-code
+landingURL: https://plus.codes
+developmentStatus: maintenance
+softwareType: library
+platforms:
+- web
+categories:
+- geographic-information-systems
+releaseDate: '2024-08-09'
+softwareVersion: ''
+legal:
+  license: Apache-2.0
+  mainCopyrightOwner: GSA
+  repoOwner: GSA
+maintenance:
+  type: community
+  contacts:
+  - name: GSA
+  status: active
+localisation:
+  availableLanguages:
+  - en
+  localisationReady: false
+dependsOn:
+  open: []
+description:
+  en:
+    shortDescription: Library to encode geographic coordinates as short alphanumeric
+      codes (plus codes).
+    longDescription: |
+      Open Location Code (OLC) is a library for generating short codes—called plus codes or simply OLC—that encode geographic location.
+      Provides an alternative to street addresses in regions without formal addressing.
+      Available in multiple programming languages (JavaScript, Python, Java, C++, Go, etc.) via CDNJS and package managers.
+      Used globally for emergency response, delivery routing, and humanitarian applications.

@@ -1,0 +1,35 @@
+---
+publiccodeYmlVersion: 0.5.0
+name: open-data-registry
+url: https://github.com/linz/open-data-registry
+landingURL: https://registry.opendata.aws
+developmentStatus: stable
+softwareType: library
+platforms:
+- Python
+categories:
+- geographic-information-systems
+releaseDate: '2023-09-04'
+softwareVersion: ''
+legal:
+  license: Apache-2.0
+  mainCopyrightOwner: linz
+  repoOwner: linz
+maintenance:
+  type: community
+  contacts:
+  - name: linz
+localisation:
+  availableLanguages:
+  - en
+  localisationReady: false
+dependsOn:
+  open: []
+description:
+  en:
+    shortDescription: A registry of publicly available datasets on AWS
+    longDescription: A registry of publicly available datasets on AWS A repository
+      of publicly available datasets that are available for access from AWS resources.
+      Note that datasets in this registry are available via AWS resources, but they
+      are not provided by AWS; these datasets are owned and maintained by a variety
+      of government organizations, researchers, businesses, and individuals.

@@ -1,0 +1,37 @@
+---
+publiccodeYmlVersion: 0.5.0
+name: schema-tiers-lieu
+url: https://github.com/etalab/schema-tiers-lieu
+landingURL: https://schema.data.gouv.fr/etalab/schema-tiers-lieu
+developmentStatus: maintenance
+softwareType: library
+platforms:
+- JSON
+categories:
+- geographic-information-systems
+releaseDate: '2023-07-18'
+softwareVersion: ''
+legal:
+  license: CC-BY-4.0
+  mainCopyrightOwner: etalab
+  repoOwner: etalab
+maintenance:
+  type: community
+  contacts:
+  - name: etalab
+localisation:
+  availableLanguages:
+  - en
+  localisationReady: false
+dependsOn:
+  open: []
+description:
+  en:
+    shortDescription: Ce dépôt contient les fichiers nécessaires pour démarrer la
+      création d'un dépôt pour un schéma [Table Schema](https://specs.frictionlessdata.io/table-schema/).
+    longDescription: |-
+      # Template de départ pour Table Schema
+
+      Ce dépôt contient les fichiers nécessaires pour démarrer la création d'un dépôt pour un schéma [Table Schema](https://specs.frictionlessdata.io/table-schema/).
+
+      ## Utiliser ce template

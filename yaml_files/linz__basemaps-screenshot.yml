@@ -1,0 +1,35 @@
+---
+publiccodeYmlVersion: 0.5.0
+name: basemaps-screenshot
+url: https://github.com/linz/basemaps-screenshot
+landingURL: https://github.com/linz/basemaps-screenshot
+developmentStatus: active
+softwareType: library
+platforms:
+- TypeScript
+categories:
+- geographic-information-systems
+releaseDate: '2022-08-12'
+softwareVersion: ''
+legal:
+  license: NOASSERTION
+  mainCopyrightOwner: linz
+  repoOwner: linz
+maintenance:
+  type: community
+  contacts:
+  - name: linz
+localisation:
+  availableLanguages:
+  - en
+  localisationReady: false
+dependsOn:
+  open: []
+description:
+  en:
+    shortDescription: Basemaps Screenshot container to validate config changes via
+      screenshot tests
+    longDescription: 'Basemaps Screenshot container to validate config changes via
+      screenshot tests
+
+      '

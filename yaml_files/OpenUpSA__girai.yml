@@ -1,0 +1,35 @@
+---
+publiccodeYmlVersion: 0.5.0
+name: girai
+url: https://github.com/OpenUpSA/girai
+landingURL: https://github.com/OpenUpSA/girai
+developmentStatus: active
+softwareType: library
+platforms:
+- TypeScript
+categories:
+- geographic-information-systems
+releaseDate: '2025-03-12'
+softwareVersion: ''
+legal:
+  license: UNSPECIFIED
+  mainCopyrightOwner: OpenUpSA
+  repoOwner: OpenUpSA
+maintenance:
+  type: community
+  contacts:
+  - name: OpenUpSA
+localisation:
+  availableLanguages:
+  - en
+  localisationReady: false
+dependsOn:
+  open: []
+description:
+  en:
+    shortDescription: OpenUp developed generative AI chatbot for Global Center on
+      AI Governance.
+    longDescription: 'OpenUp developed generative AI chatbot for Global Center on
+      AI Governance.
+
+      '

@@ -1,0 +1,35 @@
+---
+publiccodeYmlVersion: 0.5.0
+name: raster-vision
+url: https://github.com/azavea/raster-vision
+landingURL: https://docs.rastervision.io
+developmentStatus: active
+softwareType: library
+platforms:
+- Python
+categories:
+- geographic-information-systems
+releaseDate: '2017-02-02'
+softwareVersion: ''
+legal:
+  license: Apache-2.0
+  mainCopyrightOwner: azavea
+  repoOwner: azavea
+maintenance:
+  type: community
+  contacts:
+  - name: azavea
+localisation:
+  availableLanguages:
+  - en
+  localisationReady: false
+dependsOn:
+  open: []
+description:
+  en:
+    shortDescription: An open source library and framework for deep learning on satellite
+      and aerial imagery.
+    longDescription: 'An open source library and framework for deep learning on satellite
+      and aerial imagery.
+
+      '

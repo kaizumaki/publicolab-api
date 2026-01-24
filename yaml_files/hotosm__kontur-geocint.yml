@@ -1,0 +1,36 @@
+---
+publiccodeYmlVersion: 0.5.0
+name: kontur-geocint
+url: https://github.com/hotosm/kontur-geocint
+landingURL: https://github.com/hotosm/kontur-geocint
+developmentStatus: active
+softwareType: library
+platforms:
+- web
+categories:
+- geographic-information-systems
+releaseDate: '2025-08-26'
+softwareVersion: ''
+legal:
+  license: MIT
+  mainCopyrightOwner: hotosm
+  repoOwner: hotosm
+maintenance:
+  type: community
+  contacts:
+  - name: hotosm
+localisation:
+  availableLanguages:
+  - en
+  localisationReady: false
+dependsOn:
+  open: []
+description:
+  en:
+    shortDescription: Large data processing pipeline running on geocint machine.
+    longDescription: Large data processing pipeline running on geocint machine. Geocint
+      is Kontur's geodata ETL/CI/CD pipeline designed for ease of maintenance and
+      high single-node throughput. Writing the code as Geocint target makes sure that
+      it is fully recorded, can be run autonomously, can be inspected, reviewed and
+      tested by other team members, and will automatically produce new artifacts once
+      new input data comes in.

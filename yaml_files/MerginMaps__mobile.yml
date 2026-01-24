@@ -1,0 +1,33 @@
+---
+publiccodeYmlVersion: 0.5.0
+name: mobile
+url: https://github.com/MerginMaps/mobile
+landingURL: https://merginmaps.com
+developmentStatus: active
+softwareType: library
+platforms:
+- C++
+categories:
+- geographic-information-systems
+releaseDate: '2015-11-20'
+softwareVersion: ''
+legal:
+  license: GPL-2.0
+  mainCopyrightOwner: MerginMaps
+  repoOwner: MerginMaps
+maintenance:
+  type: community
+  contacts:
+  - name: MerginMaps
+localisation:
+  availableLanguages:
+  - en
+  localisationReady: false
+dependsOn:
+  open: []
+description:
+  en:
+    shortDescription: "Mergin Maps mobile app \U0001F4F2 Open QGIS projects and manage
+      vector data on your phone, even offline \U0001F4F6 (Android/iOS/Windows app)"
+    longDescription: "Mergin Maps mobile app \U0001F4F2 Open QGIS projects and manage
+      vector data on your phone, even offline \U0001F4F6 (Android/iOS/Windows app)\n"

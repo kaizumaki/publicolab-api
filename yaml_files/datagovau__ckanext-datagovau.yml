@@ -1,0 +1,32 @@
+---
+publiccodeYmlVersion: 0.5.0
+name: ckanext-datagovau
+url: https://github.com/datagovau/ckanext-datagovau
+landingURL: https://github.com/datagovau/ckanext-datagovau
+developmentStatus: active
+softwareType: library
+platforms:
+- Python
+categories:
+- geographic-information-systems
+releaseDate: '2021-11-26'
+softwareVersion: ''
+legal:
+  license: NOASSERTION
+  mainCopyrightOwner: datagovau
+  repoOwner: datagovau
+maintenance:
+  type: community
+  contacts:
+  - name: datagovau
+localisation:
+  availableLanguages:
+  - en
+  localisationReady: false
+dependsOn:
+  open: []
+description:
+  en:
+    shortDescription: CKAN extension for data.gov.au customisations.
+    longDescription: CKAN extension for data.gov.au customisations. This CKAN Extension
+      customises a CKAN instance for the hosting of data.gov.au.
