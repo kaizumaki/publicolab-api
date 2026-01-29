@@ -314,8 +314,26 @@ def health() -> dict[str, Any]:
 
 
 @app.get("/catalog/filters")
-def catalog_filters() -> dict[str, list[str]]:
-    return DATA_STORE.get("filters", {})
+def catalog_filters(
+    q: str | None = Query(None, description="Free text search across name/description"),
+    category: str | None = Query(None, description="Comma-separated category filter"),
+    platform: str | None = Query(None, description="Comma-separated platform filter"),
+    license_name: str | None = Query(None, alias="license", description="Comma-separated license filter"),
+    status: str | None = Query(None, description="Comma-separated developmentStatus filter"),
+    software_type: str | None = Query(None, alias="type", description="Comma-separated softwareType filter"),
+    language: str | None = Query(None, description="Comma-separated language filter"),
+) -> dict[str, list[str]]:
+    items = _apply_filters(
+        DATA_STORE.get("items", []),
+        q=q,
+        category=category,
+        platform=platform,
+        license_name=license_name,
+        status=status,
+        software_type=software_type,
+        language=language,
+    )
+    return _build_filters(items)
 
 
 @app.get("/catalog")

@@ -84,19 +84,38 @@ function CatalogListPage() {
     return params.toString()
   }, [activeFilters, page, pageSize, search, sort, order])
 
+  const filterQueryString = useMemo(() => {
+    const params = new URLSearchParams()
+    if (search.trim()) params.set('q', search.trim())
+    if (activeFilters.categories.length)
+      params.set('category', toQueryParam(activeFilters.categories))
+    if (activeFilters.platforms.length)
+      params.set('platform', toQueryParam(activeFilters.platforms))
+    if (activeFilters.licenses.length)
+      params.set('license', toQueryParam(activeFilters.licenses))
+    if (activeFilters.statuses.length)
+      params.set('status', toQueryParam(activeFilters.statuses))
+    if (activeFilters.types.length)
+      params.set('type', toQueryParam(activeFilters.types))
+    if (activeFilters.languages.length)
+      params.set('language', toQueryParam(activeFilters.languages))
+    return params.toString()
+  }, [activeFilters, search])
+
   useEffect(() => {
     const loadFilters = async () => {
       try {
-        const data = await fetchJson<FilterOptions>(
-          `${API_BASE}/catalog/filters`
-        )
+        const url = filterQueryString
+          ? `${API_BASE}/catalog/filters?${filterQueryString}`
+          : `${API_BASE}/catalog/filters`
+        const data = await fetchJson<FilterOptions>(url)
         setFilters(data)
       } catch (err) {
         console.error(err)
       }
     }
     loadFilters()
-  }, [])
+  }, [filterQueryString])
 
   useEffect(() => {
     const nextSearch = `?${queryString}`
