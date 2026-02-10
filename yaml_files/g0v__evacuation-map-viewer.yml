@@ -10,7 +10,7 @@ platforms:
 categories:
 - geographic-information-systems
 releaseDate: '2024-05-25'
-softwareVersion: ''
+softwareVersion: '0.0.0+6523101'
 legal:
   license: UNSPECIFIED
   mainCopyrightOwner: g0v

@@ -9,8 +9,8 @@ platforms:
 - Vue
 categories:
 - geographic-information-systems
-releaseDate: '2024-03-15'
-softwareVersion: ''
+releaseDate: '2025-04-03'
+softwareVersion: '0.0.0+446e10a'
 legal:
   license: UNSPECIFIED
   mainCopyrightOwner: codeforjapan

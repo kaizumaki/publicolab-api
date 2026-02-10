@@ -9,8 +9,8 @@ platforms:
 - Shell
 categories:
 - geographic-information-systems
-releaseDate: '2025-10-16'
-softwareVersion: ''
+releaseDate: '2026-01-21'
+softwareVersion: '0.0.0+776ae06'
 legal:
   license: NOASSERTION
   mainCopyrightOwner: linz

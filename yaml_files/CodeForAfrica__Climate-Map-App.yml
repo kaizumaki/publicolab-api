@@ -9,8 +9,8 @@ platforms:
 - Python
 categories:
 - geographic-information-systems
-releaseDate: '2025-07-29'
-softwareVersion: ''
+releaseDate: '2025-10-01'
+softwareVersion: '0.0.0+a9da95d'
 legal:
   license: NOASSERTION
   mainCopyrightOwner: CodeForAfrica

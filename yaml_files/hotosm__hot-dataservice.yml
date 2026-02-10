@@ -9,8 +9,8 @@ platforms:
 - web
 categories:
 - geographic-information-systems
-releaseDate: '2025-10-08'
-softwareVersion: ''
+releaseDate: '2021-08-04'
+softwareVersion: '0.0.0+d2d39d8'
 legal:
   license: NOASSERTION
   mainCopyrightOwner: hotosm

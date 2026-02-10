@@ -9,8 +9,8 @@ platforms:
 - HTML
 categories:
 - geographic-information-systems
-releaseDate: '2019-11-12'
-softwareVersion: ''
+releaseDate: '2024-07-22'
+softwareVersion: '0.0.0+9d3fb76'
 legal:
   license: MIT
   mainCopyrightOwner: argob

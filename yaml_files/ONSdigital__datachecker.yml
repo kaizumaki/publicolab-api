@@ -9,8 +9,8 @@ platforms:
 - Python
 categories:
 - geographic-information-systems
-releaseDate: '2026-01-08'
-softwareVersion: ''
+releaseDate: '2026-01-09'
+softwareVersion: 'v1.0.0'
 legal:
   license: MIT
   mainCopyrightOwner: ONSdigital

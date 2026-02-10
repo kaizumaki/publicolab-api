@@ -34,6 +34,9 @@ description:
       GIF（Government Interoperability Framework）は、日本のデジタル庁が主導する、
       政府機関間のシステム・データ連携における相互運用性を実現するための標準フレームワークです。
 
+      デジタル庁が公開するデータの連携・交換のためのデータ参照モデルであり、
+      利用者は標準として採用するほか、独自に拡張や項目の取捨選択などのカスタマイズが可能です。
+
       ## 概要
 
       政府が提供するデジタルサービスの相互接続性と相互運用可能性を確保するために、
@@ -77,8 +80,10 @@ description:
       - CIO ポータル: https://cio.go.jp/
   en:
     shortDescription: Government Interoperability Framework
-    longDescription: !binary |-
-      R292ZXJubWVudCBJbnRlcm9wZXJhYmlsaXR5IEZyYW1ld29yayBHSUY6IEdvdmVybm1lbnQgSW50ZXJvcGVyYWJpbGl0eSBGcmFtZXdvcmtcIEdJRuOBr+ODh+OCuOOCv+ODq+W6geOBjOWFrOmWi+OBmeOCi+ODh+ODvOOCv+OBrumAo+aQuuODu+S6pOaPm+OBruOBn+OCgeOBruODh+ODvOOCv+WPgueFp+ODouODh+ODq+OBp+OBmeOAglwg5Yip55So6ICF44GvR0lG44KS44Gd44Gu44G+44G+44OH44O844K/5qiZ5rqW44Go44GX44Gm5o6h55So44GZ44KL5LuW44CB54us6Ieq44Gr5ouh5by144KE6aCF55uu44Gu5Y+W5o2o6YG45oqe44Gq44Gp44Gu44Kr44K544K/44Oe44Kk44K644KS6KGM44Gj44Gm5Yip55So44GZ44KL44GT44Go44GM44Gn44GN44G+44GZ44CCXCBodHRwczovL3d3dy5kaWdpdGFsLmdvLmpwL3BvbGljaWVzL2RhdGFfc3RyYXRlZ3lfZ292ZXJubWVudF9pbnRlcm9wZXJhYmlsaXR5X2ZyYW1ld29yay8=
+    longDescription: |
+      The Government Interoperability Framework (GIF) is a reference model published by the Digital Agency of Japan for data linkage and exchange across government systems.
+      Users can adopt it as a data standard or customize it by extending it and selecting relevant items to suit their needs.
+      https://www.digital.go.jp/policies/data_strategy_government_interoperability_framework/
 platforms:
 - web
 dependsOn: []

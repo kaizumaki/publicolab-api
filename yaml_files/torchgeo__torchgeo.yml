@@ -9,8 +9,8 @@ platforms:
 - Python
 categories:
 - geographic-information-systems
-releaseDate: '2021-05-21'
-softwareVersion: ''
+releaseDate: '2026-01-25'
+softwareVersion: 'v0.8.1'
 legal:
   license: MIT
   mainCopyrightOwner: torchgeo

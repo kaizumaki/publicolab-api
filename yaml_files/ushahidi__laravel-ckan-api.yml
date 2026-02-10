@@ -9,8 +9,8 @@ platforms:
 - PHP
 categories:
 - geographic-information-systems
-releaseDate: '2018-05-10'
-softwareVersion: ''
+releaseDate: '2017-02-17'
+softwareVersion: '1.0.0'
 legal:
   license: UNSPECIFIED
   mainCopyrightOwner: ushahidi

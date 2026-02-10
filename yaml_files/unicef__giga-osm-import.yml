@@ -9,8 +9,8 @@ platforms:
 - web
 categories:
 - geographic-information-systems
-releaseDate: '2025-05-01'
-softwareVersion: ''
+releaseDate: '2025-11-12'
+softwareVersion: '0.0.0+a8e3ebd'
 legal:
   license: UNSPECIFIED
   mainCopyrightOwner: unicef

@@ -9,8 +9,8 @@ platforms:
 - Python
 categories:
 - geographic-information-systems
-releaseDate: '2014-12-29'
-softwareVersion: ''
+releaseDate: '2025-08-14'
+softwareVersion: '3.7.2'
 legal:
   license: MIT
   mainCopyrightOwner: pyproj4

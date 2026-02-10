@@ -9,8 +9,8 @@ platforms:
 - Python
 categories:
 - geographic-information-systems
-releaseDate: '2021-11-26'
-softwareVersion: ''
+releaseDate: '2025-08-15'
+softwareVersion: '2.11.3'
 legal:
   license: NOASSERTION
   mainCopyrightOwner: datagovau

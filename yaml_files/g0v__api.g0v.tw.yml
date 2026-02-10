@@ -9,8 +9,8 @@ platforms:
 - PHP
 categories:
 - geographic-information-systems
-releaseDate: '2024-05-21'
-softwareVersion: ''
+releaseDate: '2024-09-29'
+softwareVersion: '0.0.0+dac8392'
 legal:
   license: UNSPECIFIED
   mainCopyrightOwner: g0v

@@ -9,8 +9,8 @@ platforms:
 - Python
 categories:
 - geographic-information-systems
-releaseDate: '2017-02-02'
-softwareVersion: ''
+releaseDate: '2024-08-30'
+softwareVersion: 'v0.31.1'
 legal:
   license: Apache-2.0
   mainCopyrightOwner: azavea

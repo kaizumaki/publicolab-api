@@ -9,8 +9,8 @@ platforms:
 - JavaScript
 categories:
 - geographic-information-systems
-releaseDate: '2022-04-20'
-softwareVersion: ''
+releaseDate: '2022-10-28'
+softwareVersion: 'v4.1.0'
 legal:
   license: UNSPECIFIED
   mainCopyrightOwner: ngageoint

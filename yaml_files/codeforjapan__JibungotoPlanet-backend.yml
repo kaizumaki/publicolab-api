@@ -10,8 +10,8 @@ platforms:
 - Node.js
 categories:
 - geographic-information-systems
-releaseDate: '2025-04-28'
-softwareVersion: ''
+releaseDate: '2022-08-27'
+softwareVersion: 'stage0.5'
 legal:
   license: MIT
   mainCopyrightOwner: codeforjapan

@@ -9,8 +9,8 @@ platforms:
 - TypeScript
 categories:
 - geographic-information-systems
-releaseDate: '2022-08-15'
-softwareVersion: ''
+releaseDate: '2025-02-27'
+softwareVersion: 'v2025.07.0'
 legal:
   license: NOASSERTION
   mainCopyrightOwner: ushahidi

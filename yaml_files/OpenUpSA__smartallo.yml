@@ -9,8 +9,8 @@ platforms:
 - JavaScript
 categories:
 - geographic-information-systems
-releaseDate: '2025-04-15'
-softwareVersion: ''
+releaseDate: '2025-04-16'
+softwareVersion: '0.0.0+e5d2b40'
 legal:
   license: UNSPECIFIED
   mainCopyrightOwner: OpenUpSA

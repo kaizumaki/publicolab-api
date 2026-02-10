@@ -9,8 +9,8 @@ platforms:
 - TypeScript
 categories:
 - geographic-information-systems
-releaseDate: '2024-08-20'
-softwareVersion: ''
+releaseDate: '2022-12-19'
+softwareVersion: '0.0.0+d72573c'
 legal:
   license: MIT
   mainCopyrightOwner: codeforjapan

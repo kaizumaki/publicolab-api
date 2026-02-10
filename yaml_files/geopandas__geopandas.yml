@@ -9,8 +9,8 @@ platforms:
 - Python
 categories:
 - geographic-information-systems
-releaseDate: '2013-06-27'
-softwareVersion: ''
+releaseDate: '2025-12-22'
+softwareVersion: 'v1.1.2'
 legal:
   license: BSD-3-Clause
   mainCopyrightOwner: geopandas

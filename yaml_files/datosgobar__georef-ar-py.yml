@@ -10,7 +10,7 @@ platforms:
 categories:
 - geographic-information-systems
 releaseDate: '2025-06-04'
-softwareVersion: ''
+softwareVersion: '0.0.0+empty'
 legal:
   license: UNSPECIFIED
   mainCopyrightOwner: datosgobar

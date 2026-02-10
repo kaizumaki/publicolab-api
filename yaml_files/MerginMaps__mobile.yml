@@ -9,8 +9,8 @@ platforms:
 - C++
 categories:
 - geographic-information-systems
-releaseDate: '2015-11-20'
-softwareVersion: ''
+releaseDate: '2025-12-18'
+softwareVersion: '2025.8.0'
 legal:
   license: GPL-2.0
   mainCopyrightOwner: MerginMaps

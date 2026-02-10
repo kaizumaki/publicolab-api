@@ -9,8 +9,8 @@ platforms:
 - Ruby
 categories:
 - geographic-information-systems
-releaseDate: '2023-11-30'
-softwareVersion: ''
+releaseDate: '2026-02-09'
+softwareVersion: '0.0.0+b750d3b'
 legal:
   license: UNSPECIFIED
   mainCopyrightOwner: etalab
@@ -27,6 +27,8 @@ dependsOn:
   open: []
 description:
   en:
-    shortDescription: 'DataPass '
+    shortDescription: 'L''outil de gestion des habilitations juridiques pour les données
+      à accès restreint. Version en ligne: https://sandbox.v2.datapass.api.gouv.fr/
+      Les comptes disponibles en simili-production (couple email'
     longDescription: DataPass [![Continuous Deployment](https://github.com/etalab/data_pass/actions/workflows/continuous-deployment.yaml/badge.svg)](https://github.com/etalab/data_pass/actions/workflows/continuous-deployment.yaml)
       [![Continuous Integration](https://github.com/etalab/data_pass/actions/workflows/test.yaml/badge.svg)](https://github.com/etalab/data_pass/actions/workflows/test.yaml)

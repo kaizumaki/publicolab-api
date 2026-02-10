@@ -9,8 +9,8 @@ platforms:
 - Python
 categories:
 - geographic-information-systems
-releaseDate: '2024-01-11'
-softwareVersion: ''
+releaseDate: '2020-06-05'
+softwareVersion: 'v4.0super'
 legal:
   license: CC0-1.0
   mainCopyrightOwner: usgs

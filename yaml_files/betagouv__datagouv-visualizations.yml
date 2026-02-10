@@ -9,8 +9,8 @@ platforms:
 - web
 categories:
 - geographic-information-systems
-releaseDate: '2025-11-03'
-softwareVersion: ''
+releaseDate: '2025-10-27'
+softwareVersion: '0.0.0+a9695ca'
 legal:
   license: MIT
   mainCopyrightOwner: betagouv

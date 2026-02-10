@@ -9,8 +9,8 @@ platforms:
 - CSS
 categories:
 - geographic-information-systems
-releaseDate: '2018-06-13'
-softwareVersion: ''
+releaseDate: '2018-06-19'
+softwareVersion: '0.0.0+344759b'
 legal:
   license: UNSPECIFIED
   mainCopyrightOwner: ushahidi

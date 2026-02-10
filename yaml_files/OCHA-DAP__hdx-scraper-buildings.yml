@@ -9,8 +9,8 @@ platforms:
 - Python
 categories:
 - geographic-information-systems
-releaseDate: '2025-07-28'
-softwareVersion: ''
+releaseDate: '2025-09-01'
+softwareVersion: '0.1'
 legal:
   license: MIT
   mainCopyrightOwner: OCHA-DAP

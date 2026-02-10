@@ -10,7 +10,7 @@ platforms:
 categories:
 - geographic-information-systems
 releaseDate: '2025-12-22'
-softwareVersion: ''
+softwareVersion: 'v0.2.5'
 legal:
   license: CC-BY-4.0
   mainCopyrightOwner: etalab

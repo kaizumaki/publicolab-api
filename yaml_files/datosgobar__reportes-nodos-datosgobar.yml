@@ -9,8 +9,8 @@ platforms:
 - R
 categories:
 - geographic-information-systems
-releaseDate: '2025-03-12'
-softwareVersion: ''
+releaseDate: '2025-07-07'
+softwareVersion: '0.0.0+b3abc62'
 legal:
   license: UNSPECIFIED
   mainCopyrightOwner: datosgobar

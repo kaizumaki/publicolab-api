@@ -9,8 +9,8 @@ platforms:
 - Python
 categories:
 - geographic-information-systems
-releaseDate: '2023-04-19'
-softwareVersion: ''
+releaseDate: '2026-02-06'
+softwareVersion: 'v1.2.2'
 legal:
   license: MIT
   mainCopyrightOwner: opengeos

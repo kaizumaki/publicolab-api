@@ -9,8 +9,8 @@ platforms:
 - Vue
 categories:
 - geographic-information-systems
-releaseDate: '2025-07-22'
-softwareVersion: ''
+releaseDate: '2026-01-15'
+softwareVersion: '0.1.3'
 legal:
   license: AGPL-3.0
   mainCopyrightOwner: hotosm

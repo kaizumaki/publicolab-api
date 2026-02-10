@@ -9,8 +9,8 @@ platforms:
 - TypeScript
 categories:
 - geographic-information-systems
-releaseDate: '2013-03-07'
-softwareVersion: ''
+releaseDate: '2026-01-22'
+softwareVersion: 'v3.18.1'
 legal:
   license: NOASSERTION
   mainCopyrightOwner: mapbox

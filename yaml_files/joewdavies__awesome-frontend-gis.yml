@@ -9,8 +9,8 @@ platforms:
 - web
 categories:
 - geographic-information-systems
-releaseDate: '2019-09-18'
-softwareVersion: ''
+releaseDate: '2025-12-07'
+softwareVersion: '0.0.0+d0dbfff'
 legal:
   license: CC0-1.0
   mainCopyrightOwner: joewdavies

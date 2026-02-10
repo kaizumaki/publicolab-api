@@ -9,8 +9,8 @@ platforms:
 - Python
 categories:
 - geographic-information-systems
-releaseDate: '2023-12-13'
-softwareVersion: ''
+releaseDate: '2024-06-24'
+softwareVersion: 'v0.3'
 legal:
   license: NOASSERTION
   mainCopyrightOwner: hyperknot

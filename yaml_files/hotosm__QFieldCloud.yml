@@ -9,8 +9,8 @@ platforms:
 - Python
 categories:
 - geographic-information-systems
-releaseDate: '2025-10-20'
-softwareVersion: ''
+releaseDate: '2025-10-22'
+softwareVersion: '0.0.0+981b78b'
 legal:
   license: MIT
   mainCopyrightOwner: hotosm

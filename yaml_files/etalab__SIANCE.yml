@@ -10,7 +10,7 @@ platforms:
 categories:
 - geographic-information-systems
 releaseDate: '2022-10-26'
-softwareVersion: ''
+softwareVersion: '0.0.0+8491821'
 legal:
   license: MIT
   mainCopyrightOwner: etalab

@@ -10,8 +10,8 @@ platforms:
 - JavaScript
 categories:
 - geographic-information-systems
-releaseDate: '2026-01-09'
-softwareVersion: ''
+releaseDate: '2022-10-20'
+softwareVersion: 'v2.3.0'
 legal:
   license: MIT
   mainCopyrightOwner: uscensusbureau

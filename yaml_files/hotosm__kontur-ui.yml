@@ -9,8 +9,8 @@ platforms:
 - web
 categories:
 - geographic-information-systems
-releaseDate: '2025-08-26'
-softwareVersion: ''
+releaseDate: '2025-08-13'
+softwareVersion: '@konturio/ui-kit@5.5.1'
 legal:
   license: MIT
   mainCopyrightOwner: hotosm

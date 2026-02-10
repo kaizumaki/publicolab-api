@@ -9,8 +9,8 @@ platforms:
 - PHP
 categories:
 - geographic-information-systems
-releaseDate: '2019-07-04'
-softwareVersion: ''
+releaseDate: '2019-12-07'
+softwareVersion: '0.0.0+4bf41e8'
 legal:
   license: MIT
   mainCopyrightOwner: ushahidi

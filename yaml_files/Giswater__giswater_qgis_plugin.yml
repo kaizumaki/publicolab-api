@@ -9,8 +9,8 @@ platforms:
 - Python
 categories:
 - geographic-information-systems
-releaseDate: '2016-01-15'
-softwareVersion: ''
+releaseDate: '2026-01-30'
+softwareVersion: 'v4.7.0'
 legal:
   license: GPL-3.0
   mainCopyrightOwner: Giswater

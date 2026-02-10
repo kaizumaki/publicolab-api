@@ -10,8 +10,8 @@ platforms:
 - React
 categories:
 - geographic-information-systems
-releaseDate: '2025-06-30'
-softwareVersion: ''
+releaseDate: '2024-02-14'
+softwareVersion: 'v2.1'
 legal:
   license: MIT
   mainCopyrightOwner: egovernments

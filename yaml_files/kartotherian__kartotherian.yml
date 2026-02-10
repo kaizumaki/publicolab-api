@@ -9,8 +9,8 @@ platforms:
 - JavaScript
 categories:
 - geographic-information-systems
-releaseDate: '2015-04-16'
-softwareVersion: ''
+releaseDate: '2018-08-17'
+softwareVersion: 'v1.0.0'
 legal:
   license: Apache-2.0
   mainCopyrightOwner: kartotherian
@@ -27,7 +27,9 @@ dependsOn:
   open: []
 description:
   en:
-    shortDescription: Map Tile Server
+    shortDescription: 'Kartotherian is a map tile service originally built for the
+      Wikimedia projects. Its primary components include: * Kartotherian (readme):
+      a map tile server tying together various open source modules fro'
     longDescription: 'Map Tile Server Kartotherian is a map tile service originally
       built for the [Wikimedia](https://www.wikimedia.org/) projects. Its primary
       components include: * Kartotherian ([readme](packages/kartotherian/README.md)):

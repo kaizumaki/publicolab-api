@@ -10,7 +10,7 @@ platforms:
 categories:
 - geographic-information-systems
 releaseDate: '2019-11-27'
-softwareVersion: ''
+softwareVersion: '0.0.0+4e48a46'
 legal:
   license: UNSPECIFIED
   mainCopyrightOwner: argob

@@ -9,8 +9,8 @@ platforms:
 - JavaScript
 categories:
 - geographic-information-systems
-releaseDate: '2014-09-22'
-softwareVersion: ''
+releaseDate: '2018-05-01'
+softwareVersion: '0.0.17'
 legal:
   license: NOASSERTION
   mainCopyrightOwner: kosmtik

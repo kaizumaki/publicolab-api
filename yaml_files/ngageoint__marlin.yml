@@ -9,8 +9,8 @@ platforms:
 - HTML
 categories:
 - geographic-information-systems
-releaseDate: '2023-01-12'
-softwareVersion: ''
+releaseDate: '2025-04-28'
+softwareVersion: '0.0.0+c47b4a9'
 legal:
   license: MIT
   mainCopyrightOwner: ngageoint

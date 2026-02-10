@@ -9,8 +9,8 @@ platforms:
 - JavaScript
 categories:
 - geographic-information-systems
-releaseDate: '2012-07-05'
-softwareVersion: ''
+releaseDate: '2021-04-14'
+softwareVersion: 'v4.45.0'
 legal:
   license: BSD-3-Clause
   mainCopyrightOwner: CartoDB

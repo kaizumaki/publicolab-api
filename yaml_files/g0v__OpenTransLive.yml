@@ -9,8 +9,8 @@ platforms:
 - Python
 categories:
 - geographic-information-systems
-releaseDate: '2025-09-11'
-softwareVersion: ''
+releaseDate: '2025-12-22'
+softwareVersion: '0.0.0+0ad34f2'
 legal:
   license: AGPL-3.0
   mainCopyrightOwner: g0v

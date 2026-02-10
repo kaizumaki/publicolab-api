@@ -10,7 +10,7 @@ platforms:
 categories:
 - geographic-information-systems
 releaseDate: '2023-02-03'
-softwareVersion: ''
+softwareVersion: '0.0.0+3039d24'
 legal:
   license: UNSPECIFIED
   mainCopyrightOwner: etalab

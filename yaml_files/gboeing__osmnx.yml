@@ -9,8 +9,8 @@ platforms:
 - Python
 categories:
 - geographic-information-systems
-releaseDate: '2016-07-24'
-softwareVersion: ''
+releaseDate: '2025-11-26'
+softwareVersion: 'v2.0.7'
 legal:
   license: MIT
   mainCopyrightOwner: gboeing
